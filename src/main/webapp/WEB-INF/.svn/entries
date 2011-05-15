@@ -1,0 +1,57 @@
+8
+
+dir
+87
+svn+ssh://intranet.netapsys.fr/var/svn/java/trunk/tb_junit4spring-mvc-webapp/src/main/webapp/WEB-INF
+svn+ssh://intranet.netapsys.fr/var/svn/java
+
+
+
+2008-12-23T09:05:28.768247Z
+87
+abderrazek_chine
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+982acfcf-c5d2-4376-b17a-c9c8fdc44595
+
+jsp
+dir
+
+spring-mvc-webapp-servlet.xml
+file
+
+
+
+
+2008-12-06T10:32:18.598000Z
+c736713465e6097a02a85282a3ca1531
+2008-12-23T09:05:28.768247Z
+87
+abderrazek_chine
+has-props
+
+web.xml
+file
+
+
+
+
+2008-11-29T08:28:22.072000Z
+4caf3dcd0d6de03468ac0c4b1a704102
+2008-12-23T09:05:28.768247Z
+87
+abderrazek_chine
+has-props
+

@@ -1,0 +1,23 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>TB Spring and JUnit4 Web Application</display-name>
+  
+    
+  <!-- déclare la servlet frontal ( similaire à  struts)  -->
+  <servlet>
+		<servlet-name>spring-mvc-webapp</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+  </servlet>
+
+	<!--
+		Toutes les requetes se terminant par .html seront servis par la servlet principale
+	-->
+  <servlet-mapping>
+		<servlet-name>spring-mvc-webapp</servlet-name>
+		<url-pattern>*.html</url-pattern>
+  </servlet-mapping>
+</web-app>

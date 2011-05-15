@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+	- Contexte d'application pour spring-mvc-webapp.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<!--
+		- Tous les controlleurs sont automatiquement détectés grâce à l'annotation @Controller.
+		- On définit ici dans quel package le post processor doit chercher ces beans éventuellement
+		annotés.
+	-->
+  	
+	<context:component-scan base-package="com.netapsys.springmvc.web"/>	
+
+	<!--
+		Activates various annotations to be detected in bean classes: Spring's
+		@Required and @Autowired, as well as JSR 250's @PostConstruct,
+		@PreDestroy and @Resource (if available) and JPA's @PersistenceContext
+		and @PersistenceUnit (if available).
+	-->
+	
+<context:annotation-config/>
+	
+	<!--
+		- Les controlleurs de cette application fournissent une annotation @RequestMapping 
+		- Qui peuvent être déclaré de deux manière différentes : 
+		- Au niveau de la classe par exemple : 
+		-      @RequestMapping("/addVisit.html")
+		-      Pour ce type de controlleurs on peut annoter les méthodes pour qu'elles
+		-      prennent en charge une requete Post ou une requete Get
+		-      @RequestMapping(method = RequestMethod.GET)
+		- Ou alors au niveau de chaque méthodes, différents exemples  seront fournis.		 
+	-->
+
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+
+	
+	<!--
+		Ceci est le view resolver, il permet de définir la technologie de vue utilisée et comment
+		sélectionner une vue. Ici on prendra la solution la plus simple elle permet de mapper 
+		le nom de la vue retournée avec la sélection d'une jsp.
+		Exemple si le nom de la vue retournée est "foo/bar/hello" alors on utilisera le fichier
+		WEB-INF/jsp/foo/bar/hello.jsp pour constuire la vue. 
+	-->
+	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" p:prefix="/WEB-INF/jsp/"
+			p:suffix=".jsp"/>
+</beans>

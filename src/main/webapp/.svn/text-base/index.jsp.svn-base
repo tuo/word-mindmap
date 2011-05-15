@@ -1,0 +1,10 @@
+<html>
+<body>
+
+<% 
+//response.getWriter().print(request.getServletPath()+ "  ctxpath="+ request.getContextPath()+ " url="+request.getRequestURL()  + " uri="+request.getRequestURI());
+
+response.sendRedirect (request.getContextPath()+"/helloSpringMVC.html?name=Tb Junit4 and Spring") ;
+%>
+</body>
+</html>
