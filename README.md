@@ -18,7 +18,7 @@ words and provides similar mindset map.
 
 Then go to browser and input:
 
-    <http://localhost:8080/word-mindmap>
+<http://localhost:8080/word-mindmap>
 
 ### Notes
 
