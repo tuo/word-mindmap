@@ -14,7 +14,7 @@ words and provides similar mindset map.
 
 ### Using
 
-		    mvn clean package jetty:run
+		    mvn clean jetty:run
 
 Then go to browser and input:
 
