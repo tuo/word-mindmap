@@ -4,10 +4,12 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Hello world</title>
+    <title>Populate words successfully.</title>
 </head>
 
 <body>
+<h1>Populate words successfully</h1>
 the name you said: <c:out value="${name}"></c:out>
+
 </body>
 </html>

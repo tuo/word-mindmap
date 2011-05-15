@@ -67,7 +67,7 @@
     </dependencies>
 
     <build>
-        <finalName>spring-mvc-webapp</finalName>
+        <finalName>word-mindmap</finalName>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
