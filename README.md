@@ -16,6 +16,10 @@ words and provides similar mindset map.
 
 		    mvn clean package jetty:run
 
+Then go to browser and input:
+
+           <http://localhost:8080/word-mindmap>
+
 ### Notes
 
 
