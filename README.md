@@ -4,3 +4,18 @@
 
 ////////////////////////////////////////////////////////////////
 
+# Word-Mindmap
+
+## README
+
+Word Mindmap is a project that aims at alleviating the pain of 
+remembering words.The project trys to setup the relationship among
+words and provides similar mindset map.
+
+### Using
+
+		    mvn clean package jetty:run
+
+### Notes
+
+
