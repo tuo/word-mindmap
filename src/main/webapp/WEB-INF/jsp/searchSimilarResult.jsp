@@ -5,22 +5,16 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Populate words successfully.</title>
+    <title>Search Synonym Result.</title>
 </head>
 
 <body>
-<h1>Populate words successfully</h1>
+<h1> Word to search: <c:out value="${wordToSearch}"/></h1>
+<h4>Result are: </h4>
+ <p>
+  <c:out value="${result}"/>
+ </p>
 
-<form action="searchSimilarWords.html">
-    <label>Search word that like for: </label>
-    <input type="text" name="word" size="20" />
-    <input type="submit" name="button" value="Button" />
-</form>
-
-
-<p>
-    You can reference by following picture:
-</p>
-<img src="images/wordmap.jpg" />
+<a href="populateSuccess.html">back to search</a>
 </body>
 </html>

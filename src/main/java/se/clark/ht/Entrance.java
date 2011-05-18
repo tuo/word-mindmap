@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.io.File;
 
+import org.apache.log4j.Logger;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.WildcardQuery;
 import org.neo4j.graphdb.Direction;
@@ -31,6 +32,10 @@ import se.clark.ht.domain.WordRelationshipTypes;
 import se.clark.ht.util.FileHelper;
 
 public class Entrance {
+
+    //get log4j handler
+	private static final Logger logger = Logger.getLogger(Entrance.class);
+
 	private static final String DB_PATH = "neo4j-store";
 	private static  GraphDatabaseService graphDb ;
     
@@ -223,9 +228,10 @@ public class Entrance {
 //	      
 	}
 
-	private static void searchCorrespondingWords(String wordToSearch) {
+	public static String searchCorrespondingWords(String wordToSearch) {
 		IndexManager indexManager = graphDb.index();
-		System.out.println("search started.........."+indexManager.existsForNodes(WORDS_INDEX_KEY));
+		logger.info("search started.........."+indexManager.existsForNodes(WORDS_INDEX_KEY));
+        String result = "";
 		if(indexManager.existsForNodes(WORDS_INDEX_KEY)){
 			Index<Node> indexService = indexManager.forNodes(WORDS_INDEX_KEY);
 //			IndexHits<Node> hits = indexService.get(NAME_KEY, wordToSearch);
@@ -233,15 +239,19 @@ public class Entrance {
 			IndexHits<Node> hits = indexService.query( new WildcardQuery(new Term (NAME_KEY, "*" + wordToSearch + "*")));
 //			IndexHits<Node> hits = indexService.get(NAME_KEY, "*" +wordToSearch +"*");
 			// fulltext uses a white-space tokenizer in its analyzer.
-			System.out.println("Those are the words that match '" + wordToSearch + "': ");
+			logger.info("Those are the words that match '" + wordToSearch + "': ");
+
 			for (Node node : hits) {
-				System.out.println("name: '" + node.getProperty(NAME_KEY) 
+                String matchOne = "name: '" + node.getProperty(NAME_KEY)
 						+"', type: " + node.getProperty(TYPE_KEY)
 						+", chinese_meaning: " + node.getProperty(CHINESE_MEANING_KEY)
-						+", english_meaning: " + node.getProperty(ENGLISH_MEANING_KEY));
+						+", english_meaning: " + node.getProperty(ENGLISH_MEANING_KEY);
+                result += matchOne;
+				logger.info(matchOne);
 			}
 		}
-		System.out.println("search ended.");
+		logger.info("search ended.");
+        return result;
 	}
 
 	private static String interactionWithConsole() {

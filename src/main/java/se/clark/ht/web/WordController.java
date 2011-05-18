@@ -5,6 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 import se.clark.ht.Entrance;
 
 @Controller
@@ -14,12 +16,27 @@ public class WordController {
 	private static final Logger logger = Logger.getLogger(WordController.class);
 
     //this is not very good way to use GET
-    @RequestMapping(value = "populate_data.html",method = RequestMethod.GET)
-    public String populateWords(ModelMap model) {
+    @RequestMapping(value = "populateData.html")
+    public ModelAndView populateWords(ModelMap model) {
         logger.info("start populating words to neo4j local storage..........");
         Entrance.populateData();
         logger.info("populating words to neo4j local storage ended..........");
-        model.addAttribute("name", "hello world");
+
+        return new ModelAndView("redirect:populateSuccess.html");
+    }
+
+    @RequestMapping(value = "populateSuccess.html")
+    public String populateSuccess(ModelMap model){
         return "words";
+    }
+
+    @RequestMapping(value = "searchSimilarWords.html")
+    public String searchSimilarWords(@RequestParam(value="word", required = false) String word, ModelMap model){
+        System.out.println("word: " + word);
+        model.addAttribute("wordToSearch", word);
+        String result = Entrance.searchCorrespondingWords(word);
+
+        model.addAttribute("result", result == "" ? "No Match" : result);
+        return "searchSimilarResult";
     }
 }
