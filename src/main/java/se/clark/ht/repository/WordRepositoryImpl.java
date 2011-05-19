@@ -1,6 +1,6 @@
 package se.clark.ht.repository;
 
-public class WordRepositoryImpl implements WordRepository{
+public class WordRepositoryImpl implements WordRepository {
 
     @Override
     public void populateWords() {

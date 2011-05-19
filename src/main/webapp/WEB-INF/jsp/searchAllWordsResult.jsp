@@ -5,11 +5,11 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Search Synonym Result.</title>
+    <title>Search All Words Result.</title>
 </head>
 
 <body>
-<h1> Word to search: <c:out value="${wordToSearch}"/></h1>
+<h1> Word to search: <b>earth</b></h1>
 <h4>Result are: </h4>
 
 <p>

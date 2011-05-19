@@ -13,7 +13,7 @@ import se.clark.ht.Entrance;
 public class WordController {
 
     //get log4j handler
-	private static final Logger logger = Logger.getLogger(WordController.class);
+    private static final Logger logger = Logger.getLogger(WordController.class);
 
     //this is not very good way to use GET
     @RequestMapping(value = "populateData.html")
@@ -26,17 +26,22 @@ public class WordController {
     }
 
     @RequestMapping(value = "populateSuccess.html")
-    public String populateSuccess(ModelMap model){
+    public String populateSuccess(ModelMap model) {
         return "words";
     }
 
     @RequestMapping(value = "searchSimilarWords.html")
-    public String searchSimilarWords(@RequestParam(value="word", required = false) String word, ModelMap model){
-        System.out.println("word: " + word);
+    public String searchSimilarWords(@RequestParam(value = "word", required = false) String word, ModelMap model) {
         model.addAttribute("wordToSearch", word);
         String result = Entrance.searchCorrespondingWords(word);
-
         model.addAttribute("result", result == "" ? "No Match" : result);
         return "searchSimilarResult";
+    }
+
+    @RequestMapping(value = "searchAllWords.html")
+    public String searchAllWords(ModelMap model){
+        String result = Entrance.trasaverAll();
+        model.addAttribute("result", result == "" ? "No Match" : result);
+        return "searchAllWordsResult";
     }
 }
