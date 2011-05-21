@@ -19,6 +19,7 @@
     <!-- the package that spring-data backup -->
     <datagraph:repositories base-package="se.clark.ht.repository" graph-database-context-ref="graphDatabaseContext"/>
 
+    <!-- Not yet know whether this is error or not, go to Inspection> spring-model as warning  -->
     <tx:annotation-driven mode="aspectj" transaction-manager="transactionManager"/>
 </beans>
 
