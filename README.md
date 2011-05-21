@@ -22,6 +22,5 @@ Then go to browser and input:
 
 ### Notes
 
-<http://farm3.static.flickr.com/2544/5733785148_7d866ed51e.jpg>
 
 
