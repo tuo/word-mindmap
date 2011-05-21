@@ -44,6 +44,7 @@
             <param-name>contextConfigLocation</param-name>
             <param-value>
                 classpath:configuration/word-mindmap-servlet.xml
+                classpath:configuration/word-mindmap-context.xml
             </param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>

@@ -8,3 +8,4 @@
 
 
 6.remove comments on mvn:resources in servlet.xml
+7.remove inspection error config

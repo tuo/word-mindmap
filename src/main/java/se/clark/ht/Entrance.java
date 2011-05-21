@@ -36,7 +36,7 @@ public class Entrance {
     //get log4j handler
     private static final Logger logger = Logger.getLogger(Entrance.class);
 
-    private static final String DB_PATH = "neo4j-store";
+    private static final String DB_PATH = "data/neo4j-db";
     private static GraphDatabaseService graphDb;
 
     private static final String NAME_KEY = "name";
