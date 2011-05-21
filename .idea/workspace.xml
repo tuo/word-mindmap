@@ -66,7 +66,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="51" selection-start="960" selection-end="973" vertical-scroll-proportion="-9.272727">
+            <state line="17" column="51" selection-start="960" selection-end="973" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -129,7 +129,7 @@
       <file leaf-file-name="WordTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/domain/WordTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="6" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.53056234">
+            <state line="35" column="31" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.6807131">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,7 +143,7 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="-9.272727">
+            <state line="17" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -319,46 +319,17 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="word-mindmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="word-mindmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se.clark.ht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemId" value="word-mindmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemId" value="word-mindmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -368,7 +339,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemId" value="word-mindmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -394,7 +365,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemId" value="word-mindmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -412,7 +383,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemId" value="word-mindmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -434,7 +405,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemId" value="word-mindmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -460,7 +431,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemId" value="word-mindmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -486,7 +457,7 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemId" value="word-mindmap" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -496,6 +467,35 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se.clark.ht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -562,7 +562,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -574,13 +574,13 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="Downloaded.Files.Path" value="$PROJECT_DIR$/lib" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -813,12 +813,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-45" y="48" width="1276" height="778" extended-state="0" />
+    <frame x="4" y="22" width="1276" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -830,9 +829,10 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36511818" sideWeight="0.696793" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.303207" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3028169" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -908,34 +908,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="36" selection-start="1760" selection-end="1780" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://MAVEN/se.clark.ht:word-mindmap:1.0">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -943,11 +915,11 @@
           <OriginalElement>se.clark.ht:word-mindmap:1.0</OriginalElement>
           <nodes>
             <node x="171.0" y="4000.0">javax.servlet:jstl:jar:1.1.2</node>
-            <node x="363.0" y="3840.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.0.Final</node>
             <node x="509.0" y="1800.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
-            <node x="492.0" y="2360.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0</node>
-            <node x="619.0" y="1440.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1</node>
+            <node x="363.0" y="3840.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.hibernate.javax.persistence:hibernate-jpa-2.0-api:jar:1.0.0.Final</node>
             <node x="547.0" y="560.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6</node>
+            <node x="619.0" y="1440.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1</node>
+            <node x="492.0" y="2360.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0</node>
             <node x="712.0" y="800.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-artifact:jar:2.0.6</node>
             <node x="709.0" y="320.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-profile:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1</node>
             <node x="363.0" y="3320.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:slf4j-api:jar:1.5.10</node>
@@ -973,15 +945,15 @@
             <node x="650.0" y="1720.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
             <node x="712.0" y="720.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6</node>
             <node x="570.0" y="1960.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
-            <node x="618.0" y="3600.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-kernel:jar:1.3/org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1</node>
-            <node x="171.0" y="1560.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE</node>
             <node x="605.0" y="1320.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1/org.codehaus.plexus:plexus-utils:jar:1.5.5</node>
+            <node x="171.0" y="1560.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE</node>
+            <node x="618.0" y="3600.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-kernel:jar:1.3/org.apache.geronimo.specs:geronimo-jta_1.1_spec:jar:1.1.1</node>
             <node x="465.0" y="3640.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-lucene-index:jar:1.3</node>
             <node x="492.0" y="2440.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
-            <node x="363.0" y="3520.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.aspectj:aspectjrt:jar:1.6.11.RELEASE</node>
             <node x="547.0" y="1160.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1</node>
-            <node x="516.0" y="3400.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:slf4j-log4j12:jar:1.5.10/org.slf4j:slf4j-api:jar:1.5.10</node>
+            <node x="363.0" y="3520.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.aspectj:aspectjrt:jar:1.6.11.RELEASE</node>
             <node x="782.0" y="960.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-artifact-manager:jar:2.0.6/org.apache.maven:maven-repository-metadata:jar:2.0.6</node>
+            <node x="516.0" y="3400.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:slf4j-log4j12:jar:1.5.10/org.slf4j:slf4j-api:jar:1.5.10</node>
             <node x="666.0" y="3680.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-lucene-index:jar:1.3/org.apache.servicemix.bundles:org.apache.servicemix.bundles.lucene:jar:3.0.1_2</node>
             <node x="400.0" y="1320.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1</node>
             <node x="719.0" y="200.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-settings:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1</node>
@@ -1038,57 +1010,57 @@
             <node x="363.0" y="2960.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-commons-core:jar:1.0.0.RELEASE</node>
             <node x="363.0" y="2320.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
             <node x="363.0" y="2720.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE</node>
-            <node x="651.0" y="2800.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
             <node x="878.0" y="240.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1</node>
+            <node x="651.0" y="2800.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
             <node x="782.0" y="1080.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-artifact-manager:jar:2.0.6/org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-2</node>
-            <node x="465.0" y="3600.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-kernel:jar:1.3</node>
             <node x="400.0" y="1360.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1</node>
+            <node x="465.0" y="3600.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-kernel:jar:1.3</node>
             <node x="343.0" y="1960.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE</node>
             <node x="709.0" y="280.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-profile:jar:2.0.6/org.apache.maven:maven-model:jar:2.0.6</node>
             <node x="171.0" y="3920.0">org.aspectj:aspectjrt:jar:1.6.11.RELEASE</node>
             <node x="580.0" y="1240.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-toolchain:jar:1.0/org.apache.maven:maven-artifact:jar:2.0.6</node>
             <node x="363.0" y="3480.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/log4j:log4j:jar:1.2.15</node>
             <node x="595.0" y="3200.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.5.10</node>
-            <node x="595.0" y="3280.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE/log4j:log4j:jar:1.2.15</node>
             <node x="547.0" y="840.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-api:jar:2.0.6</node>
+            <node x="595.0" y="3280.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE/log4j:log4j:jar:1.2.15</node>
             <node x="343.0" y="1560.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE</node>
             <node x="171.0" y="4120.0">org.hibernate:hibernate-validator:jar:4.0.2.GA</node>
-            <node x="547.0" y="960.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-artifact-manager:jar:2.0.6</node>
             <node x="712.0" y="560.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-settings:jar:2.0.6</node>
+            <node x="547.0" y="960.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-artifact-manager:jar:2.0.6</node>
             <node x="580.0" y="1200.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-toolchain:jar:1.0/org.apache.maven:maven-core:jar:2.0.6</node>
-            <node x="465.0" y="3720.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-graph-algo:jar:1.3</node>
             <node x="492.0" y="2480.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="465.0" y="3720.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-graph-algo:jar:1.3</node>
             <node x="400.0" y="120.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-artifact:jar:2.0.6</node>
-            <node x="369.0" y="4120.0">org.hibernate:hibernate-validator:jar:4.0.2.GA/javax.validation:validation-api:jar:1.0.0.GA</node>
             <node x="487.0" y="2200.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-web:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
-            <node x="530.0" y="2680.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-aspects:jar:3.0.5.RELEASE/org.springframework:spring-test:jar:3.0.5.RELEASE</node>
+            <node x="369.0" y="4120.0">org.hibernate:hibernate-validator:jar:4.0.2.GA/javax.validation:validation-api:jar:1.0.0.GA</node>
             <node x="509.0" y="1840.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="530.0" y="2680.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-aspects:jar:3.0.5.RELEASE/org.springframework:spring-test:jar:3.0.5.RELEASE</node>
             <node x="363.0" y="3880.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/javax.validation:validation-api:jar:1.0.0.GA</node>
-            <node x="517.0" y="3360.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.5.10/org.slf4j:slf4j-api:jar:1.5.10</node>
             <node x="547.0" y="280.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-profile:jar:2.0.6</node>
+            <node x="517.0" y="3360.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.5.10/org.slf4j:slf4j-api:jar:1.5.10</node>
             <node x="786.0" y="920.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-descriptor:jar:2.0.6/org.apache.maven:maven-artifact:jar:2.0.6</node>
-            <node x="651.0" y="2880.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
             <node x="492.0" y="2520.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="651.0" y="2880.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
             <node x="171.0" y="40.0">org.springframework:spring-test:jar:3.0.5.RELEASE</node>
-            <node x="363.0" y="3400.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:slf4j-log4j12:jar:1.5.10</node>
-            <node x="570.0" y="2000.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
             <node x="719.0" y="160.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-settings:jar:2.0.6/org.apache.maven:maven-model:jar:2.0.6</node>
+            <node x="570.0" y="2000.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE</node>
+            <node x="363.0" y="3400.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:slf4j-log4j12:jar:1.5.10</node>
             <node x="400.0" y="80.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-plugin-api:jar:2.0.6</node>
             <node x="570.0" y="2040.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
             <node x="400.0" y="160.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6</node>
             <node x="460.0" y="3560.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/cglib:cglib:jar:2.2/asm:asm:jar:3.1</node>
-            <node x="465.0" y="3760.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-udc:jar:1.3</node>
             <node x="509.0" y="1920.0">org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE</node>
+            <node x="465.0" y="3760.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-udc:jar:1.3</node>
             <node x="171.0" y="4080.0">log4j:log4j:jar:1.2.5</node>
             <node x="316.0" y="1480.0">org.springframework:spring-core:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE</node>
             <node x="400.0" y="1280.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-utils:jar:2.0.5</node>
-            <node x="619.0" y="2960.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-commons-core:jar:1.0.0.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
             <node x="506.0" y="2760.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE</node>
+            <node x="619.0" y="2960.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-commons-core:jar:1.0.0.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE</node>
             <node x="363.0" y="2360.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE</node>
             <node x="171.0" y="3960.0">taglibs:standard:jar:1.1.2</node>
             <node x="935.0" y="720.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1</node>
-            <node x="516.0" y="3440.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:slf4j-log4j12:jar:1.5.10/log4j:log4j:jar:1.2.14</node>
             <node x="547.0" y="1120.0">org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-monitor:jar:2.0.6</node>
+            <node x="516.0" y="3440.0">org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:slf4j-log4j12:jar:1.5.10/log4j:log4j:jar:1.2.14</node>
           </nodes>
           <notes />
           <edges>
@@ -1096,14 +1068,14 @@
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6">
-              <point x="0.0" y="0.0" />
-              <point x="270.5" y="175.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="se.clark.ht:word-mindmap:1.0" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
               <point x="70.5" y="1575.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6">
+              <point x="0.0" y="0.0" />
+              <point x="270.5" y="175.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.slf4j:slf4j-log4j12:jar:1.5.10">
@@ -1121,24 +1093,24 @@
               <point x="618.0" y="215.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="412.5" y="2415.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1">
               <point x="0.0" y="0.0" />
               <point x="270.5" y="1375.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE">
+            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
-              <point x="563.5" y="2895.0" />
+              <point x="412.5" y="2415.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-aspects:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
               <point x="252.0" y="2575.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE/org.springframework:spring-tx:jar:3.0.5.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="563.5" y="2895.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-model:jar:2.0.6">
@@ -1220,13 +1192,13 @@
               <point x="252.0" y="2735.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE/org.slf4j:slf4j-log4j12:jar:1.5.10">
               <point x="0.0" y="0.0" />
               <point x="464.0" y="3255.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE">
+              <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-artifact-manager:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-artifact-manager:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1">
@@ -1239,14 +1211,8 @@
               <point x="70.5" y="55.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-utils:jar:2.0.5">
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1">
               <point x="0.0" y="0.0" />
-              <point x="270.5" y="1295.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6">
-              <point x="0.0" y="0.0" />
-              <point x="614.5" y="735.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1">
@@ -1254,8 +1220,14 @@
               <point x="614.5" y="775.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1">
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-project:jar:2.0.6/org.apache.maven:maven-plugin-registry:jar:2.0.6">
               <point x="0.0" y="0.0" />
+              <point x="614.5" y="735.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-utils:jar:2.0.5">
+              <point x="0.0" y="0.0" />
+              <point x="270.5" y="1295.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE">
@@ -1267,14 +1239,14 @@
               <point x="252.0" y="3335.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-expression:jar:3.0.5.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="242.0" y="2135.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-lucene-index:jar:1.3" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-lucene-index:jar:1.3/org.apache.servicemix.bundles:org.apache.servicemix.bundles.lucene:jar:3.0.1_2">
               <point x="0.0" y="0.0" />
               <point x="550.5" y="3695.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-expression:jar:3.0.5.RELEASE">
+              <point x="0.0" y="0.0" />
+              <point x="242.0" y="2135.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven.wagon:wagon-provider-api:jar:1.0-beta-2/org.codehaus.plexus:plexus-utils:jar:1.0.4">
@@ -1301,18 +1273,9 @@
               <point x="458.5" y="375.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1">
+            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-commons-core:jar:1.0.0.RELEASE">
               <point x="0.0" y="0.0" />
-              <point x="270.5" y="1415.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-web:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-web:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="564.5" y="1775.0" />
+              <point x="252.0" y="2975.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE">
@@ -1320,9 +1283,18 @@
               <point x="242.0" y="1615.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-commons-core:jar:1.0.0.RELEASE">
+            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
-              <point x="252.0" y="2975.0" />
+              <point x="564.5" y="1775.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-web:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-web:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1">
+              <point x="0.0" y="0.0" />
+              <point x="270.5" y="1415.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="se.clark.ht:word-mindmap:1.0" target="org.aspectj:aspectjrt:jar:1.6.11.RELEASE">
@@ -1554,18 +1526,14 @@
               <point x="252.0" y="3855.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE">
-              <point x="0.0" y="0.0" />
-              <point x="441.5" y="2055.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="se.clark.ht:word-mindmap:1.0" target="javax.servlet:jstl:jar:1.1.2">
               <point x="0.0" y="0.0" />
               <point x="70.5" y="4015.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-artifact:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-artifact:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1">
+            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context-support:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
+              <point x="441.5" y="2055.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE/log4j:log4j:jar:1.2.15">
@@ -1573,9 +1541,12 @@
               <point x="464.0" y="3295.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="se.clark.ht:word-mindmap:1.0" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2">
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-artifact:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-artifact:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1">
               <point x="0.0" y="0.0" />
-              <point x="70.5" y="95.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE">
+              <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE">
@@ -1583,8 +1554,9 @@
               <point x="252.0" y="3055.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE">
+            <edge source="se.clark.ht:word-mindmap:1.0" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2">
               <point x="0.0" y="0.0" />
+              <point x="70.5" y="95.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE">
@@ -1592,31 +1564,31 @@
               <point x="419.5" y="2775.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-repository-metadata:jar:2.0.6">
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1/org.codehaus.plexus:plexus-utils:jar:1.5.5">
               <point x="0.0" y="0.0" />
-              <point x="458.5" y="495.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-aspects:jar:3.0.5.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-aspects:jar:3.0.5.RELEASE/org.springframework:spring-beans:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1/org.codehaus.plexus:plexus-utils:jar:1.5.5">
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-repository-metadata:jar:2.0.6">
               <point x="0.0" y="0.0" />
+              <point x="458.5" y="495.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-plugin-api:jar:2.0.6">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-descriptor:jar:2.0.6">
-              <point x="0.0" y="0.0" />
-              <point x="458.5" y="895.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework.data:spring-data-graph-core:jar:1.0.0.RELEASE/org.slf4j:jcl-over-slf4j:jar:1.5.10">
               <point x="0.0" y="0.0" />
               <point x="464.0" y="3215.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-descriptor:jar:2.0.6">
+              <point x="0.0" y="0.0" />
+              <point x="458.5" y="895.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-core:jar:3.0.5.RELEASE">
@@ -1629,12 +1601,16 @@
               <point x="458.5" y="455.0" />
               <point x="0.0" y="0.0" />
             </edge>
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
             <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-web:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
               <point x="242.0" y="2175.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-manager:jar:1.8.1/org.codehaus.plexus:plexus-compiler-api:jar:1.8.1">
+            <edge source="org.springframework:spring-core:jar:3.0.5.RELEASE" target="org.springframework:spring-core:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
@@ -1643,8 +1619,9 @@
               <point x="252.0" y="3375.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework:spring-core:jar:3.0.5.RELEASE" target="org.springframework:spring-core:jar:3.0.5.RELEASE/org.springframework:spring-asm:jar:3.0.5.RELEASE">
+            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-toolchain:jar:1.0">
               <point x="0.0" y="0.0" />
+              <point x="270.5" y="1215.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-artifact:jar:2.0.6">
@@ -1652,18 +1629,13 @@
               <point x="270.5" y="135.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-toolchain:jar:1.0">
+            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-jmx:jar:1.3">
               <point x="0.0" y="0.0" />
-              <point x="270.5" y="1215.0" />
+              <point x="399.0" y="3815.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-model:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-model:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1">
               <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-jmx:jar:1.3">
-              <point x="0.0" y="0.0" />
-              <point x="399.0" y="3815.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.codehaus.plexus:plexus-compiler-javac:jar:1.8.1/org.codehaus.plexus:plexus-utils:jar:1.5.5">
@@ -1749,13 +1721,13 @@
               <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
-            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0">
-              <point x="0.0" y="0.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.springframework:spring-orm:jar:3.0.5.RELEASE/org.springframework:spring-jdbc:jar:3.0.5.RELEASE">
               <point x="0.0" y="0.0" />
               <point x="419.5" y="2815.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE" target="org.springframework:spring-webmvc:jar:3.0.5.RELEASE/org.springframework:spring-context:jar:3.0.5.RELEASE/org.springframework:spring-aop:jar:3.0.5.RELEASE/aopalliance:aopalliance:jar:1.0">
+              <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/cglib:cglib:jar:2.2">
@@ -1763,13 +1735,13 @@
               <point x="252.0" y="3575.0" />
               <point x="0.0" y="0.0" />
             </edge>
+            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-kernel:jar:1.3">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-error-diagnostics:jar:2.0.6">
               <point x="0.0" y="0.0" />
               <point x="458.5" y="535.0" />
-              <point x="0.0" y="0.0" />
-            </edge>
-            <edge source="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3" target="org.springframework.data:spring-data-neo4j:jar:1.0.0.RELEASE/org.neo4j:neo4j:jar:1.3/org.neo4j:neo4j-kernel:jar:1.3">
-              <point x="0.0" y="0.0" />
               <point x="0.0" y="0.0" />
             </edge>
             <edge source="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6" target="org.apache.maven.plugins:maven-compiler-plugin:maven-plugin:2.3.2/org.apache.maven:maven-core:jar:2.0.6/org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6/org.codehaus.plexus:plexus-utils:jar:1.4.1">
@@ -1781,34 +1753,11 @@
               <point x="0.0" y="0.0" />
             </edge>
           </edges>
-          <settings layout="Hierarchic Group" zoom="0.07695961995249406" x="3143.7561728395067" y="2484.814814814815" />
+          <settings layout="Hierarchic Group" zoom="0.07695961995249406" x="3144.0" y="2485.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
           <VISIBILITY>All</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="81" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/configuration/word-mindmap-servlet.xml">
-      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="-9.272727">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TODO Lists">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="32" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1817,7 +1766,7 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="51" selection-start="960" selection-end="973" vertical-scroll-proportion="-9.272727">
+        <state line="17" column="51" selection-start="960" selection-end="973" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1829,9 +1778,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TODO Lists">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="32" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="81" selection-start="1153" selection-end="1153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="17" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="36" selection-start="1760" selection-end="1780" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="11" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/configuration/word-mindmap-servlet.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="988" selection-end="988" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/domain/WordTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="6" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.53056234">
+        <state line="35" column="31" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.6807131">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1895,6 +1896,7 @@
             <option name="proportions">
               <list>
                 <option value="0.27662036" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
