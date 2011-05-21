@@ -3,3 +3,8 @@
 2.add Spring support.
 3.add spring-data-neo4j support.
 4.maven-idea-plugin support for intellij and maven-eclipse support for eclipse
+5.Neo4j Helper to clean DB Neo4jHelper.cleanDb(graphDatabaseContext);
+
+
+
+6.remove comments on mvn:resources in servlet.xml
