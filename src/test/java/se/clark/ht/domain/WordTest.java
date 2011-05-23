@@ -45,7 +45,7 @@ public class WordTest {
     @Test
     public void shouldRetrieveFromGraphDBForPersistedEntity(){
         Word earth = new Word("earth", "noun", "土地", "the planet we live").persist();
-        Word retrievedWord  = graphDatabaseContext.getNodeById(word.getNodeId());
+        Word retrievedWord  = graphDatabaseContext.getNodeById  (earth.getNodeId());
         assertEquals("retrieved word match persisted one", earth, retrievedWord);
         assertEquals("retrieved word name match ", "earth", retrievedWord.getName());
     }
