@@ -1,6 +1,7 @@
 package se.clark.ht.domain;
 
 import org.springframework.data.graph.annotation.NodeEntity;
+import org.springframework.data.graph.core.GraphBacked;
 import org.springframework.data.graph.neo4j.annotation.Indexed;
 
 import java.util.Set;
