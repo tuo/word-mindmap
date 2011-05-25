@@ -78,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.38897893">
+            <state line="30" column="25" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -135,10 +135,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TODO Lists" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TODO Lists" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/TODO Lists">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="32" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+            <state line="15" column="57" selection-start="460" selection-end="460" vertical-scroll-proportion="0.2917342">
               <folding />
             </state>
           </provider>
@@ -180,12 +180,12 @@
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/repository/WordRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/TODO Lists" />
         <option value="$PROJECT_DIR$/src/main/resources/configuration/word-mindmap-context.xml" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/TODO Lists" />
       </list>
     </option>
   </component>
@@ -905,11 +905,6 @@
         <state line="21" column="29" selection-start="811" selection-end="823" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TODO Lists">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/configuration/word-mindmap-context.xml">
       <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
         <state />
@@ -972,7 +967,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.38897893">
+        <state line="30" column="25" selection-start="733" selection-end="733" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO Lists">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="57" selection-start="460" selection-end="460" vertical-scroll-proportion="0.2917342">
           <folding />
         </state>
       </provider>

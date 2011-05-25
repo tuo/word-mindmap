@@ -21,7 +21,7 @@ Then go to browser and input:
 <http://localhost:8080/word-mindmap>
 
 ### Notes
-This project uses spring data graph ,check out the references:
+This project uses spring data graph, check out the references:
 
 [The Spring Data Graph Guide Book](http://static.springsource.org/spring-data/data-graph/docs/current/reference/html/)
 
