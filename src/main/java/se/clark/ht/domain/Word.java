@@ -1,6 +1,8 @@
 package se.clark.ht.domain;
 
 import org.springframework.data.graph.annotation.NodeEntity;
+import org.springframework.data.graph.annotation.RelatedTo;
+import org.springframework.data.graph.core.Direction;
 import org.springframework.data.graph.core.GraphBacked;
 import org.springframework.data.graph.neo4j.annotation.Indexed;
 
@@ -22,15 +24,13 @@ public class Word {
     @Indexed
     private String chineseMeaning;
 
-
-//    private Set<Word> synonyms;
+    @RelatedTo(elementClass = Word.class, type = "SYNONYM_TO", direction = Direction.BOTH)
+    private Set<Word> synonyms;
 //
 //    private Set<Word> extentions;
 //
 //    private Set<Word> idioms;
 
-    public Word() {
-    }
 
     public Word(String name, String type, String chineseMeaning, String englishMeaning) {
         this.name = name;

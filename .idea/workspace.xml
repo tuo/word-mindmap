@@ -69,19 +69,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Word.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Word.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="18" selection-start="264" selection-end="264" vertical-scroll-proportion="0.09724473">
+            <state line="32" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0">
+            <state line="30" column="24" selection-start="740" selection-end="740" vertical-scroll-proportion="0.5834684">
               <folding />
             </state>
           </provider>
@@ -111,7 +111,7 @@
       <file leaf-file-name="WordRelationshipTypes.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="12" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
+            <state line="7" column="49" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -182,10 +182,10 @@
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/repository/WordRepositoryTest.java" />
         <option value="$PROJECT_DIR$/TODO Lists" />
         <option value="$PROJECT_DIR$/src/main/resources/configuration/word-mindmap-context.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -905,11 +905,6 @@
         <state line="21" column="29" selection-start="811" selection-end="823" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="577" selection-end="577" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TODO Lists">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="32" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0" />
@@ -947,13 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="12" selection-start="86" selection-end="86" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="13" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
@@ -968,9 +956,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="49" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="264" selection-end="264" vertical-scroll-proportion="0.09724473">
+        <state line="32" column="0" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="24" selection-start="740" selection-end="740" vertical-scroll-proportion="0.5834684">
           <folding />
         </state>
       </provider>

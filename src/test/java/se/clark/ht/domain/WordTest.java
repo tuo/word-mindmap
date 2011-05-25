@@ -39,7 +39,7 @@ public class WordTest {
     @Test
     public void shouldBeSimpleEnoughJustToCreateEntity(){
         //used just for testing
-        Word word = new Word();
+        Word word = new Word(synonyms);
         assertNotNull("word should not be null", word);
     }
 
