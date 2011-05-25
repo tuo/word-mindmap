@@ -18,15 +18,15 @@ words and provides similar mindset map.
 
 Then go to browser and input:
 
-    <http://localhost:8080/word-mindmap>
+<http://localhost:8080/word-mindmap>
 
 ### Notes
 This project uses spring data graph ,check out the references:
 
-    [The Spring Data Graph Guide Book](http://static.springsource.org/spring-data/data-graph/docs/current/reference/html/)
+[The Spring Data Graph Guide Book](http://static.springsource.org/spring-data/data-graph/docs/current/reference/html/)
 
 
 ### Contact
 
-    <clarkhtse@gmail.com>
+<clarkhtse@gmail.com>
 
