@@ -1,6 +1,7 @@
 package se.clark.ht.repository;
 
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,14 +46,28 @@ public class WordRepositoryTest {
         Neo4jHelper.cleanDb(graphDatabaseContext);
     }
 
-    @Test
-    public void shouldSaveWord() {
-        Word earth = new WordBuilder()
+    private Word earth;
+    private Word globe;
+
+    @Before
+    public void setUp(){
+       earth = new WordBuilder()
                 .withName("earth")
                 .withType("noun")
                 .withChineseMeaning("土地")
                 .withEnglishMeaning("the planet we live")
                 .build();
+       globe = new WordBuilder()
+                .withName("globe")
+                .withType("noun")
+                .withChineseMeaning("地球,全球")
+                .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
+                .build();
+
+    }
+
+    @Test
+    public void shouldRetrieveTheSameWordJustSaved() {
         Word retrievedWord = wordRepository.save(earth);
         assertEquals("retrieved word match persisted one", earth, retrievedWord);
         assertEquals("retrieved word name match ", "earth", retrievedWord.getName());
@@ -60,20 +75,6 @@ public class WordRepositoryTest {
 
     @Test
     public void shouldGetSynonymsFromSavingSide() {
-        Word earth = new WordBuilder()
-                .withName("earth")
-                .withType("noun")
-                .withChineseMeaning("土地")
-                .withEnglishMeaning("the planet we live")
-                .build();
-
-        Word globe = new WordBuilder()
-                .withName("globe")
-                .withType("noun")
-                .withChineseMeaning("地球,全球")
-                .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
-                .build();
-
         wordRepository.save(earth);
         assertThat("earth's synonyms count", earth.getSynonymsCount(), is(0));
         wordRepository.save(globe);
@@ -85,20 +86,6 @@ public class WordRepositoryTest {
 
     @Test
     public void shouldGetSynonymsFromOtherSide() {
-        Word earth = new WordBuilder()
-                .withName("earth")
-                .withType("noun")
-                .withChineseMeaning("土地")
-                .withEnglishMeaning("the planet we live")
-                .build();
-
-        Word globe = new WordBuilder()
-                .withName("globe")
-                .withType("noun")
-                .withChineseMeaning("地球,全球")
-                .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
-                .build();
-
         wordRepository.save(earth);
         wordRepository.save(globe);
         assertThat("globe's synonyms count", globe.getSynonymsCount(), is(0));
