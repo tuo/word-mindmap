@@ -1,0 +1,78 @@
+
+earth     = Neo4j::Node.new(:name => 'earth', :type => 'noun', :chinese_meaning => '土地,呢;地球' , :english_meaning => 'the world; the planet that we live on;the substance that plants grow in')
+
+#about '地球'
+globe     = Neo4j::Node.new(:name => 'globe', :type => 'noun', :chinese_meaning =>' 地球,全球', :english_meaning => 'the world (used especially to emphasize its size);a thing shaped like a ball')
+world     = Neo4j::Node.new(:name => 'world', :type => 'noun', :chinese_meaning =>' 地球,世界', :english_meaning => 'the earth, with all its countries, peoples and natural features;')
+
+#about '土地'
+soil     = Neo4j::Node.new(:name => 'soil', :type => 'noun', :chinese_meaning =>'土地,土壤', :english_meaning => 'the top layer of the earth in which plants, trees, etc. grow;a country; an area of land')
+ground   = Neo4j::Node.new(:name => 'ground', :type => 'noun', :chinese_meaning =>'大地,操场,背景,主题,立场', :english_meaning => 'the solid surface of the earth; a large area of land or sea that is used for a particular purpose; background that a design is painted or printed on;a good or true reason for saying, doing or believing something')
+land = Neo4j::Node.new(:name => 'land', :type => 'noun', :chinese_meaning =>'大地', :english_meaning => 'the surface of the earth that is not sea')
+mud = Neo4j::Node.new(:name => 'mud', :type => 'noun', :chinese_meaning =>'湿地,泥潭', :english_meaning => 'wet earth that is soft and sticky')
+dirt = Neo4j::Node.new(:name => 'dirt', :type => 'noun', :chinese_meaning =>'污垢, 泥土, 灰尘;污秽的言行, 粪便, 卑鄙的人, 堕落, 矿渣', :english_meaning => 'any substance that makes something dirty, for example dust, soil or mud;unpleasant or harmful information about somebody that could be used to damage their reputation, career, etc')
+
+#about '行近字'
+word     = Neo4j::Node.new(:name => 'word', :type => 'noun', :chinese_meaning =>'单词,承诺', :english_meaning => 'a single unit of language which means something and can be spoken or written;a promise or guarantee that you will do something or that something will happen or is true')
+in_a_word = Neo4j::Node.new(:name => 'in a word', :type => 'phrase', :chinese_meaning =>'总而言之', :english_meaning => 'used for giving a very short, usually negative, answer or comment' , :type => 'informal')
+
+sky = Neo4j::Node.new(:name => 'sky', :type => 'noun', :chinese_meaning => '天空', :english_meaning => 'plural skies the space above the earth that you can see when you look up, where clouds and the sun, moon and stars appear')
+ocean = Neo4j::Node.new(:name => 'ocean', :type => 'noun', :chinese_meaning => '海洋', :english_meaning => "the mass of salt water that covers most of the earth's surface")
+blue = Neo4j::Node.new(:name => 'blue', :type => 'adj', :chinese_meaning => '蓝色的(颜色),沮丧的,支持共和党的', :english_meaning => "having the colour of a clear sky or the sea/ocean on a clear day;depressed;(of an area in the US) having more people who vote for the Democratic candidate than the Republican one")
+
+happy = Neo4j::Node.new(:name => 'happy', :type => 'adj', :chinese_meaning => '高兴的;满足的', :english_meaning => "feeling or showing pleasure; pleased;satisfied that something is good or right; not anxious
+")
+
+depressed = Neo4j::Node.new(:name => 'depressed', :type => 'adj', :chinese_meaning => '沮丧的', :english_meaning => "very sad and without hope")
+
+
+
+# construct relationalshiip
+
+Neo4j::Relationship.new :synonym, earth, globe, :on_chinese => '地球', :on_english => 'the planet we live'
+Neo4j::Relationship.new :synonym, earth, world, :on_chinese => '地球', :on_english => 'the planet we live'
+Neo4j::Relationship.new :synonym, globe, earth, :on_chinese => '地球', :on_english => 'the planet we live'
+Neo4j::Relationship.new :synonym, world, earth, :on_chinese => '地球', :on_english => 'the planet we live'
+
+
+
+Neo4j::Relationship.new :synonym, earth, soil, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, earth, ground, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, earth, land, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, earth, mud, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, earth, dirt, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, soil, earth, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, ground, earth, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, land, earth, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, mud, earth, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, dirt, earth, :on_chinese => '土地', :on_english => 'area on earth'
+
+
+Neo4j::Relationship.new :extend, earth, sky, :on_chinese => '土地和天空', :on_english => 'earth/sky'
+Neo4j::Relationship.new :extend, earth, ocean, :on_chinese => '土地和海洋', :on_english => 'earth/ocean'
+Neo4j::Relationship.new :extend, sky, earth, :on_chinese => '天空和土地', :on_english => 'sky/earth'
+Neo4j::Relationship.new :extend, ocean, earth,:on_chinese => '海洋和土地', :on_english => 'ocean/earth'
+Neo4j::Relationship.new :extend, sky, ocean, :on_chinese => '天空和海洋', :on_english => 'sky/ocean'
+Neo4j::Relationship.new :extend, ocean, sky,:on_chinese => '海洋和天空', :on_english => 'ocean/sky'
+
+
+Neo4j::Relationship.new :extend, blue, ocean,  :on_chinese => '海洋 是 蓝色的', :on_english => 'ocean is blue'
+Neo4j::Relationship.new :extend, ocean, blue,  :on_chinese => '海洋 是 蓝色的', :on_english => 'ocean is blue'
+
+
+Neo4j::Relationship.new :synonym, blue, depressed, :on_chinese => '忧郁的', :on_english => 'not very happy'
+Neo4j::Relationship.new :synonym, depressed, blue, :on_chinese => '忧郁的', :on_english => 'not very happy'
+
+Neo4j::Relationship.new :antonym, blue, happy, :on_chinese => '忧郁的 -- 高兴的', :on_english => 'blue vs happy'
+Neo4j::Relationship.new :antonym, happy, blue, :on_chinese => '高兴的 -- 忧郁的', :on_english => 'happy vs blue'
+
+
+Neo4j::Relationship.new :idiom, word, in_a_word, :on_chinese => '总之', :on_english => '(in a) word'
+Neo4j::Relationship.new :idiom, in_a_word, word, :on_chinese => '总之', :on_english => '(in a) word'
+
+
+Neo4j::Relationship.new :extend, word, world, :on_chinese => '单词--世界', :on_english => 'word -- world'
+Neo4j::Relationship.new :extend, world, word, :on_chinese => '世界--单词', :on_english => 'world -- word'
+
+
+end

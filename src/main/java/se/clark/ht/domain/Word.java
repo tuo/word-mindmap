@@ -27,9 +27,18 @@ public class Word {
     @RelatedTo(elementClass = Word.class, type = "SYNONYM_TO", direction = Direction.BOTH)
     private Set<Word> synonyms;
 //
-//    private Set<Word> extentions;
+//    private Set<Word> extensions;
 //
 //    private Set<Word> idioms;
+
+    public void synonymTo(Word anotherWord, String onChinese, String onEnglish){
+        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.SYNONYM_TO.name());
+        relationship.on(onChinese, onEnglish);
+    }
+
+
+    public Word() {
+    }
 
 
     public Word(String name, String type, String chineseMeaning, String englishMeaning) {
@@ -41,6 +50,7 @@ public class Word {
 
     public String getName() {
         return name;
+
     }
 
     public String getType() {
@@ -53,6 +63,14 @@ public class Word {
 
     public String getChineseMeaning() {
         return chineseMeaning;
+    }
+
+    public Set<Word> getSynonyms() {
+        return synonyms;
+    }
+
+    public int getSynonymsCount(){
+        return synonyms.size();
     }
 
     @Override

@@ -15,6 +15,9 @@ import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.domain.Word;
 
 import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.matchers.JUnitMatchers.hasItem;
+
 
 /**
  * Exploratory unit-tests for the Spring Data Graph annotated Word entity.
@@ -46,6 +49,19 @@ public class WordRepositoryTest {
         Word retrievedWord = wordRepository.save(earth);
         assertEquals("retrieved word match persisted one", earth, retrievedWord);
         assertEquals("retrieved word name match ", "earth", retrievedWord.getName());
+    }
+
+    @Test
+    public void shouldSaveWordWithSynonyms(){
+        Word earth = new Word("earth", "noun", "土地", "the planet we live");
+        Word globe = new Word("globe", "noun", "地球,全球", "the world (used especially to emphasize its size);a thing shaped like a ball");
+        wordRepository.save(earth);
+        assertThat("earth's synonyms count", earth.getSynonymsCount(), is(0));
+        wordRepository.save(globe);
+        //as earth and globe both are under controll of springdata graph, no need to further call earth.save()
+        earth.synonymTo(globe, "地球", "the planet we live");
+        assertThat("earth's synonyms count", earth.getSynonymsCount(), is(equalTo(1)));
+        assertThat("earth's synonym contains globe", earth.getSynonyms(), hasItem(globe));
     }
 
 }
