@@ -1,7 +1,6 @@
 package se.clark.ht.repository;
 
 
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +14,10 @@ import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.builder.WordBuilder;
 import se.clark.ht.domain.Word;
 
-import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 import static org.junit.matchers.JUnitMatchers.hasItem;
 
 
@@ -58,7 +59,7 @@ public class WordRepositoryTest {
     }
 
     @Test
-    public void shouldSaveWordWithSynonyms() {
+    public void shouldGetSynonymsFromSavingSide() {
         Word earth = new WordBuilder()
                 .withName("earth")
                 .withType("noun")
@@ -81,5 +82,31 @@ public class WordRepositoryTest {
         assertThat("earth's synonyms count", earth.getSynonymsCount(), is(equalTo(1)));
         assertThat("earth's synonym contains globe", earth.getSynonyms(), hasItem(globe));
     }
+
+    @Test
+    public void shouldGetSynonymsFromOtherSide() {
+        Word earth = new WordBuilder()
+                .withName("earth")
+                .withType("noun")
+                .withChineseMeaning("土地")
+                .withEnglishMeaning("the planet we live")
+                .build();
+
+        Word globe = new WordBuilder()
+                .withName("globe")
+                .withType("noun")
+                .withChineseMeaning("地球,全球")
+                .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
+                .build();
+
+        wordRepository.save(earth);
+        wordRepository.save(globe);
+        assertThat("globe's synonyms count", globe.getSynonymsCount(), is(0));
+        //as earth and globe both are under controll of springdata graph, no need to further call earth.save()
+        earth.synonymTo(globe, "地球", "the planet we live");
+        assertThat("globe's synonyms count", globe.getSynonymsCount(), is(equalTo(1)));
+        assertThat("globe's synonyms contain earth", globe.getSynonyms(), hasItem(earth));
+    }
+
 
 }

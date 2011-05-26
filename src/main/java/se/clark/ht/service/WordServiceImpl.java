@@ -3,6 +3,7 @@ package se.clark.ht.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.domain.Word;
 import se.clark.ht.repository.WordRepository;
 
@@ -13,16 +14,13 @@ public class WordServiceImpl implements WordService {
     private WordRepository wordRepository;
 
     @Override
+    @Transactional
     public void populateSomeWords() {
 
         Word earth = new Word("earth", "noun", "土地,呢;地球", "the world; the planet that we live on;the substance that plants grow in");
 
-
         Word globe = new Word("globe", "noun", "地球,全球", "the world (used especially to emphasize its size);a thing shaped like a ball");
-
         Word world = new Word("world", "noun", "地球,世界", "the earth, with all its countries, peoples and natural features");
-
-
         Word soil = new Word("soil", "noun", "土地,土壤", "the top layer of the earth in which plants, trees, etc. grow;a country; an area of land");
 
         Word ground = new Word("ground", "noun", "大地,操场,背景,主题,立场", "the solid surface of the earth; a large area of land or sea that is used for a particular purpose; background that a design is painted or printed on;a good or true reason for saying, doing or believing something");
@@ -41,7 +39,26 @@ public class WordServiceImpl implements WordService {
         Word happy = new Word("happy", "adj", "高兴的;满足的", "feeling or showing pleasure; pleased;satisfied that something is good or right; not anxious");
         Word depressed = new Word("depressed", "adj", "沮丧的", "very sad and without hope");
 
-
         wordRepository.save(earth);
+        wordRepository.save(globe);
+        wordRepository.save(world);
+        wordRepository.save(soil);
+        wordRepository.save(ground);
+        wordRepository.save(land);
+        wordRepository.save(mud);
+        wordRepository.save(dirt);
+        wordRepository.save(word);
+        wordRepository.save(in_a_word);
+        wordRepository.save(sky);
+        wordRepository.save(ocean);
+        wordRepository.save(blue);
+        wordRepository.save(happy);
+        wordRepository.save(depressed);
+
+        String earthSynonymChi = "地球";
+        String earthSynonymEng = "the planet we live";
+
+        earth.synonymTo(globe, earthSynonymChi, earthSynonymEng);
+        earth.synonymTo(world, earthSynonymChi, earthSynonymEng);
     }
 }
