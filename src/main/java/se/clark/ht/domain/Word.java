@@ -19,10 +19,10 @@ public class Word {
     private String type;
 
     @Indexed
-    private String englishMeaning;
+    private String chineseMeaning;
 
     @Indexed
-    private String chineseMeaning;
+    private String englishMeaning;
 
     @RelatedTo(elementClass = Word.class, type = "SYNONYM_TO", direction = Direction.BOTH)
     private Set<Word> synonyms;

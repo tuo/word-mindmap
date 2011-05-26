@@ -12,6 +12,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.transaction.annotation.Transactional;
+import se.clark.ht.builder.WordBuilder;
 
 import static org.junit.Assert.*;
 
@@ -39,7 +40,13 @@ public class WordTest {
     @Test
     public void shouldBeSimpleEnoughJustToCreateEntity(){
         //used just for testing
-        Word word = new Word("earth", "noun", "土地", "the planet we live");
+        Word word = new WordBuilder()
+                .withName("earth")
+                .withType("noun")
+                .withChineseMeaning("土地")
+                .withEnglishMeaning("the planet we live")
+                .build();
+
         assertNotNull("word should not be null", word);
     }
 
