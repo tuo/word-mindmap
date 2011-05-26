@@ -30,3 +30,7 @@ This project uses spring data graph, check out the references:
 
 ![Prototype](https://lh4.googleusercontent.com/-rkKT0y3b_P8/Td4Qdv5b6DI/AAAAAAAAAeA/IRE_Nr_3WUA/s640/2011-05-26_16-31-58_281.jpg "Optional title")
 
+![Prototype](https://github.com/Tuo-Huang/word-mindmap/blob/3ec9158749c72737c8bfd29d2b4291877609ac35/src/main/webapp/images/wordmap.jpg?raw=true "Optional title")
+
+
+
