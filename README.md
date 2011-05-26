@@ -28,5 +28,5 @@ This project uses spring data graph, check out the references:
 
 ### Prototype
 
-![Alt text]("https://lh4.googleusercontent.com/-rkKT0y3b_P8/Td4Qdv5b6DI/AAAAAAAAAeA/IRE_Nr_3WUA/s640/2011-05-26_16-31-58_281.jpg" "Optional title")
+![Alt text](https://lh4.googleusercontent.com/-rkKT0y3b_P8/Td4Qdv5b6DI/AAAAAAAAAeA/IRE_Nr_3WUA/s640/2011-05-26_16-31-58_281.jpg "Optional title")
 
