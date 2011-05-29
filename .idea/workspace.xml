@@ -60,10 +60,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Word.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Word.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="31" selection-start="825" selection-end="825" vertical-scroll-proportion="0.28846154">
+            <state line="57" column="74" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -78,19 +78,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Entrance.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/Entrance.java">
+      <file leaf-file-name="WordRepository.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="40" selection-start="2115" selection-end="2116" vertical-scroll-proportion="0.0">
+            <state line="6" column="17" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordRepository.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepository.java">
+      <file leaf-file-name="WordTest.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/domain/WordTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="17" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+            <state line="52" column="29" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,7 +108,7 @@
       <file leaf-file-name="WordRepositoryTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/repository/WordRepositoryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="30" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0">
+            <state line="140" column="82" selection-start="5692" selection-end="5692" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,16 +119,34 @@
       <file leaf-file-name="data.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="4724" selection-end="5306" vertical-scroll-proportion="0.0">
+            <state line="68" column="0" selection-start="5731" selection-end="5946" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordServiceImpl.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WordServiceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="48" selection-start="4412" selection-end="4412" vertical-scroll-proportion="0.0">
+            <state line="77" column="14" selection-start="4353" selection-end="4362" vertical-scroll-proportion="0.7307692">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="17" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WordRepositoryImpl.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -160,10 +178,10 @@
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/builder/WordBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java" />
         <option value="$PROJECT_DIR$/data.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java" />
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/repository/WordRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -332,6 +350,10 @@
               <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WordTest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -470,6 +492,10 @@
               <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WordService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -527,8 +553,76 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="repository" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WordRepositoryExtension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Word" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -994,16 +1088,16 @@
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12387938" sideWeight="0.69970846" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25183374" sideWeight="0.6705539" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25183374" sideWeight="0.31778425" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.68221575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="28" y="308" width="1227" height="205" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39941692" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1062,30 +1156,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.3579278">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/builder/WordBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="13" selection-start="224" selection-end="224" vertical-scroll-proportion="0.20722134">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="113" selection-end="113" vertical-scroll-proportion="0.07305936">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/domain/WordTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="29" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.7123288">
           <folding />
         </state>
       </provider>
@@ -1097,46 +1170,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="4724" selection-end="5306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="48" selection-start="4412" selection-end="4412" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/repository/WordRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="30" selection-start="4480" selection-end="4480" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/Entrance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="40" selection-start="2115" selection-end="2116" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="17" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1148,9 +1184,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="600" selection-end="600" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="17" selection-start="148" selection-end="148" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="17" selection-start="232" selection-end="232" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/domain/WordTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="29" selection-start="1707" selection-end="1707" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/repository/WordRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="82" selection-start="5692" selection-end="5692" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="31" selection-start="825" selection-end="825" vertical-scroll-proportion="0.28846154">
+        <state line="57" column="74" selection-start="1896" selection-end="1896" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="68" column="0" selection-start="5731" selection-end="5946" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="14" selection-start="4353" selection-end="4362" vertical-scroll-proportion="0.7307692">
           <folding />
         </state>
       </provider>

@@ -49,6 +49,7 @@ public class WordRepositoryTest {
     private Word earth;
     private Word globe;
     private Word sky;
+    private Word onEarth;
 
     @Before
     public void setUp(){
@@ -69,6 +70,12 @@ public class WordRepositoryTest {
                 .withType("noun")
                 .withChineseMeaning("天空")
                 .withEnglishMeaning("blue sky")
+                .build();
+       onEarth = new WordBuilder()
+                .withName("on earth")
+                .withType("phrase")
+                .withChineseMeaning("究竟")
+                .withEnglishMeaning("what the hell")
                 .build();
 
     }
@@ -124,6 +131,31 @@ public class WordRepositoryTest {
         assertThat("sky's extensions count", sky.getExtensionsCount(), is(equalTo(1)));
         assertThat("sky's extensions contains sky", sky.getExtensions(), hasItem(earth));
     }
+
+    @Test
+    public void shouldGetIdiomFromSavingSide(){
+        wordRepository.save(earth);
+        assertThat("earth's idioms count", earth.getIdiomsCount(), is(0));
+        wordRepository.save(onEarth);
+        //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
+        earth.idiomTo(onEarth, "加前缀on", "added a prefix 'on'");
+        assertThat("earth's idioms count", earth.getIdiomsCount(), is(equalTo(1)));
+        assertThat("earth's idioms contains onEarth", earth.getIdioms(), hasItem(onEarth));
+    }
+
+    @Test
+    public void shouldGetIdiomFromOtherSide(){
+        wordRepository.save(earth);
+        wordRepository.save(onEarth);
+        assertThat("onEarth's idiom count", onEarth.getIdiomsCount(), is(0));
+
+        //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
+        earth.idiomTo(onEarth, "加前缀on", "added a prefix 'on'");
+        assertThat("onEarth's idiom count", onEarth.getIdiomsCount(), is(equalTo(1)));
+        assertThat("onEarth's idiom contains earth", onEarth.getIdioms(), hasItem(earth));
+    }
+
+
 
 
 }

@@ -69,18 +69,17 @@ public class WordServiceImpl implements WordService {
         earth.synonymTo(mud, earthSynonymAeraChi, earthSynonymAeraEng);
         earth.synonymTo(dirt, earthSynonymAeraChi, earthSynonymAeraEng);
 
-//        String earthExtensionChi = "土地 <--> 天空";
-//        String earthExtensionEng = "土地 <--> 天空";
-//        earth.synonymTo(dirt, earthSynonymAeraChi, earthSynonymAeraEng);
-//
-//
-//Neo4j::Relationship.new :extend, earth, sky, :on_chinese => "土地和天空", :on_english => "earth/sky"
-//Neo4j::Relationship.new :extend, earth, ocean, :on_chinese => "土地和海洋", :on_english => "earth/ocean"
-//Neo4j::Relationship.new :extend, sky, earth, :on_chinese => "天空和土地", :on_english => "sky/earth"
-//Neo4j::Relationship.new :extend, ocean, earth,:on_chinese => "海洋和土地", :on_english => "ocean/earth"
-//Neo4j::Relationship.new :extend, sky, ocean, :on_chinese => "天空和海洋", :on_english => "sky/ocean"
-//Neo4j::Relationship.new :extend, ocean, sky,:on_chinese => "海洋和天空", :on_english => "ocean/sky"
-//
+        earth.extendTo(sky, "土地 <--> 天空", "from earth to sky");
+        earth.extendTo(ocean, "土地 <--> 海洋", "from earth to ocean");
+        ocean.extendTo(sky, "天空 <--> 海洋", "from ocean to sky");
+
+        ocean.synonymTo(blue, "海洋是蓝色的", " ocean is blue");
+
+        blue.synonymTo(depressed, "忧郁的", "not very happy though");
+        blue.synonymTo(happy, "高兴和忧郁", "happiness vs depressed");
+
+        world.extendTo(word, "两个单词只差一个字母", "just have one more letter 'l'");
+        word.idiomTo(in_a_word, "扩展,组成短语", "compose to a phrase");
 
     }
 }

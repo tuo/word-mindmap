@@ -29,7 +29,8 @@ public class Word {
     @RelatedTo(elementClass = Word.class, type = "EXTENSION_WITH", direction = Direction.BOTH)
     private Set<Word> extensions;
 //
-//    private Set<Word> idioms;
+    @RelatedTo(elementClass = Word.class, type = "IDIOM_TO", direction = Direction.BOTH)
+    private Set<Word> idioms;
 
     public void synonymTo(Word anotherWord, String onChinese, String onEnglish){
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.SYNONYM_WITH.name());
@@ -38,6 +39,11 @@ public class Word {
 
     public void extendTo(Word anotherWord, String onChinese, String onEnglish){
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.EXTENSION_WITH.name());
+        relationship.on(onChinese, onEnglish);
+    }
+
+    public void idiomTo(Word anotherWord, String onChinese, String onEnglish){
+        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.IDIOM_TO.name());
         relationship.on(onChinese, onEnglish);
     }
 
@@ -84,6 +90,14 @@ public class Word {
 
     public int getExtensionsCount(){
         return extensions.size();
+    }
+
+    public Set<Word> getIdioms() {
+        return idioms;
+    }
+
+    public int getIdiomsCount() {
+        return idioms.size();
     }
 
     @Override
