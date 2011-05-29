@@ -87,21 +87,26 @@ public class WordServiceTest {
     }
 
     @Test
-    public void shouldSearchSynonymsForAtDepthTwo() throws WordNotFoundException {
-        List<Word> result = wordService.searchSynonymsFor("earth", 2);
+    public void shouldSearchSynonymsInAnyDepthFor() throws WordNotFoundException {
+        List<Word> result = wordService.searchSynonymsInAnyDepthFor("earth");
 
         assertThat(result.size(), is(2));
         assertThat(result, equalTo(Arrays.asList(globe, world)));
     }
 
     @Test
-    public void shouldSearchNearBySynonymsThatDontHoldSynonym() throws WordNotFoundException {
-        List<Word> result = wordService.searchSynonymsFor("on earth", 2);
+    public void shouldSearchSynonymsInAnyDepthForThatDontHoldSynonym() throws WordNotFoundException {
+        List<Word> result = wordService.searchSynonymsInAnyDepthFor("on earth");
         assertThat(result.isEmpty(), is(true));
     }
 
     @Test(expected = WordNotFoundException.class)
-    public void shouldRaiseNotFoundExceptionWhenNamePassedDoesntExist() throws WordNotFoundException {
-        wordService.searchSynonymsFor("some word that doesn't exist", 2);
+    public void shouldRaiseNotFoundExceptionWhenNamePassedDoesntExistForAll() throws WordNotFoundException {
+        wordService.searchSynonymsInAnyDepthFor("some word that doesn't exist");
+    }
+
+    @Test(expected = WordNotFoundException.class)
+    public void shouldRaiseNotFoundExceptionWhenNamePassedDoesntExistForNearby() throws WordNotFoundException {
+        wordService.searchNearBySynonymsFor("some word that doesn't exist");
     }
 }

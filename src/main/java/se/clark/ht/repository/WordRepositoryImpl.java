@@ -36,4 +36,10 @@ public class WordRepositoryImpl implements WordRepositoryExtension {
         return wordRepository.findAllByTraversal(word, traversal);
     }
 
+    @Override
+    public Iterable<Word> findSynonymsInAnyDepthFor(Word word) {
+        TraversalDescription traversal = Traversal.description().relationships(SYNONYM_WITH).evaluator(Evaluators.excludeStartPosition());
+        return wordRepository.findAllByTraversal(word, traversal);
+    }
+
 }

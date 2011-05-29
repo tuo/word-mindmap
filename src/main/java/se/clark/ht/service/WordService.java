@@ -14,10 +14,12 @@ public interface WordService {
 
     Word searchExactWordByName(String wordName);
 
-    List<Word> searchSynonymsFor(String wordName, int depth) throws WordNotFoundException;
-
     List<Word> searchNearBySynonymsFor(String wordName) throws WordNotFoundException;
+
+    List<Word> searchSynonymsInAnyDepthFor(String wordName) throws WordNotFoundException;
 
     @Transactional
     void createWord(Word word);
+
+
 }

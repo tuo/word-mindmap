@@ -11,8 +11,14 @@ public class NavigationController {
         return "searchSpecificWord";
     }
 
-    @RequestMapping(value = "openSearchSynonyms.html")
-    public String openSearchSynonyms(){
-        return "searchSynonyms";
+    @RequestMapping(value = "openSearchNearbySynonyms.html")
+    public String openSearchNearbySynonyms(){
+        return "searchNearbySynonyms";
     }
+
+    @RequestMapping(value = "openSearchSynonymsInAnyDepth.html")
+    public String openSearchSynonymsInAnyDepth(){
+        return "searchSynonymsInAnyDepth";
+    }
+
 }

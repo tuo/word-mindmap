@@ -56,18 +56,32 @@ public class WordController {
         return "searchSpecificWordResult";
     }
 
-    @RequestMapping(value = "searchSynonyms.html")
+    @RequestMapping(value = "searchNearbySynonyms.html")
     public String searchSynonyms(@RequestParam(value = "name", required = false) String wordName, ModelMap model) {
         model.addAttribute("wordToSearch", wordName);
         List<Word> result = null;
         try {
-            result = wordService.searchSynonymsFor(wordName, 1);
-            model.addAttribute("result", result.isEmpty() ? "No Match" : result);
+            result = wordService.searchNearBySynonymsFor(wordName);
+            model.addAttribute("result", result);
         } catch (WordNotFoundException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            model.addAttribute("result", e.getMessage());
         }
 
-        return "searchSynonymsResult";
+        return "searchNearbySynonymsResult";
+    }
+
+    @RequestMapping(value = "searchSynonymsInAnyDepth.html")
+    public String searchSynonymsInAnyDepth(@RequestParam(value = "name", required = false) String wordName, ModelMap model) {
+        model.addAttribute("wordToSearch", wordName);
+        List<Word> result = null;
+        try {
+            result = wordService.searchSynonymsInAnyDepthFor(wordName);
+            model.addAttribute("result", result);
+        } catch (WordNotFoundException e) {
+            model.addAttribute("result", e.getMessage());
+        }
+
+        return "searchSynonymsInAnyDepthResult";
     }
 
 

@@ -10,7 +10,7 @@
 
 <body>
 <h1> Word to search: <b>earth</b></h1>
-<h4>Result are: </h4>
+<h4>Result(any depth) is: </h4>
 
     <c:forEach var="synonym" items="${result}" varStatus="status">
       <ul style="border:1px dotted gray;">

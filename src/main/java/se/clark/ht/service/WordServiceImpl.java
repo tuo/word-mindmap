@@ -22,22 +22,30 @@ public class WordServiceImpl implements WordService {
     }
 
     @Override
-    public List<Word> searchSynonymsFor(String wordName, int depth) throws WordNotFoundException {
-
+    public List<Word> searchNearBySynonymsFor(String wordName) throws WordNotFoundException {
         Word earth = wordRepository.findWordNamed(wordName);
         if(earth == null){
             throw new WordNotFoundException(wordName);
         }
         List<Word> result = new ArrayList<Word>();
-        for(Word word : wordRepository.findSynonymsFor(earth, depth)){
+        for(Word word : wordRepository.findSynonymsFor(earth, 1)){
             result.add(word);
         }
         return result;
     }
 
     @Override
-    public List<Word> searchNearBySynonymsFor(String wordName) throws WordNotFoundException {
-        return searchSynonymsFor(wordName, 1);
+    public List<Word> searchSynonymsInAnyDepthFor(String wordName) throws WordNotFoundException {
+        Word earth = wordRepository.findWordNamed(wordName);
+        if(earth == null){
+            throw new WordNotFoundException(wordName);
+        }
+        List<Word> result = new ArrayList<Word>();
+        for(Word word : wordRepository.findSynonymsInAnyDepthFor(earth)){
+            result.add(word);
+        }
+        return result;
+
     }
 
 
@@ -62,6 +70,7 @@ public class WordServiceImpl implements WordService {
         Word land = new Word("land", "noun", "大地", "the surface of the earth that is not sea");
         Word mud = new Word("mud", "noun", "湿地,泥潭", "wet earth that is soft and sticky");
         Word dirt = new Word("dirt", "noun", "污垢, 泥土, 灰尘;污秽的言行, 粪便, 卑鄙的人, 堕落, 矿渣", "any substance that makes something dirty, for example dust, soil or mud;unpleasant or harmful information about somebody that could be used to damage their reputation, career, etc");
+        Word dust = new Word("dust", "noun", "污垢, 灰尘", "fine dust floating in the air");
 
         Word word = new Word("word", "noun", "单词,承诺", "a single unit of language which means something and can be spoken or written;a promise or guarantee that you will do something or that something will happen or is true");
         Word in_a_word = new Word("in a word", "phrase", "总而言之", "used for giving a very short, usually negative, answer or comment informal");
@@ -82,6 +91,7 @@ public class WordServiceImpl implements WordService {
         wordRepository.save(land);
         wordRepository.save(mud);
         wordRepository.save(dirt);
+        wordRepository.save(dust);
         wordRepository.save(word);
         wordRepository.save(in_a_word);
         wordRepository.save(sky);
@@ -104,6 +114,8 @@ public class WordServiceImpl implements WordService {
         earth.synonymWith(ground, earthSynonymAeraChi, earthSynonymAeraEng);
         earth.synonymWith(mud, earthSynonymAeraChi, earthSynonymAeraEng);
         earth.synonymWith(dirt, earthSynonymAeraChi, earthSynonymAeraEng);
+
+        dirt.synonymWith(dust, "灰尘", "little floating in the air");
 
         earth.extendWith(sky, "土地 <--> 天空", "from earth to sky");
         earth.extendWith(ocean, "土地 <--> 海洋", "from earth to ocean");
