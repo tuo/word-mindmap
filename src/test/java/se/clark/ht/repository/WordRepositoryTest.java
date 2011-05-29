@@ -14,6 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.builder.WordBuilder;
+import se.clark.ht.builder.WordMother;
 import se.clark.ht.domain.Word;
 import se.clark.ht.service.WordService;
 
@@ -52,18 +53,8 @@ public class WordRepositoryTest {
 
     @Test
     public void shouldFindWordByNameExactMatch(){
-        Word earth = new WordBuilder()
-                .withName("earth")
-                .withType("noun")
-                .withChineseMeaning("土地")
-                .withEnglishMeaning("the planet we live")
-                .build();
-        Word globe = new WordBuilder()
-                .withName("globe")
-                .withType("noun")
-                .withChineseMeaning("地球,全球")
-                .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
-                .build();
+        Word earth = WordMother.getEarth();
+        Word globe = WordMother.getGlobe();
 
         wordRepository.save(earth);
         wordRepository.save(globe);

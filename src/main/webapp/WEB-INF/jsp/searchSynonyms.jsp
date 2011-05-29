@@ -5,13 +5,12 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Search Synonyms.</title>
+    <title>Search Nearby Synonyms.</title>
 </head>
 
 <body>
-<h2>Search Synonyms</h2>
+<h2>Search Nearby Synonyms(means 1 depth lookup)</h2>
 <br/>
-<h5>Currently only support for earth.</h5>
 <form action="searchSynonyms.html">
     <label>Name of word to search: </label>
     <input type="text" name="name" size="20"/>
