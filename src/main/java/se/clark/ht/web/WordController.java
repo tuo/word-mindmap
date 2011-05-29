@@ -5,12 +5,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import se.clark.ht.Entrance;
 import se.clark.ht.domain.Word;
 import se.clark.ht.service.WordService;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 @Controller
 public class WordController {
@@ -52,6 +56,20 @@ public class WordController {
         Word result = wordService.searchExactWordByName(word);
         model.addAttribute("result", result == null ? "No Match" : result);
         return "searchSpecificWordResult";
+    }
+
+    @RequestMapping(value = "searchSynonyms.html")
+    public String searchSynonyms(@RequestParam(value = "name", required = false) String wordName, ModelMap model) {
+        model.addAttribute("wordToSearch", wordName);
+        Iterable<Word> returned = wordService.searchSynonymsFor(wordName);
+
+        List<Word> result = new ArrayList<Word>();
+        for(Word word : returned){
+            result.add(word);
+        }
+
+        model.addAttribute("result", result.isEmpty() ? "No Match" : result);
+        return "searchSynonymsResult";
     }
 
 

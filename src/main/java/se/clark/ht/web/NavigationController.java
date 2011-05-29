@@ -10,4 +10,9 @@ public class NavigationController {
     public String openSearchSpecificWord(){
         return "searchSpecificWord";
     }
+
+    @RequestMapping(value = "openSearchSynonyms.html")
+    public String openSearchSynonyms(){
+        return "searchSynonyms";
+    }
 }
