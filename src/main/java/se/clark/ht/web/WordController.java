@@ -9,11 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import se.clark.ht.Entrance;
 import se.clark.ht.domain.Word;
+import se.clark.ht.exception.WordNotFoundException;
 import se.clark.ht.service.WordService;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 @Controller
@@ -61,14 +59,14 @@ public class WordController {
     @RequestMapping(value = "searchSynonyms.html")
     public String searchSynonyms(@RequestParam(value = "name", required = false) String wordName, ModelMap model) {
         model.addAttribute("wordToSearch", wordName);
-        Iterable<Word> returned = wordService.searchSynonymsFor(wordName);
-
-        List<Word> result = new ArrayList<Word>();
-        for(Word word : returned){
-            result.add(word);
+        List<Word> result = null;
+        try {
+            result = wordService.searchSynonymsFor(wordName, 1);
+            model.addAttribute("result", result.isEmpty() ? "No Match" : result);
+        } catch (WordNotFoundException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
 
-        model.addAttribute("result", result.isEmpty() ? "No Match" : result);
         return "searchSynonymsResult";
     }
 

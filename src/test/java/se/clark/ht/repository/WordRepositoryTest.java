@@ -64,6 +64,7 @@ public class WordRepositoryTest {
                 .withChineseMeaning("地球,全球")
                 .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
                 .build();
+
         wordRepository.save(earth);
         wordRepository.save(globe);
 

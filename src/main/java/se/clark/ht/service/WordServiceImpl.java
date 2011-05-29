@@ -1,21 +1,17 @@
 package se.clark.ht.service;
 
-
-import org.apache.log4j.Logger;
-import org.neo4j.graphdb.traversal.TraversalDescription;
-import org.neo4j.kernel.Traversal;
-import org.neo4j.kernel.Uniqueness;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.domain.Word;
-import se.clark.ht.domain.WordRelationshipTypes;
+import se.clark.ht.exception.WordNotFoundException;
 import se.clark.ht.repository.WordRepositoryExtension;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class WordServiceImpl implements WordService {
-
-    private static final Logger logger = Logger.getLogger(WordServiceImpl.class);
 
     @Autowired
     private WordRepositoryExtension wordRepository;
@@ -26,16 +22,28 @@ public class WordServiceImpl implements WordService {
     }
 
     @Override
-    public Iterable<Word> searchSynonymsFor(String wordName) {
+    public List<Word> searchSynonymsFor(String wordName, int depth) throws WordNotFoundException {
 
-        Word earth = wordRepository.findWordNamed("earth");
-        logger.info("traverse synonyms from node 'earth':");
-        Iterable<Word> result = wordRepository.findSynonymsFor(earth);
-        for(Word word : result){
-            System.out.println("*********: " + word.getName());
+        Word earth = wordRepository.findWordNamed(wordName);
+        if(earth == null){
+            throw new WordNotFoundException(wordName);
+        }
+        List<Word> result = new ArrayList<Word>();
+        for(Word word : wordRepository.findSynonymsFor(earth, depth)){
+            result.add(word);
         }
         return result;
+    }
 
+    @Override
+    public List<Word> searchNearBySynonymsFor(String wordName) throws WordNotFoundException {
+        return searchSynonymsFor(wordName, 1);
+    }
+
+
+    @Transactional
+    public void createWord(Word word) {
+        wordRepository.save(word);
     }
 
 

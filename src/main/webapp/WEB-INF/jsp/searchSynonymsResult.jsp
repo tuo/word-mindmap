@@ -13,9 +13,8 @@
 <h4>Result are: </h4>
 
     <c:forEach var="synonym" items="${result}" varStatus="status">
-      <h5><c:out value="${status.index + 1}"/></h5>
       <ul style="border:1px dotted gray;">
-        <li><c:out value="${synonym.name}"/></li>
+        <li><b><i><c:out value="${synonym.name}"/></i></b></li>
         <li><c:out value="${synonym.type}"/></li>
         <li><c:out value="${synonym.chineseMeaning}"/></li>
         <li><c:out value="${synonym.englishMeaning}"/></li>

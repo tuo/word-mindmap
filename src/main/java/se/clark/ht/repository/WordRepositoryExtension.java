@@ -10,6 +10,6 @@ public interface WordRepositoryExtension {
 
     public Word findWordNamed(String name);
 
-    public Iterable<Word> findSynonymsFor(Word word);
+    public Iterable<Word> findSynonymsFor(Word word, int depth);
 
 }
