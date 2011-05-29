@@ -84,7 +84,7 @@ public class Entrance {
                     .forRelationships(WordRelationshipTypes.SYNONYM_TO
                             .toString());
             RelationshipIndex extentions = indexManger
-                    .forRelationships(WordRelationshipTypes.EXTENTION_TO
+                    .forRelationships(WordRelationshipTypes.EXTENSION_WITH
                             .toString());
             RelationshipIndex idioms = indexManger
                     .forRelationships(WordRelationshipTypes.IDIOM_TO.toString());
@@ -94,7 +94,7 @@ public class Entrance {
             // +"-fulltext",
             // MapUtil.stringMap( "provider", "lucene", "type", "fulltext" ) );
             // RelationshipIndex extentions =
-            // indexManger.forRelationships(WordRelationshipTypes.EXTENTION_TO.toString()
+            // indexManger.forRelationships(WordRelationshipTypes.EXTENSION_WITH.toString()
             // +"-fulltext",
             // MapUtil.stringMap( "provider", "lucene", "type", "fulltext" ) );
             // RelationshipIndex idioms =
@@ -173,7 +173,7 @@ public class Entrance {
 
             // word extend to world
             Relationship rel = savedNodes.get("world").createRelationshipTo(
-                    word, WordRelationshipTypes.EXTENTION_TO);
+                    word, WordRelationshipTypes.EXTENSION_WITH);
             rel.setProperty(ON_CHI_REL_KEY, "世界--单词");
             rel.setProperty(ON_ENG_REL_KEY, "world-word");
             synonyms.add(rel, ON_CHI_REL_KEY, "世界--单词");
@@ -213,7 +213,7 @@ public class Entrance {
         logger.info("traverse synonyms from node 'earth':");
         String result = "";
         for (Path position : SYNONYMS_TRAVERSAL
-                .relationships(WordRelationshipTypes.EXTENTION_TO)
+                .relationships(WordRelationshipTypes.EXTENSION_WITH)
                 .relationships(WordRelationshipTypes.IDIOM_TO)
                 .filter(Traversal.returnAllButStartNode())
                 .traverse(earth)) {

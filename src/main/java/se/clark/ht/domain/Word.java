@@ -3,7 +3,6 @@ package se.clark.ht.domain;
 import org.springframework.data.graph.annotation.NodeEntity;
 import org.springframework.data.graph.annotation.RelatedTo;
 import org.springframework.data.graph.core.Direction;
-import org.springframework.data.graph.core.GraphBacked;
 import org.springframework.data.graph.neo4j.annotation.Indexed;
 
 import java.util.Set;
@@ -27,7 +26,7 @@ public class Word {
     @RelatedTo(elementClass = Word.class, type = "SYNONYM_TO", direction = Direction.BOTH)
     private Set<Word> synonyms;
 
-    @RelatedTo(elementClass = Word.class, type = "EXTENTION_TO", direction = Direction.BOTH)
+    @RelatedTo(elementClass = Word.class, type = "EXTENSION_WITH", direction = Direction.BOTH)
     private Set<Word> extensions;
 //
 //    private Set<Word> idioms;
@@ -38,7 +37,7 @@ public class Word {
     }
 
     public void extendTo(Word anotherWord, String onChinese, String onEnglish){
-        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.EXTENTION_TO.name());
+        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.EXTENSION_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
 
