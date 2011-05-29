@@ -15,6 +15,8 @@
 	<context:spring-configured/>
     <context:annotation-config/>
 
+    <context:component-scan base-package="se.clark.ht.service;se.clark.ht.repository;"/>
+
     <datagraph:config storeDirectory="data/neo4j-db"/>
     <!-- the package that spring-data backup -->
     <datagraph:repositories base-package="se.clark.ht.repository" graph-database-context-ref="graphDatabaseContext"/>

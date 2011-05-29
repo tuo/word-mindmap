@@ -5,5 +5,5 @@ import org.neo4j.graphdb.RelationshipType;
 
 public enum WordRelationshipTypes implements RelationshipType {
 
-    ROOT, SYNONYM_WITH, EXTENSION_WITH, ANTONYM_WITH, IDIOM_WITH;
+    ROOT, SYNONYM_WITH, EXTENSION_WITH, ANTONYM_WITH, IDIOM_WITH
 }

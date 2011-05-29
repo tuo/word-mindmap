@@ -6,12 +6,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.domain.Word;
 import se.clark.ht.repository.WordRepository;
+import se.clark.ht.repository.WordRepositoryExtension;
 
 @Service
 public class WordServiceImpl implements WordService {
 
     @Autowired
-    private WordRepository wordRepository;
+    private WordRepositoryExtension wordRepository;
 
     @Override
     @Transactional
@@ -53,6 +54,7 @@ public class WordServiceImpl implements WordService {
         wordRepository.save(sky);
         wordRepository.save(ocean);
         wordRepository.save(blue);
+        wordRepository.save(yellow);
         wordRepository.save(happy);
         wordRepository.save(depressed);
 

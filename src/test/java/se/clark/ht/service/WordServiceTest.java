@@ -1,7 +1,5 @@
-package se.clark.ht.repository;
+package se.clark.ht.service;
 
-
-import org.hamcrest.CoreMatchers;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,13 +13,9 @@ import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.builder.WordBuilder;
 import se.clark.ht.domain.Word;
-import se.clark.ht.service.WordService;
-
-import javax.validation.constraints.Null;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.CoreMatchers.is;
-import static org.hamcrest.core.IsNull.nullValue;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import static org.junit.matchers.JUnitMatchers.hasItem;
@@ -36,13 +30,14 @@ import static org.junit.matchers.JUnitMatchers.hasItem;
 @ContextConfiguration(locations = "classpath:configuration/word-mindmap-context.xml")
 @RunWith(SpringJUnit4ClassRunner.class)
 @Transactional
-public class WordRepositoryTest {
+public class WordServiceTest {
 
     @Autowired
     private GraphDatabaseContext graphDatabaseContext;
 
     @Autowired
-    private WordRepositoryExtension wordRepository;
+    private WordService wordService;
+
 
     @Rollback(false)
     @BeforeTransaction
@@ -51,25 +46,8 @@ public class WordRepositoryTest {
     }
 
     @Test
-    public void shouldFindWordByNameExactMatch(){
-        Word earth = new WordBuilder()
-                .withName("earth")
-                .withType("noun")
-                .withChineseMeaning("土地")
-                .withEnglishMeaning("the planet we live")
-                .build();
-        Word globe = new WordBuilder()
-                .withName("globe")
-                .withType("noun")
-                .withChineseMeaning("地球,全球")
-                .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
-                .build();
-        wordRepository.save(earth);
-        wordRepository.save(globe);
-
-        assertThat(wordRepository.findWordNamed("earth"), is(earth));
-        assertThat(wordRepository.findWordNamed("globe"), is(globe));
-        assertThat(wordRepository.findWordNamed("glo"), nullValue());
+    public void shouldPopulateData(){
+        wordService.populateSomeWords();
     }
 
 }

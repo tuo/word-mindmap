@@ -13,10 +13,14 @@ public class WordRepositoryImpl implements WordRepositoryExtension {
     @Autowired
     private WordRepository wordRepository;
 
+    @Transactional
+    public void save(Word word) {
+        wordRepository.save(word);
+    }
+
     @Override
     public Word findWordNamed(String name) {
        return wordRepository.findByPropertyValue("name", name);
     }
-
 
 }
