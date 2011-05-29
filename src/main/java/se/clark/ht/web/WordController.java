@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
@@ -57,39 +58,35 @@ public class WordController {
     }
 
     @RequestMapping(value = "searchNearbySynonyms.html")
-    public String searchSynonyms(@RequestParam(value = "name", required = false) String wordName, ModelMap model) {
+    public String searchNearbySynonyms(@RequestParam(value = "name", required = false) String wordName, ModelMap model) throws WordNotFoundException {
         model.addAttribute("wordToSearch", wordName);
-        List<Word> result = null;
-        try {
-            result = wordService.searchNearBySynonymsFor(wordName);
-            model.addAttribute("result", result);
-        } catch (WordNotFoundException e) {
-            model.addAttribute("result", e.getMessage());
-        }
-
+        List<Word> result = wordService.searchNearBySynonymsFor(wordName);
+        model.addAttribute("result", result);
         return "searchNearbySynonymsResult";
     }
 
     @RequestMapping(value = "searchSynonymsInAnyDepth.html")
-    public String searchSynonymsInAnyDepth(@RequestParam(value = "name", required = false) String wordName, ModelMap model) {
+    public String searchSynonymsInAnyDepth(@RequestParam(value = "name", required = false) String wordName, ModelMap model) throws WordNotFoundException {
         model.addAttribute("wordToSearch", wordName);
-        List<Word> result = null;
-        try {
-            result = wordService.searchSynonymsInAnyDepthFor(wordName);
-            model.addAttribute("result", result);
-        } catch (WordNotFoundException e) {
-            model.addAttribute("result", e.getMessage());
-        }
-
+        List<Word> result = wordService.searchSynonymsInAnyDepthFor(wordName);
+        model.addAttribute("result", result);
         return "searchSynonymsInAnyDepthResult";
     }
 
 
     @RequestMapping(value = "searchAllWords.html")
-    public String searchAllWords(ModelMap model){
+    public String searchAllWords(ModelMap model) {
         String result = Entrance.trasaverAll();
         model.addAttribute("result", result == "" ? "No Match" : result);
         return "searchAllWordsResult";
+    }
+
+
+    @ExceptionHandler(WordNotFoundException.class)
+    public ModelAndView handleWordNotFoundException(WordNotFoundException ex) {
+        ModelAndView model = new ModelAndView("wordNotFound");
+        model.addObject("message", ex.getMessage());
+        return model;
     }
 
 

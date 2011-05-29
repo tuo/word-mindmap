@@ -71,15 +71,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordRepositoryExtension.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="3" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WordRepositoryImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,28 +93,55 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="WordController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="46" selection-start="3250" selection-end="3280" vertical-scroll-proportion="0.0">
+            <state line="71" column="45" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.7218543">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchSynonymsInAnyDepthResult.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wordNotFound.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="32" selection-start="561" selection-end="561" vertical-scroll-proportion="-8.571428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchSynonymsInAnyDepth.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="27" selection-start="835" selection-end="835" vertical-scroll-proportion="-12.571428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchNearbySynonyms.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonyms.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="28" selection-start="535" selection-end="535" vertical-scroll-proportion="-6.857143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="searchSynonymsInAnyDepthResult.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="14" selection-start="533" selection-end="533" vertical-scroll-proportion="0.24161074">
+            <state line="21" column="54" selection-start="850" selection-end="892" vertical-scroll-proportion="-12.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="371" selection-end="371" vertical-scroll-proportion="0.0">
+            <state line="35" column="23" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -133,24 +151,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="25" selection-start="752" selection-end="752" vertical-scroll-proportion="-9.714286">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NavigationController.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/NavigationController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="17" selection-start="620" selection-end="644" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchSynonymsInAnyDepth.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="25" selection-start="774" selection-end="774" vertical-scroll-proportion="-11.428572">
               <folding />
             </state>
           </provider>
@@ -170,22 +170,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/exception/WordNotFoundException.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonyms.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/builder/WordMother.java" />
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/repository/WordRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonyms.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/NavigationController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/service/WordServiceTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java" />
       </list>
     </option>
   </component>
@@ -1233,20 +1233,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/Entrance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="217" column="58" selection-start="9595" selection-end="9637" vertical-scroll-proportion="0.6335404">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/exception/WordNotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/se/clark/ht/builder/WordMother.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
@@ -1261,13 +1247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonyms.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="28" selection-start="535" selection-end="535" vertical-scroll-proportion="-6.857143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="44" selection-start="791" selection-end="819" vertical-scroll-proportion="-10.857142">
@@ -1278,13 +1257,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/NavigationController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="17" selection-start="620" selection-end="644" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="25" selection-start="774" selection-end="774" vertical-scroll-proportion="-11.428572">
           <folding />
         </state>
       </provider>
@@ -1337,16 +1309,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="46" selection-start="3250" selection-end="3280" vertical-scroll-proportion="0.0">
+        <state line="35" column="23" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonyms.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="28" selection-start="535" selection-end="535" vertical-scroll-proportion="-6.857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="835" selection-end="835" vertical-scroll-proportion="-12.571428">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="533" selection-end="533" vertical-scroll-proportion="0.24161074">
+        <state line="21" column="54" selection-start="850" selection-end="892" vertical-scroll-proportion="-12.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="32" selection-start="561" selection-end="561" vertical-scroll-proportion="-8.571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="45" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.7218543">
           <folding />
         </state>
       </provider>
