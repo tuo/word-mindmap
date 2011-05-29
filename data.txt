@@ -23,56 +23,56 @@ blue = Neo4j::Node.new(:name => 'blue', :type => 'adj', :chinese_meaning => '蓝
 happy = Neo4j::Node.new(:name => 'happy', :type => 'adj', :chinese_meaning => '高兴的;满足的', :english_meaning => "feeling or showing pleasure; pleased;satisfied that something is good or right; not anxious
 ")
 
-depressed = Neo4j::Node.new(:name => 'depressed', :type => 'adj', :chinese_meaning => '沮丧的', :english_meaning => "very sad and without hope")
+depressed = Neo4j::Node.new(:name => "depressed", :type => "adj", :chinese_meaning => "沮丧的", :english_meaning => "very sad and without hope")
 
 
 
 # construct relationalshiip
 
-Neo4j::Relationship.new :synonym, earth, globe, :on_chinese => '地球', :on_english => 'the planet we live'
-Neo4j::Relationship.new :synonym, earth, world, :on_chinese => '地球', :on_english => 'the planet we live'
-Neo4j::Relationship.new :synonym, globe, earth, :on_chinese => '地球', :on_english => 'the planet we live'
-Neo4j::Relationship.new :synonym, world, earth, :on_chinese => '地球', :on_english => 'the planet we live'
+Neo4j::Relationship.new :synonym, earth, globe, :on_chinese => "地球", :on_english => "the planet we live"
+Neo4j::Relationship.new :synonym, earth, world, :on_chinese => "地球", :on_english => "the planet we live"
+Neo4j::Relationship.new :synonym, globe, earth, :on_chinese => "地球", :on_english => "the planet we live"
+Neo4j::Relationship.new :synonym, world, earth, :on_chinese => "地球", :on_english => "the planet we live"
 
 
 
-Neo4j::Relationship.new :synonym, earth, soil, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, earth, ground, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, earth, land, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, earth, mud, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, earth, dirt, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, soil, earth, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, ground, earth, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, land, earth, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, mud, earth, :on_chinese => '土地', :on_english => 'area on earth'
-Neo4j::Relationship.new :synonym, dirt, earth, :on_chinese => '土地', :on_english => 'area on earth'
+Neo4j::Relationship.new :synonym, earth, soil, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, earth, ground, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, earth, land, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, earth, mud, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, earth, dirt, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, soil, earth, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, ground, earth, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, land, earth, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, mud, earth, :on_chinese => "土地", :on_english => "area on earth"
+Neo4j::Relationship.new :synonym, dirt, earth, :on_chinese => "土地", :on_english => "area on earth"
 
 
-Neo4j::Relationship.new :extend, earth, sky, :on_chinese => '土地和天空', :on_english => 'earth/sky'
-Neo4j::Relationship.new :extend, earth, ocean, :on_chinese => '土地和海洋', :on_english => 'earth/ocean'
-Neo4j::Relationship.new :extend, sky, earth, :on_chinese => '天空和土地', :on_english => 'sky/earth'
-Neo4j::Relationship.new :extend, ocean, earth,:on_chinese => '海洋和土地', :on_english => 'ocean/earth'
-Neo4j::Relationship.new :extend, sky, ocean, :on_chinese => '天空和海洋', :on_english => 'sky/ocean'
-Neo4j::Relationship.new :extend, ocean, sky,:on_chinese => '海洋和天空', :on_english => 'ocean/sky'
+Neo4j::Relationship.new :extend, earth, sky, :on_chinese => "土地和天空", :on_english => "earth/sky"
+Neo4j::Relationship.new :extend, earth, ocean, :on_chinese => "土地和海洋", :on_english => "earth/ocean"
+Neo4j::Relationship.new :extend, sky, earth, :on_chinese => "天空和土地", :on_english => "sky/earth"
+Neo4j::Relationship.new :extend, ocean, earth,:on_chinese => "海洋和土地", :on_english => "ocean/earth"
+Neo4j::Relationship.new :extend, sky, ocean, :on_chinese => "天空和海洋", :on_english => "sky/ocean"
+Neo4j::Relationship.new :extend, ocean, sky,:on_chinese => "海洋和天空", :on_english => "ocean/sky"
 
 
-Neo4j::Relationship.new :extend, blue, ocean,  :on_chinese => '海洋 是 蓝色的', :on_english => 'ocean is blue'
-Neo4j::Relationship.new :extend, ocean, blue,  :on_chinese => '海洋 是 蓝色的', :on_english => 'ocean is blue'
+Neo4j::Relationship.new :extend, blue, ocean,  :on_chinese => "海洋 是 蓝色的", :on_english => "ocean is blue"
+Neo4j::Relationship.new :extend, ocean, blue,  :on_chinese => "海洋 是 蓝色的", :on_english => "ocean is blue"
 
 
-Neo4j::Relationship.new :synonym, blue, depressed, :on_chinese => '忧郁的', :on_english => 'not very happy'
-Neo4j::Relationship.new :synonym, depressed, blue, :on_chinese => '忧郁的', :on_english => 'not very happy'
+Neo4j::Relationship.new :synonym, blue, depressed, :on_chinese => "忧郁的", :on_english => "not very happy"
+Neo4j::Relationship.new :synonym, depressed, blue, :on_chinese => "忧郁的", :on_english => "not very happy"
 
-Neo4j::Relationship.new :antonym, blue, happy, :on_chinese => '忧郁的 -- 高兴的', :on_english => 'blue vs happy'
-Neo4j::Relationship.new :antonym, happy, blue, :on_chinese => '高兴的 -- 忧郁的', :on_english => 'happy vs blue'
-
-
-Neo4j::Relationship.new :idiom, word, in_a_word, :on_chinese => '总之', :on_english => '(in a) word'
-Neo4j::Relationship.new :idiom, in_a_word, word, :on_chinese => '总之', :on_english => '(in a) word'
+Neo4j::Relationship.new :antonym, blue, happy, :on_chinese => "忧郁的 -- 高兴的", :on_english => "blue vs happy"
+Neo4j::Relationship.new :antonym, happy, blue, :on_chinese => "高兴的 -- 忧郁的", :on_english => "happy vs blue"
 
 
-Neo4j::Relationship.new :extend, word, world, :on_chinese => '单词--世界', :on_english => 'word -- world'
-Neo4j::Relationship.new :extend, world, word, :on_chinese => '世界--单词', :on_english => 'world -- word'
+Neo4j::Relationship.new :idiom, word, in_a_word, :on_chinese => "总之", :on_english => "(in a) word"
+Neo4j::Relationship.new :idiom, in_a_word, word, :on_chinese => "总之", :on_english => "(in a) word"
+
+
+Neo4j::Relationship.new :extend, word, world, :on_chinese => "单词--世界", :on_english => "word -- world"
+Neo4j::Relationship.new :extend, world, word, :on_chinese => "世界--单词", :on_english => "world -- word"
 
 
 end

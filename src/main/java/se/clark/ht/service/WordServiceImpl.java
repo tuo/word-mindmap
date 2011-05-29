@@ -60,5 +60,27 @@ public class WordServiceImpl implements WordService {
 
         earth.synonymTo(globe, earthSynonymChi, earthSynonymEng);
         earth.synonymTo(world, earthSynonymChi, earthSynonymEng);
+
+        String earthSynonymAeraChi = "土地";
+        String earthSynonymAeraEng = "area on earth";
+
+        earth.synonymTo(soil, earthSynonymAeraChi, earthSynonymAeraEng);
+        earth.synonymTo(ground, earthSynonymAeraChi, earthSynonymAeraEng);
+        earth.synonymTo(mud, earthSynonymAeraChi, earthSynonymAeraEng);
+        earth.synonymTo(dirt, earthSynonymAeraChi, earthSynonymAeraEng);
+
+//        String earthExtensionChi = "土地 <--> 天空";
+//        String earthExtensionEng = "土地 <--> 天空";
+//        earth.synonymTo(dirt, earthSynonymAeraChi, earthSynonymAeraEng);
+//
+//
+//Neo4j::Relationship.new :extend, earth, sky, :on_chinese => "土地和天空", :on_english => "earth/sky"
+//Neo4j::Relationship.new :extend, earth, ocean, :on_chinese => "土地和海洋", :on_english => "earth/ocean"
+//Neo4j::Relationship.new :extend, sky, earth, :on_chinese => "天空和土地", :on_english => "sky/earth"
+//Neo4j::Relationship.new :extend, ocean, earth,:on_chinese => "海洋和土地", :on_english => "ocean/earth"
+//Neo4j::Relationship.new :extend, sky, ocean, :on_chinese => "天空和海洋", :on_english => "sky/ocean"
+//Neo4j::Relationship.new :extend, ocean, sky,:on_chinese => "海洋和天空", :on_english => "ocean/sky"
+//
+
     }
 }

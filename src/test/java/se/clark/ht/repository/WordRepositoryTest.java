@@ -48,6 +48,7 @@ public class WordRepositoryTest {
 
     private Word earth;
     private Word globe;
+    private Word sky;
 
     @Before
     public void setUp(){
@@ -62,6 +63,12 @@ public class WordRepositoryTest {
                 .withType("noun")
                 .withChineseMeaning("地球,全球")
                 .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
+                .build();
+       sky = new WordBuilder()
+                .withName("sky")
+                .withType("noun")
+                .withChineseMeaning("天空")
+                .withEnglishMeaning("blue sky")
                 .build();
 
     }
@@ -93,6 +100,29 @@ public class WordRepositoryTest {
         earth.synonymTo(globe, "地球", "the planet we live");
         assertThat("globe's synonyms count", globe.getSynonymsCount(), is(equalTo(1)));
         assertThat("globe's synonyms contain earth", globe.getSynonyms(), hasItem(earth));
+    }
+
+    @Test
+    public void shouldGetExtensionFromSavingSide(){
+        wordRepository.save(earth);
+        assertThat("earth's extensions count", earth.getExtensionsCount(), is(0));
+        wordRepository.save(sky);
+        //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
+        earth.extendTo(sky, "土地和天空", "earth and sky just intuitive");
+        assertThat("earth's extensions count", earth.getExtensionsCount(), is(equalTo(1)));
+        assertThat("earth's extensions contains sky", earth.getExtensions(), hasItem(sky));
+    }
+
+    @Test
+    public void shouldGetExtensionFromOtherSide(){
+        wordRepository.save(earth);
+        wordRepository.save(sky);
+        assertThat("sky's extensions count", sky.getExtensionsCount(), is(0));
+
+        //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
+        earth.extendTo(sky, "土地和天空", "earth and sky just intuitive");
+        assertThat("sky's extensions count", sky.getExtensionsCount(), is(equalTo(1)));
+        assertThat("sky's extensions contains sky", sky.getExtensions(), hasItem(earth));
     }
 
 
