@@ -9,7 +9,7 @@
 </head>
 
 <body>
-
+<h2>Exact Match</h2>
 <br/>
 <form action="searchSpecificWord.html">
     <label>Name of word to search: </label>

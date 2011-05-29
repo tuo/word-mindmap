@@ -15,7 +15,7 @@
 <h4>Now, you can click to do following operations on words:</h4>
 
 <ul>
-   <li><a href="openSearchSpecificWord.html">Search specific word</a></li>
+   <li><a href="openSearchSpecificWord.html">Search specific word by name(Exact Match)</a></li>
 
 </ul>
 
