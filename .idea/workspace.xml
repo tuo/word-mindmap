@@ -93,19 +93,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="WordController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="45" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.7218543">
+            <state line="77" column="15" selection-start="3170" selection-end="3170" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wordNotFound.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="wordNotFound.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="32" selection-start="561" selection-end="561" vertical-scroll-proportion="-8.571428">
+            <state line="16" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.32214764">
               <folding />
             </state>
           </provider>
@@ -184,8 +184,8 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp" />
       </list>
     </option>
   </component>
@@ -1337,16 +1337,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="32" selection-start="561" selection-end="561" vertical-scroll-proportion="-8.571428">
+        <state line="77" column="15" selection-start="3170" selection-end="3170" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="45" selection-start="3046" selection-end="3046" vertical-scroll-proportion="0.7218543">
+        <state line="16" column="0" selection-start="595" selection-end="595" vertical-scroll-proportion="0.32214764">
           <folding />
         </state>
       </provider>
