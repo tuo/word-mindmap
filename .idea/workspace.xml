@@ -128,7 +128,7 @@
       <file leaf-file-name="WordServiceImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="30" selection-start="3311" selection-end="3311" vertical-scroll-proportion="0.4871795">
+            <state line="80" column="44" selection-start="4615" selection-end="4615" vertical-scroll-proportion="0.75">
               <folding />
             </state>
           </provider>
@@ -178,10 +178,10 @@
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/builder/WordBuilder.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java" />
         <option value="$PROJECT_DIR$/data.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/repository/WordRepositoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Word.java" />
+        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -1278,7 +1278,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="30" selection-start="3311" selection-end="3311" vertical-scroll-proportion="0.4871795">
+        <state line="80" column="44" selection-start="4615" selection-end="4615" vertical-scroll-proportion="0.75">
           <folding />
         </state>
       </provider>
