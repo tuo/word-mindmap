@@ -109,7 +109,7 @@ public class WordRepositoryTest {
         assertThat("earth's synonyms count", earth.getSynonymsCount(), is(0));
         wordRepository.save(globe);
         //as earth and globe both are under controll of springdata graph, no need to further call earth.save()
-        earth.synonymTo(globe, "地球", "the planet we live");
+        earth.synonymWith(globe, "地球", "the planet we live");
         assertThat("earth's synonyms count", earth.getSynonymsCount(), is(equalTo(1)));
         assertThat("earth's synonym contains globe", earth.getSynonyms(), hasItem(globe));
     }
@@ -120,7 +120,7 @@ public class WordRepositoryTest {
         wordRepository.save(globe);
         assertThat("globe's synonyms count", globe.getSynonymsCount(), is(0));
         //as earth and globe both are under controll of springdata graph, no need to further call earth.save()
-        earth.synonymTo(globe, "地球", "the planet we live");
+        earth.synonymWith(globe, "地球", "the planet we live");
         assertThat("globe's synonyms count", globe.getSynonymsCount(), is(equalTo(1)));
         assertThat("globe's synonyms contain earth", globe.getSynonyms(), hasItem(earth));
     }
@@ -131,7 +131,7 @@ public class WordRepositoryTest {
         assertThat("earth's extensions count", earth.getExtensionsCount(), is(0));
         wordRepository.save(sky);
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        earth.extendTo(sky, "土地和天空", "earth and sky just intuitive");
+        earth.extendWith(sky, "土地和天空", "earth and sky just intuitive");
         assertThat("earth's extensions count", earth.getExtensionsCount(), is(equalTo(1)));
         assertThat("earth's extensions contains sky", earth.getExtensions(), hasItem(sky));
     }
@@ -143,7 +143,7 @@ public class WordRepositoryTest {
         assertThat("sky's extensions count", sky.getExtensionsCount(), is(0));
 
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        earth.extendTo(sky, "土地和天空", "earth and sky just intuitive");
+        earth.extendWith(sky, "土地和天空", "earth and sky just intuitive");
         assertThat("sky's extensions count", sky.getExtensionsCount(), is(equalTo(1)));
         assertThat("sky's extensions contains sky", sky.getExtensions(), hasItem(earth));
     }
@@ -154,7 +154,7 @@ public class WordRepositoryTest {
         assertThat("earth's idioms count", earth.getIdiomsCount(), is(0));
         wordRepository.save(onEarth);
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        earth.idiomTo(onEarth, "加前缀on", "added a prefix 'on'");
+        earth.idiomWith(onEarth, "加前缀on", "added a prefix 'on'");
         assertThat("earth's idioms count", earth.getIdiomsCount(), is(equalTo(1)));
         assertThat("earth's idioms contains onEarth", earth.getIdioms(), hasItem(onEarth));
     }
@@ -166,7 +166,7 @@ public class WordRepositoryTest {
         assertThat("onEarth's idiom count", onEarth.getIdiomsCount(), is(0));
 
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        earth.idiomTo(onEarth, "加前缀on", "added a prefix 'on'");
+        earth.idiomWith(onEarth, "加前缀on", "added a prefix 'on'");
         assertThat("onEarth's idiom count", onEarth.getIdiomsCount(), is(equalTo(1)));
         assertThat("onEarth's idiom contains earth", onEarth.getIdioms(), hasItem(earth));
     }
@@ -177,7 +177,7 @@ public class WordRepositoryTest {
         assertThat("happy's antonym count", happy.getAntonymsCount(), is(0));
         wordRepository.save(sad);
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        happy.antonymTo(sad, "高兴与悲伤", "feel good vs feel bad'");
+        happy.antonymWith(sad, "高兴与悲伤", "feel good vs feel bad'");
         assertThat("happy's antonym count", happy.getAntonymsCount(), is(equalTo(1)));
         assertThat("happy's antonym contains sad", happy.getAntonyms(), hasItem(sad));
     }
@@ -188,7 +188,7 @@ public class WordRepositoryTest {
         wordRepository.save(sad);
         assertThat("sad's antonym count", sad.getAntonymsCount(), is(0));
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        happy.antonymTo(sad, "高兴与悲伤", "feel good vs feel bad'");
+        happy.antonymWith(sad, "高兴与悲伤", "feel good vs feel bad'");
         assertThat("sad's antonym count", sad.getAntonymsCount(), is(equalTo(1)));
         assertThat("sad's antonym contains happy", sad.getAntonyms(), hasItem(happy));
     }

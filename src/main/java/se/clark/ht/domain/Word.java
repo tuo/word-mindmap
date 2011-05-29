@@ -29,29 +29,29 @@ public class Word {
     @RelatedTo(elementClass = Word.class, type = "EXTENSION_WITH", direction = Direction.BOTH)
     private Set<Word> extensions;
     //
-    @RelatedTo(elementClass = Word.class, type = "IDIOM_TO", direction = Direction.BOTH)
+    @RelatedTo(elementClass = Word.class, type = "IDIOM_WITH", direction = Direction.BOTH)
     private Set<Word> idioms;
 
-    @RelatedTo(elementClass = Word.class, type = "ANTONYM_TO", direction = Direction.BOTH)
+    @RelatedTo(elementClass = Word.class, type = "ANTONYM_WITH", direction = Direction.BOTH)
     private Set<Word> antonyms;
 
-    public void synonymTo(Word anotherWord, String onChinese, String onEnglish) {
+    public void synonymWith(Word anotherWord, String onChinese, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.SYNONYM_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
 
-    public void extendTo(Word anotherWord, String onChinese, String onEnglish) {
+    public void extendWith(Word anotherWord, String onChinese, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.EXTENSION_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
 
-    public void idiomTo(Word anotherWord, String onChinese, String onEnglish) {
-        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.IDIOM_TO.name());
+    public void idiomWith(Word anotherWord, String onChinese, String onEnglish) {
+        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.IDIOM_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
 
-    public void antonymTo(Word anotherWord, String onChinese, String onEnglish) {
-        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.ANTONYM_TO.name());
+    public void antonymWith(Word anotherWord, String onChinese, String onEnglish) {
+        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.ANTONYM_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
 

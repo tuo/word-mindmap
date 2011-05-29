@@ -87,7 +87,7 @@ public class Entrance {
                     .forRelationships(WordRelationshipTypes.EXTENSION_WITH
                             .toString());
             RelationshipIndex idioms = indexManger
-                    .forRelationships(WordRelationshipTypes.IDIOM_TO.toString());
+                    .forRelationships(WordRelationshipTypes.IDIOM_WITH.toString());
 
             // RelationshipIndex synonyms =
             // indexManger.forRelationships(WordRelationshipTypes.SYNONYM_WITH.toString()
@@ -98,7 +98,7 @@ public class Entrance {
             // +"-fulltext",
             // MapUtil.stringMap( "provider", "lucene", "type", "fulltext" ) );
             // RelationshipIndex idioms =
-            // indexManger.forRelationships(WordRelationshipTypes.IDIOM_TO.toString()+"-fulltext",
+            // indexManger.forRelationships(WordRelationshipTypes.IDIOM_WITH.toString()+"-fulltext",
             // MapUtil.stringMap( "provider", "lucene", "type", "fulltext" ) );
 
             Node earth = graphDb.createNode();
@@ -184,7 +184,7 @@ public class Entrance {
             meanings = new Meaning();
             meanings.putMeaning("in a word", "phrase", "总而言之",
                     "used for giving a very short, usually negative, answer or comment");
-            insertNodeAndCreateRelAsGroup(word, WordRelationshipTypes.IDIOM_TO,
+            insertNodeAndCreateRelAsGroup(word, WordRelationshipTypes.IDIOM_WITH,
                     "总之", "in a word", meanings, savedNodes, wordsIndex, idioms);
             tx.success();
         } finally {
@@ -214,7 +214,7 @@ public class Entrance {
         String result = "";
         for (Path position : SYNONYMS_TRAVERSAL
                 .relationships(WordRelationshipTypes.EXTENSION_WITH)
-                .relationships(WordRelationshipTypes.IDIOM_TO)
+                .relationships(WordRelationshipTypes.IDIOM_WITH)
                 .filter(Traversal.returnAllButStartNode())
                 .traverse(earth)) {
             result += "Path from start node to current position is: " + position + ", to node: " + position.endNode().getProperty(NAME_KEY);

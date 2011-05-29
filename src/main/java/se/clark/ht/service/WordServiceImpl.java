@@ -58,28 +58,28 @@ public class WordServiceImpl implements WordService {
         String earthSynonymChi = "地球";
         String earthSynonymEng = "the planet we live";
 
-        earth.synonymTo(globe, earthSynonymChi, earthSynonymEng);
-        earth.synonymTo(world, earthSynonymChi, earthSynonymEng);
+        earth.synonymWith(globe, earthSynonymChi, earthSynonymEng);
+        earth.synonymWith(world, earthSynonymChi, earthSynonymEng);
 
         String earthSynonymAeraChi = "土地";
         String earthSynonymAeraEng = "area on earth";
 
-        earth.synonymTo(soil, earthSynonymAeraChi, earthSynonymAeraEng);
-        earth.synonymTo(ground, earthSynonymAeraChi, earthSynonymAeraEng);
-        earth.synonymTo(mud, earthSynonymAeraChi, earthSynonymAeraEng);
-        earth.synonymTo(dirt, earthSynonymAeraChi, earthSynonymAeraEng);
+        earth.synonymWith(soil, earthSynonymAeraChi, earthSynonymAeraEng);
+        earth.synonymWith(ground, earthSynonymAeraChi, earthSynonymAeraEng);
+        earth.synonymWith(mud, earthSynonymAeraChi, earthSynonymAeraEng);
+        earth.synonymWith(dirt, earthSynonymAeraChi, earthSynonymAeraEng);
 
-        earth.extendTo(sky, "土地 <--> 天空", "from earth to sky");
-        earth.extendTo(ocean, "土地 <--> 海洋", "from earth to ocean");
-        ocean.extendTo(sky, "天空 <--> 海洋", "from ocean to sky");
+        earth.extendWith(sky, "土地 <--> 天空", "from earth to sky");
+        earth.extendWith(ocean, "土地 <--> 海洋", "from earth to ocean");
+        ocean.extendWith(sky, "天空 <--> 海洋", "from ocean to sky");
 
-        ocean.synonymTo(blue, "海洋是蓝色的", " ocean is blue");
+        ocean.synonymWith(blue, "海洋是蓝色的", " ocean is blue");
 
-        blue.antonymTo(depressed, "忧郁的", "not very happy though");
-        blue.synonymTo(happy, "高兴和忧郁", "happiness vs depressed");
+        blue.antonymWith(depressed, "忧郁的", "not very happy though");
+        blue.synonymWith(happy, "高兴和忧郁", "happiness vs depressed");
 
-        world.extendTo(word, "两个单词只差一个字母", "just have one more letter 'l'");
-        word.idiomTo(in_a_word, "扩展,组成短语", "compose to a phrase");
+        world.extendWith(word, "两个单词只差一个字母", "just have one more letter 'l'");
+        word.idiomWith(in_a_word, "扩展,组成短语", "compose to a phrase");
 
     }
 }
