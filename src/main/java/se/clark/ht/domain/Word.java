@@ -23,7 +23,7 @@ public class Word {
     @Indexed
     private String englishMeaning;
 
-    @RelatedTo(elementClass = Word.class, type = "SYNONYM_TO", direction = Direction.BOTH)
+    @RelatedTo(elementClass = Word.class, type = "SYNONYM_WITH", direction = Direction.BOTH)
     private Set<Word> synonyms;
 
     @RelatedTo(elementClass = Word.class, type = "EXTENSION_WITH", direction = Direction.BOTH)
@@ -32,7 +32,7 @@ public class Word {
 //    private Set<Word> idioms;
 
     public void synonymTo(Word anotherWord, String onChinese, String onEnglish){
-        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.SYNONYM_TO.name());
+        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.SYNONYM_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
 

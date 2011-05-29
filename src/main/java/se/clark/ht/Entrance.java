@@ -81,7 +81,7 @@ public class Entrance {
                             "lucene", "type", "fulltext"));
 
             RelationshipIndex synonyms = indexManger
-                    .forRelationships(WordRelationshipTypes.SYNONYM_TO
+                    .forRelationships(WordRelationshipTypes.SYNONYM_WITH
                             .toString());
             RelationshipIndex extentions = indexManger
                     .forRelationships(WordRelationshipTypes.EXTENSION_WITH
@@ -90,7 +90,7 @@ public class Entrance {
                     .forRelationships(WordRelationshipTypes.IDIOM_TO.toString());
 
             // RelationshipIndex synonyms =
-            // indexManger.forRelationships(WordRelationshipTypes.SYNONYM_TO.toString()
+            // indexManger.forRelationships(WordRelationshipTypes.SYNONYM_WITH.toString()
             // +"-fulltext",
             // MapUtil.stringMap( "provider", "lucene", "type", "fulltext" ) );
             // RelationshipIndex extentions =
@@ -201,7 +201,7 @@ public class Entrance {
     }
 
     static final TraversalDescription SYNONYMS_TRAVERSAL = Traversal.description()
-            .relationships(WordRelationshipTypes.SYNONYM_TO)
+            .relationships(WordRelationshipTypes.SYNONYM_WITH)
             .depthFirst()
             .uniqueness(Uniqueness.RELATIONSHIP_GLOBAL);
 
@@ -305,7 +305,7 @@ public class Entrance {
 
     private static void insertNodeAndCreateRelAsGroup(Node earth,
                                                       String on_chinese_mean, String on_english_mean, Meaning meanings, Map<String, Node> savedNodes, Index<Node> wordsIndex, RelationshipIndex relIndex) {
-        insertNodeAndCreateRelAsGroup(earth, WordRelationshipTypes.SYNONYM_TO, on_chinese_mean, on_english_mean, meanings, savedNodes, wordsIndex, relIndex);
+        insertNodeAndCreateRelAsGroup(earth, WordRelationshipTypes.SYNONYM_WITH, on_chinese_mean, on_english_mean, meanings, savedNodes, wordsIndex, relIndex);
     }
 
 
