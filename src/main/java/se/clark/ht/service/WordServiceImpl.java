@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.domain.Word;
-import se.clark.ht.repository.WordRepository;
 import se.clark.ht.repository.WordRepositoryExtension;
 
 @Service
@@ -13,6 +12,12 @@ public class WordServiceImpl implements WordService {
 
     @Autowired
     private WordRepositoryExtension wordRepository;
+
+    @Override
+    public Word searchExactWordByName(String wordName) {
+        return wordRepository.findWordNamed(wordName);
+    }
+
 
     @Override
     @Transactional
@@ -86,4 +91,6 @@ public class WordServiceImpl implements WordService {
         word.idiomWith(in_a_word, "扩展,组成短语", "compose to a phrase");
 
     }
+
+
 }

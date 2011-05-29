@@ -11,11 +11,18 @@
 <body>
 <h1>Populate words successfully</h1>
 
-<form action="searchSimilarWords.html">
-    <label>Search word that like for: </label>
-    <input type="text" name="word" size="20"/>
-    <input type="submit" name="button" value="submit"/>
-</form>
+
+<h4>Now, you can click to do following operations on words:</h4>
+
+<ul>
+   <li><a href="openSearchSpecificWord.html">Search specific word</a></li>
+
+</ul>
+
+<cite>Other operations are still working in progress..........</cite>
+
+<div style="display:none">
+
 
 
 <hr/>
@@ -27,5 +34,7 @@
     You can reference by following picture:
 </p>
 <img src="images/wordmap.jpg"/>
+
+</div>
 </body>
 </html>

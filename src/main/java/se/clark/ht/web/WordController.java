@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 import se.clark.ht.Entrance;
+import se.clark.ht.domain.Word;
 import se.clark.ht.service.WordService;
 
 @Controller
@@ -44,10 +45,22 @@ public class WordController {
         return "searchSimilarResult";
     }
 
+
+    @RequestMapping(value = "searchSpecificWord.html")
+    public String searchSpecificWord(@RequestParam(value = "word", required = false) String word, ModelMap model) {
+        model.addAttribute("wordToSearch", word);
+        Word result = wordService.searchExactWordByName(word);
+        model.addAttribute("result", result == null ? "No Match" : result);
+        return "searchSpecificWordResult";
+    }
+
+
     @RequestMapping(value = "searchAllWords.html")
     public String searchAllWords(ModelMap model){
         String result = Entrance.trasaverAll();
         model.addAttribute("result", result == "" ? "No Match" : result);
         return "searchAllWordsResult";
     }
+
+
 }
