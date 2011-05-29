@@ -50,32 +50,48 @@ public class WordRepositoryTest {
     private Word globe;
     private Word sky;
     private Word onEarth;
+    private Word happy;
+    private Word sad;
 
     @Before
-    public void setUp(){
-       earth = new WordBuilder()
+    public void setUp() {
+        earth = new WordBuilder()
                 .withName("earth")
                 .withType("noun")
                 .withChineseMeaning("土地")
                 .withEnglishMeaning("the planet we live")
                 .build();
-       globe = new WordBuilder()
+        globe = new WordBuilder()
                 .withName("globe")
                 .withType("noun")
                 .withChineseMeaning("地球,全球")
                 .withEnglishMeaning("the world (used especially to emphasize its size);a thing shaped like a ball")
                 .build();
-       sky = new WordBuilder()
+        sky = new WordBuilder()
                 .withName("sky")
                 .withType("noun")
                 .withChineseMeaning("天空")
                 .withEnglishMeaning("blue sky")
                 .build();
-       onEarth = new WordBuilder()
+        onEarth = new WordBuilder()
                 .withName("on earth")
                 .withType("phrase")
                 .withChineseMeaning("究竟")
                 .withEnglishMeaning("what the hell")
+                .build();
+
+        happy = new WordBuilder()
+                .withName("happy")
+                .withType("noun/adj")
+                .withChineseMeaning("高兴")
+                .withEnglishMeaning("active emotion,feel good")
+                .build();
+
+        sad = new WordBuilder()
+                .withName("sad")
+                .withType("adj")
+                .withChineseMeaning("悲伤的")
+                .withEnglishMeaning("not feel good")
                 .build();
 
     }
@@ -110,7 +126,7 @@ public class WordRepositoryTest {
     }
 
     @Test
-    public void shouldGetExtensionFromSavingSide(){
+    public void shouldGetExtensionFromSavingSide() {
         wordRepository.save(earth);
         assertThat("earth's extensions count", earth.getExtensionsCount(), is(0));
         wordRepository.save(sky);
@@ -121,7 +137,7 @@ public class WordRepositoryTest {
     }
 
     @Test
-    public void shouldGetExtensionFromOtherSide(){
+    public void shouldGetExtensionFromOtherSide() {
         wordRepository.save(earth);
         wordRepository.save(sky);
         assertThat("sky's extensions count", sky.getExtensionsCount(), is(0));
@@ -133,7 +149,7 @@ public class WordRepositoryTest {
     }
 
     @Test
-    public void shouldGetIdiomFromSavingSide(){
+    public void shouldGetIdiomFromSavingSide() {
         wordRepository.save(earth);
         assertThat("earth's idioms count", earth.getIdiomsCount(), is(0));
         wordRepository.save(onEarth);
@@ -144,7 +160,7 @@ public class WordRepositoryTest {
     }
 
     @Test
-    public void shouldGetIdiomFromOtherSide(){
+    public void shouldGetIdiomFromOtherSide() {
         wordRepository.save(earth);
         wordRepository.save(onEarth);
         assertThat("onEarth's idiom count", onEarth.getIdiomsCount(), is(0));
@@ -155,7 +171,26 @@ public class WordRepositoryTest {
         assertThat("onEarth's idiom contains earth", onEarth.getIdioms(), hasItem(earth));
     }
 
+    @Test
+    public void shouldGetAntonymFromSavingSide() {
+        wordRepository.save(happy);
+        assertThat("happy's antonym count", happy.getAntonymsCount(), is(0));
+        wordRepository.save(sad);
+        //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
+        happy.antonymTo(sad, "高兴与悲伤", "feel good vs feel bad'");
+        assertThat("happy's antonym count", happy.getAntonymsCount(), is(equalTo(1)));
+        assertThat("happy's antonym contains sad", happy.getAntonyms(), hasItem(sad));
+    }
 
-
+    @Test
+    public void shouldGetAntonymFromOtherSide() {
+        wordRepository.save(happy);
+        wordRepository.save(sad);
+        assertThat("sad's antonym count", sad.getAntonymsCount(), is(0));
+        //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
+        happy.antonymTo(sad, "高兴与悲伤", "feel good vs feel bad'");
+        assertThat("sad's antonym count", sad.getAntonymsCount(), is(equalTo(1)));
+        assertThat("sad's antonym contains happy", sad.getAntonyms(), hasItem(happy));
+    }
 
 }

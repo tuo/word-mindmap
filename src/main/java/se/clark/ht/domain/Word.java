@@ -28,25 +28,32 @@ public class Word {
 
     @RelatedTo(elementClass = Word.class, type = "EXTENSION_WITH", direction = Direction.BOTH)
     private Set<Word> extensions;
-//
+    //
     @RelatedTo(elementClass = Word.class, type = "IDIOM_TO", direction = Direction.BOTH)
     private Set<Word> idioms;
 
-    public void synonymTo(Word anotherWord, String onChinese, String onEnglish){
+    @RelatedTo(elementClass = Word.class, type = "ANTONYM_TO", direction = Direction.BOTH)
+    private Set<Word> antonyms;
+
+    public void synonymTo(Word anotherWord, String onChinese, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.SYNONYM_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
 
-    public void extendTo(Word anotherWord, String onChinese, String onEnglish){
+    public void extendTo(Word anotherWord, String onChinese, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.EXTENSION_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
 
-    public void idiomTo(Word anotherWord, String onChinese, String onEnglish){
+    public void idiomTo(Word anotherWord, String onChinese, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.IDIOM_TO.name());
         relationship.on(onChinese, onEnglish);
     }
 
+    public void antonymTo(Word anotherWord, String onChinese, String onEnglish) {
+        Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.ANTONYM_TO.name());
+        relationship.on(onChinese, onEnglish);
+    }
 
     public Word() {
     }
@@ -80,7 +87,7 @@ public class Word {
         return synonyms;
     }
 
-    public int getSynonymsCount(){
+    public int getSynonymsCount() {
         return synonyms.size();
     }
 
@@ -88,7 +95,7 @@ public class Word {
         return extensions;
     }
 
-    public int getExtensionsCount(){
+    public int getExtensionsCount() {
         return extensions.size();
     }
 
@@ -98,6 +105,14 @@ public class Word {
 
     public int getIdiomsCount() {
         return idioms.size();
+    }
+
+        public Set<Word> getAntonyms() {
+        return antonyms;
+    }
+
+    public int getAntonymsCount() {
+        return antonyms.size();
     }
 
     @Override

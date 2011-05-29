@@ -75,7 +75,7 @@ public class WordServiceImpl implements WordService {
 
         ocean.synonymTo(blue, "海洋是蓝色的", " ocean is blue");
 
-        blue.synonymTo(depressed, "忧郁的", "not very happy though");
+        blue.antonymTo(depressed, "忧郁的", "not very happy though");
         blue.synonymTo(happy, "高兴和忧郁", "happiness vs depressed");
 
         world.extendTo(word, "两个单词只差一个字母", "just have one more letter 'l'");
