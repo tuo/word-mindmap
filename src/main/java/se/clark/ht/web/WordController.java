@@ -34,7 +34,7 @@ public class WordController {
 
     @RequestMapping(value = "populateSuccess.html")
     public String populateSuccess(ModelMap model) {
-        return "words";
+        return "searchEntrance";
     }
 
     @RequestMapping(value = "searchSimilarWords.html")
