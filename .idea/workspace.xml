@@ -78,10 +78,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TODO Lists" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TODO Lists" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TODO Lists">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="764" selection-end="764" vertical-scroll-proportion="0.4667747">
+            <state line="24" column="44" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="17" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
+            <state line="25" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.49668875">
               <folding />
             </state>
           </provider>
@@ -164,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/NavigationController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java" />
@@ -180,6 +179,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/TODO Lists" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1059,13 +1059,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="17" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="10" selection-start="257" selection-end="257" vertical-scroll-proportion="-6.857143">
@@ -1075,7 +1068,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TODO Lists">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="764" selection-end="764" vertical-scroll-proportion="0.4667747">
+        <state line="24" column="44" selection-start="764" selection-end="764" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="580" selection-end="580" vertical-scroll-proportion="0.49668875">
           <folding />
         </state>
       </provider>

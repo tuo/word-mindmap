@@ -12,13 +12,19 @@ Word Mindmap is a project that aims at alleviating the pain of
 remembering words.The project trys to setup the relationship among
 words and provides similar mindset map.
 
-### Using
+### Using for Local
 
 		    mvn clean jetty:run
 
 Then go to browser and input:
 
 <http://localhost:8080/word-mindmap>
+
+### Using directly
+
+Current the project is host in Cloud Foundry:
+
+<http://word-mindmap.cloudfoundry.com>
 
 ### Notes
 This project uses spring data graph, check out the references:
