@@ -16,3 +16,10 @@
 10. Word---Word synonym relationship diagram to README.md
 
 11.get rid of Contact
+
+12. push current object to cloud foundry :
+ run "mvn clean packaging" to generate the war file under target/
+ first time: vmc push word-mindmap --path=target/
+ and later just update the project: vmc update word-mindmap --path=target/
+
+ Diagnose the app on cloud foundry: vmc apps
