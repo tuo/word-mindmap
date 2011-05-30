@@ -205,6 +205,7 @@
                     </webAppConfig>
                 </configuration>
             </plugin>
+            <!-- run mvn idea:idea-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-idea-plugin</artifactId>
@@ -213,6 +214,34 @@
                     <downloadSources>true</downloadSources>
                     <dependenciesAsLibraries>true</dependenciesAsLibraries>
                 </configuration>
+            </plugin>
+            <!-- run mvn eclipse:eclipse-->
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-eclipse-plugin</artifactId>
+              <version>2.7</version>
+              <!-- Note 2.8 does not work with AspectJ aspect path -->
+              <configuration>
+                <downloadSources>true</downloadSources>
+                <downloadJavadocs>false</downloadJavadocs>
+                <wtpversion>2.0</wtpversion>
+                <additionalBuildcommands>
+                  <buildCommand>
+                    <name>org.eclipse.ajdt.core.ajbuilder</name>
+                    <arguments>
+                      <aspectPath>org.springframework.aspects</aspectPath>
+                    </arguments>
+                  </buildCommand>
+                  <buildCommand>
+                    <name>org.springframework.ide.eclipse.core.springbuilder</name>
+                  </buildCommand>
+                </additionalBuildcommands>
+                <additionalProjectnatures>
+                  <projectnature>org.eclipse.ajdt.ui.ajnature</projectnature>
+                  <projectnature>com.springsource.sts.roo.core.nature</projectnature>
+                  <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+                </additionalProjectnatures>
+              </configuration>
             </plugin>
         </plugins>
     </build>
