@@ -6,6 +6,15 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FacetAutodetectingManager">
+    <autodetection-disabled>
+      <facet-type id="web">
+        <modules>
+          <module name="word-mindmap" />
+        </modules>
+      </facet-type>
+    </autodetection-disabled>
+  </component>
   <component name="IdProvider" IDEtalkID="BBFC84FEB6415A05A164949C5093F9CD" />
   <component name="JavadocGenerationManager">
     <option name="OUTPUT_DIRECTORY" />
