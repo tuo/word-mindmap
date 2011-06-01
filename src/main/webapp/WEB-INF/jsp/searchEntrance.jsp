@@ -5,11 +5,11 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Populate words successfully.</title>
+    <title>Start Searching</title>
 </head>
 
 <body>
-<h1>Populate words successfully</h1>
+<h1>Search</h1>
 
 
 <h4>Now, you can click to do following operations on words:</h4>
@@ -23,8 +23,6 @@
 <cite>Other operations are still working in progress..........</cite>
 
 <div style="display:none">
-
-
 
 <hr/>
 

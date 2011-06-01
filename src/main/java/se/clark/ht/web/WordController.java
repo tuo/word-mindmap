@@ -38,11 +38,11 @@ public class WordController {
         wordService.populateSomeWords();
         logger.info("populating words to neo4j local storage ended..........");
 
-        return new ModelAndView("redirect:populateSuccess.html");
+        return new ModelAndView("redirect:startSearching.html");
     }
 
-    @RequestMapping(value = "populateSuccess.html")
-    public String populateSuccess(ModelMap model) {
+    @RequestMapping(value = "startSearching.html")
+    public String startSearching(ModelMap model) {
         return "searchEntrance";
     }
 
