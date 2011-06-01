@@ -2,6 +2,8 @@ package se.clark.ht.web;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.graph.neo4j.support.GraphDatabaseContext;
+import org.springframework.data.graph.neo4j.support.node.Neo4jHelper;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -24,11 +26,15 @@ public class WordController {
     @Autowired
     private WordService wordService;
 
+    @Autowired
+    private GraphDatabaseContext graphDatabaseContext;
+
 
     //this is not very good way to use GET
     @RequestMapping(value = "populateData.html")
     public ModelAndView populateWords(ModelMap model) {
         logger.info("start populating words to neo4j local storage..........");
+        Neo4jHelper.cleanDb(graphDatabaseContext);
         wordService.populateSomeWords();
         logger.info("populating words to neo4j local storage ended..........");
 
@@ -39,15 +45,6 @@ public class WordController {
     public String populateSuccess(ModelMap model) {
         return "searchEntrance";
     }
-
-    @RequestMapping(value = "searchSimilarWords.html")
-    public String searchSimilarWords(@RequestParam(value = "word", required = false) String word, ModelMap model) {
-        model.addAttribute("wordToSearch", word);
-        String result = Entrance.searchCorrespondingWords(word);
-        model.addAttribute("result", result == "" ? "No Match" : result);
-        return "searchSimilarResult";
-    }
-
 
     @RequestMapping(value = "searchSpecificWord.html")
     public String searchSpecificWord(@RequestParam(value = "word", required = false) String word, ModelMap model) {
