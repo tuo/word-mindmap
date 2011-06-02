@@ -20,6 +20,10 @@ Then go to browser and input:
 
 <http://localhost:8080/word-mindmap>
 
+deploy to that:
+
+            ./deploy.sh
+
 ### Using directly
 
 Current the project is host in Cloud Foundry:

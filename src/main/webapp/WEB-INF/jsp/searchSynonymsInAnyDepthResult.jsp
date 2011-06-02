@@ -24,6 +24,6 @@
 
     </c:forEach>
 
-<a href="populateSuccess.html">back to search</a>
+<a href="openSearchSynonymsInAnyDepth.html">back to search</a>
 </body>
 </html>

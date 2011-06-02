@@ -16,6 +16,6 @@
     <c:out value="${result}"/>
 </p>
 
-<a href="populateSuccess.html">back to search</a>
+<a href="startSearching.html">back to search</a>
 </body>
 </html>

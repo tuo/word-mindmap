@@ -18,6 +18,6 @@
     <input type="submit" name="button" value="submit"/>
 </form>
 <hr/>
-<a href="populateSuccess.html">back to search operation home page.</a>
+<a href="startSearching.html">back to search operation home page.</a>
 </body>
 </html>
