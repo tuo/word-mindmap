@@ -69,10 +69,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wordNotFound.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="wordNotFound.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="34" selection-start="500" selection-end="500" vertical-scroll-proportion="0.22147651">
+            <state line="11" column="22" selection-start="489" selection-end="489" vertical-scroll-proportion="-6.285714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy.sh" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deploy.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="0" selection-start="2348" selection-end="2348" vertical-scroll-proportion="0.93046355">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TODO Lists" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TODO Lists">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -96,33 +132,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchNearbySynonyms.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonyms.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="36" selection-start="785" selection-end="826" vertical-scroll-proportion="-12.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchSimilarResult.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSimilarResult.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="607" selection-end="621" vertical-scroll-proportion="-10.285714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchAllWordsResult.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="23" selection-start="603" selection-end="603" vertical-scroll-proportion="-10.285714">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="searchEntrance.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -136,15 +145,6 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state line="24" column="33" selection-start="961" selection-end="961" vertical-scroll-proportion="-13.714286">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchSpecificWordResult.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="31" selection-start="636" selection-end="636" vertical-scroll-proportion="-10.285714">
               <folding />
             </state>
           </provider>
@@ -170,7 +170,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp" />
         <option value="$PROJECT_DIR$/Note.txt" />
-        <option value="$PROJECT_DIR$/deploy.sh" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWord.jsp" />
@@ -180,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSimilarResult.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp" />
+        <option value="$PROJECT_DIR$/deploy.sh" />
       </list>
     </option>
   </component>
@@ -1036,34 +1036,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="38" selection-start="1142" selection-end="1142" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="23" selection-start="554" selection-end="554" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="30" selection-start="198" selection-end="215" vertical-scroll-proportion="-5.714286">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="45" selection-start="2119" selection-end="2119" vertical-scroll-proportion="0.0">
@@ -1143,7 +1115,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="500" selection-end="500" vertical-scroll-proportion="0.22147651">
+        <state line="11" column="22" selection-start="489" selection-end="489" vertical-scroll-proportion="-6.285714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TODO Lists">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="0" selection-start="2348" selection-end="2348" vertical-scroll-proportion="0.93046355">
           <folding />
         </state>
       </provider>
