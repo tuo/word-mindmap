@@ -81,7 +81,7 @@
       <file leaf-file-name="deploy.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="7" selection-start="2863" selection-end="2863" vertical-scroll-proportion="0.82615894">
+            <state line="74" column="19" selection-start="2804" selection-end="2804" vertical-scroll-proportion="0.34602076">
               <folding />
             </state>
           </provider>
@@ -1143,7 +1143,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="7" selection-start="2863" selection-end="2863" vertical-scroll-proportion="0.82615894">
+        <state line="74" column="19" selection-start="2804" selection-end="2804" vertical-scroll-proportion="0.34602076">
           <folding />
         </state>
       </provider>

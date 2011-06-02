@@ -26,7 +26,7 @@ end
 
 
 def vmc_login
-  puts "input 'clarkhtse@gmail' for email in login..."
+  puts "input 'clarkhtse@gmail' for email in login....".yellow
   raise 'pls check out your internet connection.' unless system 'vmc login'
 end
 
@@ -70,8 +70,9 @@ def vmc_update
   puts "[ updating project 'word-mindmap' hosted in cloud foundry.................. ]".yellow
   raise 'there is problem when updating cloud foundry project.' unless system "vmc update word-mindmap --path=target/"
   File.open(".last_deploy_commit_number", "w"){ |f| f.write lastest_commit_number}
-  puts "[ update last commit number.....OK ]".yellow
-  puts "[ updating succeed~~ yep~~~~~ :) ]".green
+  puts "[ update last commit number.....OK ]".green
+  puts "[ updating succeed~~ yep~~~~~]".green
+  puts ":)~~".green
 end
 
 
