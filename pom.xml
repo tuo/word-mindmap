@@ -126,6 +126,12 @@
             </exclusions>
         </dependency>
 
+        <dependency>
+            <groupId>org.zeroturnaround</groupId>
+            <artifactId>jrebel-maven-plugin</artifactId>
+            <version>1.0.7</version>
+        </dependency>
+
     </dependencies>
 
     <build>
@@ -133,19 +139,19 @@
         <plugins>
             <!-- clean data/neo4j-store directory where neo4j stores its data to -->
             <plugin>
-              <artifactId>maven-clean-plugin</artifactId>
-              <version>2.4.1</version>
-              <configuration>
-                <filesets>
-                  <fileset>
-                    <directory>${neo4j-store-path}</directory>
-                    <includes>
-                      <include>**/*</include>
-                    </includes>
-                    <followSymlinks>false</followSymlinks>
-                  </fileset>
-                </filesets>
-              </configuration>
+                <artifactId>maven-clean-plugin</artifactId>
+                <version>2.4.1</version>
+                <configuration>
+                    <filesets>
+                        <fileset>
+                            <directory>${neo4j-store-path}</directory>
+                            <includes>
+                                <include>**/*</include>
+                            </includes>
+                            <followSymlinks>false</followSymlinks>
+                        </fileset>
+                    </filesets>
+                </configuration>
             </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -204,6 +210,7 @@
                     <webAppConfig>
                         <contextPath>/${project.name}</contextPath>
                     </webAppConfig>
+                    <scanIntervalSeconds>0</scanIntervalSeconds>
                 </configuration>
             </plugin>
             <!-- run mvn idea:idea-->
@@ -218,31 +225,45 @@
             </plugin>
             <!-- run mvn eclipse:eclipse-->
             <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-eclipse-plugin</artifactId>
-              <version>2.7</version>
-              <!-- Note 2.8 does not work with AspectJ aspect path -->
-              <configuration>
-                <downloadSources>true</downloadSources>
-                <downloadJavadocs>false</downloadJavadocs>
-                <wtpversion>2.0</wtpversion>
-                <additionalBuildcommands>
-                  <buildCommand>
-                    <name>org.eclipse.ajdt.core.ajbuilder</name>
-                    <arguments>
-                      <aspectPath>org.springframework.aspects</aspectPath>
-                    </arguments>
-                  </buildCommand>
-                  <buildCommand>
-                    <name>org.springframework.ide.eclipse.core.springbuilder</name>
-                  </buildCommand>
-                </additionalBuildcommands>
-                <additionalProjectnatures>
-                  <projectnature>org.eclipse.ajdt.ui.ajnature</projectnature>
-                  <projectnature>com.springsource.sts.roo.core.nature</projectnature>
-                  <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
-                </additionalProjectnatures>
-              </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-eclipse-plugin</artifactId>
+                <version>2.7</version>
+                <!-- Note 2.8 does not work with AspectJ aspect path -->
+                <configuration>
+                    <downloadSources>true</downloadSources>
+                    <downloadJavadocs>false</downloadJavadocs>
+                    <wtpversion>2.0</wtpversion>
+                    <additionalBuildcommands>
+                        <buildCommand>
+                            <name>org.eclipse.ajdt.core.ajbuilder</name>
+                            <arguments>
+                                <aspectPath>org.springframework.aspects</aspectPath>
+                            </arguments>
+                        </buildCommand>
+                        <buildCommand>
+                            <name>org.springframework.ide.eclipse.core.springbuilder</name>
+                        </buildCommand>
+                    </additionalBuildcommands>
+                    <additionalProjectnatures>
+                        <projectnature>org.eclipse.ajdt.ui.ajnature</projectnature>
+                        <projectnature>com.springsource.sts.roo.core.nature</projectnature>
+                        <projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>
+                    </additionalProjectnatures>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.zeroturnaround</groupId>
+                <artifactId>jrebel-maven-plugin</artifactId>
+                <version>1.0.7</version>
+                <executions>
+                    <execution>
+                        <id>generate-rebel-xml</id>
+                        <phase>process-resources</phase>
+                        <goals>
+                            <goal>generate</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
