@@ -15,7 +15,7 @@
     <script language="javascript" type="text/javascript" src="javascripts/bird-view-nodes.js"></script>
 
 </head>
-<body onload="init();">
+<body>
 <h1>Word MindMap</h1>
 <blockquote>
     A better way to view the relationship among words.
@@ -40,3 +40,6 @@
 
 </body>
 </html>
+<script type="text/javascript">
+        init();
+</script>

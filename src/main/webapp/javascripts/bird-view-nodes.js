@@ -331,6 +331,25 @@ function init(){
           duration: 500
         });
       };
+
+      //when first time user coming to graph, highlight the earth as
+      if(node.name == "earth"){
+            var isAnyOneSelected = false;
+            fd.graph.eachNode(function(n) {
+              if(n.selected){
+               isAnyOneSelected = true;
+              }
+            });
+            if(!isAnyOneSelected){
+                node.selected = true;
+                node.data.$dim = 17;
+                node.eachAdjacency(function(adj) {
+                 adj.data.$lineWidth=3;
+                 adj.data.$color ='#FF69B4';
+                });
+            }
+
+        };
       //Toggle a node selection when clicking
       //its name. This is done by animating some
       //node styles like its dimension and the color
@@ -353,7 +372,8 @@ function init(){
           node.eachAdjacency(function(adj) {
             adj.setDataset('end', {
               lineWidth: 3,
-              color: '#36acfb'
+              //36acfb
+              color: '#FF69B4'
             });
           });
         } else {
