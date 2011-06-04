@@ -54,4 +54,15 @@
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 
+    <jsp-config>
+        <jsp-property-group>
+          <description>Basic header/footer templating</description>
+          <url-pattern>*.jsp</url-pattern>
+            <el-ignored>false</el-ignored>
+          <include-prelude>/WEB-INF/templates/header.jspf</include-prelude>
+          <include-coda>/WEB-INF/templates/footer.jspf</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+
+
 </web-app>

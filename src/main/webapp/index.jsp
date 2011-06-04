@@ -2,15 +2,17 @@
 <!-- index.jsp  -->
 <head>
     <title>Word Mindmap</title>
- <link type="text/css" href="css/base.css" rel="stylesheet" />
-<link type="text/css" href="css/ForceDirected.css" rel="stylesheet" />
+    <link type="text/css" href="css/base.css" rel="stylesheet" />
+    <link type="text/css" href="css/ForceDirected.css" rel="stylesheet" />
+    <link type="text/css" href="css/bird-view-nodes.css" rel="stylesheet" />
 
 
-<!-- JIT Library File -->
-<script language="javascript" type="text/javascript" src="javascripts/jit-yc.js"></script>
+    <!-- JIT Library File -->
+    <script language="javascript" type="text/javascript" src="javascripts/jit-yc.js"></script>
 
-<!-- Example File -->
-<script language="javascript" type="text/javascript" src="javascripts/bird_view_nodes.js"></script>
+
+    <!-- Example File -->
+    <script language="javascript" type="text/javascript" src="javascripts/bird-view-nodes.js"></script>
 
 </head>
 <body onload="init();">
@@ -28,7 +30,8 @@
 <div id="center-container">
     <div id="infovis"></div>
 </div>
-
+<cite><b>Try to click the nodes.</b></cite>
+<cite>You can scroll to scale down the graph if graph filled in too much or you can move the nodes</cite>
 <div id="right-container">
 <div id="inner-details"></div>
 </div>

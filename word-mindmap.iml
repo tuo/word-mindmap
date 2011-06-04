@@ -38,8 +38,16 @@
       <excludeFolder url="file://$MODULE_DIR$/data" />
       <excludeFolder url="file://$MODULE_DIR$/ssh_clarkhtse" />
       <excludeFolder url="file://$MODULE_DIR$/target/classes" />
+<<<<<<< HEAD
       <excludeFolder url="file://$MODULE_DIR$/target/test-classes" />
       <excludeFolder url="file://$MODULE_DIR$/target/tmp" />
+=======
+      <excludeFolder url="file://$MODULE_DIR$/target/maven-archiver" />
+      <excludeFolder url="file://$MODULE_DIR$/target/surefire-reports" />
+      <excludeFolder url="file://$MODULE_DIR$/target/test-classes" />
+      <excludeFolder url="file://$MODULE_DIR$/target/war" />
+      <excludeFolder url="file://$MODULE_DIR$/target/word-mindmap" />
+>>>>>>> parent of 670da01... Revert "Added jspf for header and footer template."
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

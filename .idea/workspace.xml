@@ -60,28 +60,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="WordRepositoryExtension.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java">
+      <file leaf-file-name="searchSpecificWordResult.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="37" selection-start="430" selection-end="441" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordRepositoryImpl.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java">
+      <file leaf-file-name="searchSynonymsInAnyDepth.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="51" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
+            <state line="10" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="-5.714286">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WordService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java">
+      <file leaf-file-name="searchSynonymsInAnyDepthResult.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="20" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0">
+            <state line="14" column="0" selection-start="510" selection-end="510" vertical-scroll-proportion="-8.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="wordNotFound.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-2.857143">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.jspf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/footer.jspf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="21" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.jspf" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.jspf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="65" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.285714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="36" selection-start="1048" selection-end="1048" vertical-scroll-proportion="-18.285715">
               <folding />
             </state>
           </provider>
@@ -90,25 +126,16 @@
       <file leaf-file-name="WordController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="41" selection-start="2990" selection-end="3004" vertical-scroll-proportion="0.0">
+            <state line="39" column="13" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchEntrance.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp">
+      <file leaf-file-name="bird-view-nodes.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="35" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-20.571428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="85" selection-start="427" selection-end="427" vertical-scroll-proportion="0.24699828">
+            <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.09724473">
               <folding />
             </state>
           </provider>
@@ -117,34 +144,7 @@
       <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="12" selection-start="465" selection-end="465" vertical-scroll-proportion="-3.1923077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ForceDirected.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/ForceDirected.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bird_view_nodes.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/bird_view_nodes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="71" selection-start="71" selection-end="71" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchAllWordsResult.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="18" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+            <state line="1" column="20" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,22 +164,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSimilarResult.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/deploy.sh" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java" />
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/javascripts/example2.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/node.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonyms.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSimilarResult.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWord.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bird_view_nodes.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.jspf" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css" />
       </list>
     </option>
   </component>
@@ -456,6 +456,66 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jsp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="javascripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -523,6 +583,44 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1012,94 +1110,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="23" selection-start="772" selection-end="772" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="33" selection-start="961" selection-end="961" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="20" selection-start="7722" selection-end="7722" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="48" selection-start="2926" selection-end="2926" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="17" selection-start="548" selection-end="548" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="20" selection-start="1815" selection-end="1815" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="430" selection-end="441" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/service/WordService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="20" selection-start="570" selection-end="570" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="41" selection-start="2990" selection-end="3004" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="-4.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="35" selection-start="1229" selection-end="1229" vertical-scroll-proportion="-20.571428">
+        <state line="24" column="31" selection-start="760" selection-end="760" vertical-scroll-proportion="-13.714286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/ForceDirected.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonyms.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="0.0">
+        <state line="9" column="5" selection-start="273" selection-end="273" vertical-scroll-proportion="-5.142857">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="12" selection-start="465" selection-end="465" vertical-scroll-proportion="-3.1923077">
+        <state line="14" column="0" selection-start="446" selection-end="446" vertical-scroll-proportion="-8.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/bird_view_nodes.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSimilarResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="71" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="-4.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWord.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="239" selection-end="239" vertical-scroll-proportion="-5.714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="-5.714286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="510" selection-end="510" vertical-scroll-proportion="-8.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-2.857143">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/footer.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="21" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.jspf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="65" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.285714">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="13" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="85" selection-start="427" selection-end="427" vertical-scroll-proportion="0.24699828">
+        <state line="32" column="36" selection-start="1048" selection-end="1048" vertical-scroll-proportion="-18.285715">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="20" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.09724473">
           <folding />
         </state>
       </provider>
