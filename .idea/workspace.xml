@@ -132,19 +132,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bird-view-nodes.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bird-view-nodes.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.09724473">
+            <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="20" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+            <state line="4" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.07779579">
               <folding />
             </state>
           </provider>
@@ -177,9 +177,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bird_view_nodes.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.jspf" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
       </list>
     </option>
   </component>
@@ -1208,16 +1208,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="20" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
+        <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.09724473">
+        <state line="4" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.07779579">
           <folding />
         </state>
       </provider>
