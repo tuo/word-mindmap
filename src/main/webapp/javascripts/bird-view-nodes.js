@@ -147,7 +147,7 @@ function init(){
         }
       ], 
       "data": {
-        "$color": "#83548B"
+        "$color": "blue"
       }, 
       "id": "blue", 
       "name": "blue"
@@ -199,7 +199,7 @@ function init(){
         } 
       ], 
       "data": {
-        "$color": "#83548B"
+        "$color": "yellow"
       }, 
       "id": "yellow", 
       "name": "yellow"

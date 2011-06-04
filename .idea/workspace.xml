@@ -60,15 +60,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searchSpecificWordResult.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="searchSynonymsInAnyDepth.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
           <provider selected="true" editor-type-id="text-editor">
@@ -144,7 +135,16 @@
       <file leaf-file-name="base.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.07779579">
+            <state line="1" column="12" selection-start="25" selection-end="25" vertical-scroll-proportion="0.018838305">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bird-view-nodes.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="120" column="26" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -164,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/javascripts/example2.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/node.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp" />
@@ -179,6 +178,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.jspf" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
       </list>
     </option>
@@ -1110,13 +1110,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="103" selection-end="103" vertical-scroll-proportion="-4.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="31" selection-start="760" selection-end="760" vertical-scroll-proportion="-13.714286">
@@ -1215,9 +1208,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="26" selection-start="2885" selection-end="2885" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="114" selection-end="114" vertical-scroll-proportion="0.07779579">
+        <state line="1" column="12" selection-start="25" selection-end="25" vertical-scroll-proportion="0.018838305">
           <folding />
         </state>
       </provider>
