@@ -22,7 +22,7 @@ Then go to browser and input:
 
 deploy to that:
 
-            ./deploy.sh
+            ruby deploy.sh
 
 ### Using directly
 

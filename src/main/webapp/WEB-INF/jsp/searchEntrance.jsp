@@ -18,6 +18,7 @@
    <li><a href="openSearchSpecificWord.html">Search specific word by name(Exact Match)</a></li>
    <li><a href="openSearchNearbySynonyms.html">Search nearby synonyms for word</a></li>
    <li><a href="openSearchSynonymsInAnyDepth.html">Search all synonyms for word in any depth</a></li>
+    <li><a href="searchAllWords.html">Search all words from earth</a></li>
 </ul>
 
 <cite>Other operations are still working in progress..........</cite>

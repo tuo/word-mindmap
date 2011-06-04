@@ -18,6 +18,8 @@ public interface WordService {
 
     List<Word> searchSynonymsInAnyDepthFor(String wordName) throws WordNotFoundException;
 
+    List<Word> getAllWords();
+
     @Transactional
     void createWord(Word word);
 

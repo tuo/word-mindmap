@@ -73,8 +73,8 @@ public class WordController {
 
     @RequestMapping(value = "searchAllWords.html")
     public String searchAllWords(ModelMap model) {
-        String result = Entrance.trasaverAll();
-        model.addAttribute("result", result == "" ? "No Match" : result);
+        List<Word> result = wordService.getAllWords();
+        model.addAttribute("result", result);
         return "searchAllWordsResult";
     }
 

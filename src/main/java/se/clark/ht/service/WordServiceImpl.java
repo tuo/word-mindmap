@@ -48,6 +48,17 @@ public class WordServiceImpl implements WordService {
 
     }
 
+    @Override
+    public List<Word> getAllWords() {
+        Word earth = wordRepository.findWordNamed("earth");
+
+       List<Word> result = new ArrayList<Word>();
+        for(Word word : wordRepository.getAllWords(earth)){
+            result.add(word);
+        }
+        return result;
+    }
+
 
     @Transactional
     public void createWord(Word word) {

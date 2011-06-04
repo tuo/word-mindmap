@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.domain.Word;
 
-import static se.clark.ht.domain.WordRelationshipTypes.SYNONYM_WITH;
+import static se.clark.ht.domain.WordRelationshipTypes.*;
 
 
 @Repository
@@ -40,6 +40,17 @@ public class WordRepositoryImpl implements WordRepositoryExtension {
     public Iterable<Word> findSynonymsInAnyDepthFor(Word word) {
         TraversalDescription traversal = Traversal.description().relationships(SYNONYM_WITH).evaluator(Evaluators.excludeStartPosition());
         return wordRepository.findAllByTraversal(word, traversal);
+    }
+
+    @Override
+    public Iterable<Word> getAllWords(Word fromWord) {
+       TraversalDescription traversal = Traversal.description()
+               .relationships(SYNONYM_WITH)
+               .relationships(EXTENSION_WITH)
+               .relationships(IDIOM_WITH)
+               .relationships(ANTONYM_WITH)
+               .evaluator(Evaluators.excludeStartPosition());
+       return wordRepository.findAllByTraversal(fromWord, traversal);
     }
 
 }

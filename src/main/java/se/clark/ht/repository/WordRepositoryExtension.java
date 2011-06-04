@@ -14,4 +14,5 @@ public interface WordRepositoryExtension {
 
     public Iterable<Word> findSynonymsInAnyDepthFor(Word word);
 
+    public Iterable<Word> getAllWords(Word fromWord);
 }
