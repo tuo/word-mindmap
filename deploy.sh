@@ -1,4 +1,4 @@
-#!/Users/twer/.rvm/rubies/ree-1.8.7-2010.02/bin/ruby
+#!/usr/bin/env ruby
 
 #http://www.tobinharris.com/past/2010/5/10/analyse-your-git-log-with-ruby/
 #http://www.jukie.net/bart/blog/pimping-out-git-log
