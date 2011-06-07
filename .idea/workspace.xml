@@ -60,91 +60,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searchSynonymsInAnyDepthResult.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp">
+      <file leaf-file-name="word-mindmap.iml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/word-mindmap.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="72" selection-end="446" vertical-scroll-proportion="-1.7142857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchAllWordsResult.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="-7.428571">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deploy.sh" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/deploy.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="20" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="14" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jit-yc.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/jit-yc.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="9672" selection-start="10798" selection-end="10798" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="62" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-20.571428">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="searchSimilarResult.jsp" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSimilarResult.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="-4.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bird-view-nodes.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="1" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bird-view-nodes.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="398" column="0" selection-start="10077" selection-end="10077" vertical-scroll-proportion="1.8540032">
+            <state line="40" column="6" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.7453416">
               <folding />
             </state>
           </provider>
@@ -164,7 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchEntrance.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonyms.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp" />
@@ -180,6 +98,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js" />
+        <option value="$PROJECT_DIR$/word-mindmap.iml" />
       </list>
     </option>
   </component>
@@ -252,7 +171,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="0" />
+    <option name="STATE" value="2" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -325,35 +244,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="word-mindmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spring-mvc-webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="word-mindmap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="se.clark.ht" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -622,6 +512,35 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring-mvc-webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="word-mindmap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="se.clark.ht" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -1052,7 +971,6 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1064,10 +982,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12387938" sideWeight="0.69970846" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25203916" sideWeight="0.6705539" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32952693" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.68221575" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="28" y="308" width="1227" height="205" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39941692" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1110,114 +1029,84 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="-5.714286">
-          <folding />
-        </state>
+        <state line="10" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="-5.714286" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/wordNotFound.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-2.857143">
-          <folding />
-        </state>
+        <state line="5" column="0" selection-start="128" selection-end="128" vertical-scroll-proportion="-2.857143" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/footer.jspf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1" column="21" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.jspf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="65" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.285714">
-          <folding />
-        </state>
+        <state line="11" column="65" selection-start="567" selection-end="567" vertical-scroll-proportion="-6.285714" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/web/WordController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="39" column="13" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="13" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSimilarResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="-4.0">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="-4.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="72" selection-end="446" vertical-scroll-proportion="-1.7142857">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="72" selection-end="446" vertical-scroll-proportion="-1.7142857" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchAllWordsResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="-7.428571">
-          <folding />
-        </state>
+        <state line="13" column="0" selection-start="405" selection-end="405" vertical-scroll-proportion="-7.428571" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="20" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="20" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="14" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="24" column="14" selection-start="545" selection-end="545" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/jit-yc.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="9672" selection-start="10798" selection-end="10798" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="9672" selection-start="10798" selection-end="10798" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="62" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-20.571428">
-          <folding />
-        </state>
+        <state line="36" column="62" selection-start="1209" selection-end="1209" vertical-scroll-proportion="-20.571428" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="1" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="30" column="1" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="398" column="0" selection-start="10077" selection-end="10077" vertical-scroll-proportion="1.8540032">
+        <state line="398" column="0" selection-start="10077" selection-end="10077" vertical-scroll-proportion="1.8540032" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word-mindmap.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="6" selection-start="2347" selection-end="2347" vertical-scroll-proportion="0.7453416">
           <folding />
         </state>
       </provider>
