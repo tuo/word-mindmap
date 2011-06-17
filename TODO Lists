@@ -23,3 +23,8 @@
  and later just update the project: vmc update word-mindmap --path=target/
 
  Diagnose the app on cloud foundry: vmc apps
+
+
+
+1st: pop up the data when start up (i.e : if that directory already exist , skip it.)
+2nd: JRebel
