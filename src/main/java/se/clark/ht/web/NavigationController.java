@@ -2,6 +2,12 @@ package se.clark.ht.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import se.clark.ht.domain.Word;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class NavigationController {
@@ -20,5 +26,8 @@ public class NavigationController {
     public String openSearchSynonymsInAnyDepth(){
         return "searchSynonymsInAnyDepth";
     }
+
+
+
 
 }

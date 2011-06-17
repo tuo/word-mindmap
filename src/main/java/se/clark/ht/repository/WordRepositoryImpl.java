@@ -1,6 +1,7 @@
 package se.clark.ht.repository;
 
 
+import org.neo4j.graphdb.Path;
 import org.neo4j.graphdb.traversal.Evaluators;
 import org.neo4j.graphdb.traversal.TraversalDescription;
 import org.neo4j.kernel.Traversal;
@@ -50,6 +51,7 @@ public class WordRepositoryImpl implements WordRepositoryExtension {
                .relationships(IDIOM_WITH)
                .relationships(ANTONYM_WITH)
                .evaluator(Evaluators.excludeStartPosition());
+
        return wordRepository.findAllByTraversal(fromWord, traversal);
     }
 

@@ -11,6 +11,8 @@
     <script language="javascript" type="text/javascript" src="javascripts/jit-yc.js"></script>
 
 
+    <script language="javascript" type="text/javascript" src="javascripts/jquery-1.6.1.min.js"></script>
+
     <!-- Example File -->
     <script language="javascript" type="text/javascript" src="javascripts/bird-view-nodes.js"></script>
 
@@ -20,7 +22,7 @@
 <blockquote>
     A better way to view the relationship among words.
 </blockquote>
-<h4><a href="populateData.html"> start experiencing...........</a></h4>
+<h4 id="shit"><a href="populateData.html"> start experiencing...........</a></h4>
 
 <hr/>
 <i>contribute to github: <a href="https://github.com/Tuo-Huang/word-mindmap">https://github.com/Tuo-Huang/word-mindmap</a></i>
@@ -41,5 +43,13 @@
 </body>
 </html>
 <script type="text/javascript">
-        init();
+//        init();
+$(document).ready(function() {
+    $.ajax({
+        url: "words.html",
+        success: function(data){
+            init(eval(data));
+        }
+    });
+});
 </script>

@@ -27,232 +27,232 @@ var Log = {
 };
 
 
-function init() {
+function init(json) {
     // init data
-    var json = [
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "sky",
-                    "nodeFrom": "earth",
-                    "data": {
-                        "$color":"#dd99dd",
-                        "relatedOn": "from sky to earth"
-                    }
-                },
-                {
-                    "nodeTo": "ocean",
-                    "nodeFrom": "earth",
-                    "data": {
-                        "relatedOn": "from ocean to earth"
-                    }
-                },
-                {
-                    "nodeTo": "soil",
-                    "nodeFrom": "earth",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "ground",
-                    "nodeFrom": "earth",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "land",
-                    "nodeFrom": "earth",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "globe",
-                    "nodeFrom": "earth",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "mud",
-                    "nodeFrom": "earth",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "world",
-                    "nodeFrom": "earth",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "red",
-                "$type": "star"
-            },
-            "id": "earth",
-            "name": "earth"
-        },
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "ocean",
-                    "nodeFrom": "sky",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "earth",
-                    "nodeFrom": "sky",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "#83548B"
-            },
-            "id": "sky",
-            "name": "sky"
-        },
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "sky",
-                    "nodeFrom": "ocean",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "earth",
-                    "nodeFrom": "ocean",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "blue",
-                    "nodeFrom": "ocean",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "#83548B"
-            },
-            "id": "ocean",
-            "name": "ocean"
-        },
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "ocean",
-                    "nodeFrom": "blue",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "depressed",
-                    "nodeFrom": "blue",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "happy",
-                    "nodeFrom": "blue",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "yellow",
-                    "nodeFrom": "blue",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "blue"
-            },
-            "id": "blue",
-            "name": "blue"
-        },
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "blue",
-                    "nodeFrom": "depressed",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "happy",
-                    "nodeFrom": "depressed",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "#83548B"
-            },
-            "id": "depressed",
-            "name": "depressed"
-        },
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "blue",
-                    "nodeFrom": "happy",
-                    "data": {}
-                },
-                {
-                    "nodeTo": "depressed",
-                    "nodeFrom": "happy",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "#83548B"
-            },
-            "id": "happy",
-            "name": "happy"
-        },
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "blue",
-                    "nodeFrom": "yellow",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "yellow"
-            },
-            "id": "yellow",
-            "name": "yellow"
-        }
-        ,
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "earth",
-                    "nodeFrom": "mud",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "#83548B"
-            },
-            "id": "mud",
-            "name": "mud"
-        },
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "word",
-                    "nodeFrom": "world",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "#83548B"
-            },
-            "id": "world",
-            "name": "world"
-        },
-        {
-            "adjacencies": [
-                {
-                    "nodeTo": "in a word",
-                    "nodeFrom": "word",
-                    "data": {}
-                }
-            ],
-            "data": {
-                "$color": "#83548B"
-            },
-            "id": "word",
-            "name": "word"
-        }
-    ];
+//    var json = [
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "sky",
+//                    "nodeFrom": "earth",
+//                    "data": {
+//                        "$color":"#dd99dd",
+//                        "relatedOn": "from sky to earth"
+//                    }
+//                },
+//                {
+//                    "nodeTo": "ocean",
+//                    "nodeFrom": "earth",
+//                    "data": {
+//                        "relatedOn": "from ocean to earth"
+//                    }
+//                },
+//                {
+//                    "nodeTo": "soil",
+//                    "nodeFrom": "earth",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "ground",
+//                    "nodeFrom": "earth",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "land",
+//                    "nodeFrom": "earth",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "globe",
+//                    "nodeFrom": "earth",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "mud",
+//                    "nodeFrom": "earth",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "world",
+//                    "nodeFrom": "earth",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "red",
+//                "$type": "star"
+//            },
+//            "id": "earth",
+//            "name": "earth"
+//        },
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "ocean",
+//                    "nodeFrom": "sky",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "earth",
+//                    "nodeFrom": "sky",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "#83548B"
+//            },
+//            "id": "sky",
+//            "name": "sky"
+//        },
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "sky",
+//                    "nodeFrom": "ocean",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "earth",
+//                    "nodeFrom": "ocean",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "blue",
+//                    "nodeFrom": "ocean",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "#83548B"
+//            },
+//            "id": "ocean",
+//            "name": "ocean"
+//        },
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "ocean",
+//                    "nodeFrom": "blue",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "depressed",
+//                    "nodeFrom": "blue",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "happy",
+//                    "nodeFrom": "blue",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "yellow",
+//                    "nodeFrom": "blue",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "blue"
+//            },
+//            "id": "blue",
+//            "name": "blue"
+//        },
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "blue",
+//                    "nodeFrom": "depressed",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "happy",
+//                    "nodeFrom": "depressed",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "#83548B"
+//            },
+//            "id": "depressed",
+//            "name": "depressed"
+//        },
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "blue",
+//                    "nodeFrom": "happy",
+//                    "data": {}
+//                },
+//                {
+//                    "nodeTo": "depressed",
+//                    "nodeFrom": "happy",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "#83548B"
+//            },
+//            "id": "happy",
+//            "name": "happy"
+//        },
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "blue",
+//                    "nodeFrom": "yellow",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "yellow"
+//            },
+//            "id": "yellow",
+//            "name": "yellow"
+//        }
+//        ,
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "earth",
+//                    "nodeFrom": "mud",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "#83548B"
+//            },
+//            "id": "mud",
+//            "name": "mud"
+//        },
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "word",
+//                    "nodeFrom": "world",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "#83548B"
+//            },
+//            "id": "world",
+//            "name": "world"
+//        },
+//        {
+//            "adjacencies": [
+//                {
+//                    "nodeTo": "in a word",
+//                    "nodeFrom": "word",
+//                    "data": {}
+//                }
+//            ],
+//            "data": {
+//                "$color": "#83548B"
+//            },
+//            "id": "word",
+//            "name": "word"
+//        }
+//    ];
     // end
 
     $jit.ForceDirected.Plot.EdgeTypes.implement({

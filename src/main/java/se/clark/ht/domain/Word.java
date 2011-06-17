@@ -35,7 +35,9 @@ public class Word {
     @RelatedTo(elementClass = Word.class, type = "ANTONYM_WITH", direction = Direction.BOTH)
     private Set<Word> antonyms;
 
+
     public Word() {
+
     }
 
 
@@ -125,4 +127,5 @@ public class Word {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.ANTONYM_WITH.name());
         relationship.on(onChinese, onEnglish);
     }
+
 }

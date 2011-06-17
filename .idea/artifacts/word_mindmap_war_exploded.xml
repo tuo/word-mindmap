@@ -8,6 +8,7 @@
           <element id="module-output" name="word-mindmap" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: net.minidev:json-smart:1.0.6.3" />
           <element id="library" level="project" name="Maven: org.springframework:spring-test:3.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.apache.maven:maven-plugin-api:2.0.6" />
           <element id="library" level="project" name="Maven: org.apache.maven:maven-artifact:2.0.6" />
