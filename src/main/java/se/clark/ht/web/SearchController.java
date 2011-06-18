@@ -138,8 +138,8 @@ public class SearchController {
 //            "#999900", "#99CC00", "#FFCCCC", "#FFFF00",
 //            "#0000CC", "#"};
     String[] colors = {
-        "Yellow","#333300","Fuchsia ","Purple",
-        "Lime","Maroon","Navy","Gray",
+        "Yellow","Maroon","Fuchsia ","Purple",
+        "Lime","Navy","Gray",
         "Red","Silver","Teal","White",
         "#FFCC33","Blue", "Green"};
 

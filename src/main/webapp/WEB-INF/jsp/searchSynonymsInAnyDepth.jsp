@@ -58,6 +58,7 @@ $(document).ready(function() {
             success: function(data){
                 //clear previous graph
                 $("#infovis").empty();
+                $("#color-to-relationship").empty();
 
                 var result =  eval("("  + data + ")");
                 var data = result["data"];
