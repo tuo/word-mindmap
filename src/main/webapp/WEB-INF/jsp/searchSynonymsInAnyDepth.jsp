@@ -38,7 +38,7 @@
             <label>English Meaning </label>
          <input type="input" name="englishMeaning" size="20" value=""/>
         <br/>
-        <input type="submit" name="button" value="submit"/>
+        <input type="submit" name="button" value="create word"/>
    </fieldset>
 </form>
 
@@ -61,7 +61,7 @@
         <input type="radio" name="whichType" value="antonym_with"> antonym<br>
         <input type="radio" name="whichType" value="idiom_with"> idiom
             <input type="radio" name="whichType" value="extension_with"> extension <br>
-        <input type="submit" name="button" value="submit"/>
+        <input type="submit" name="button" value="create relationship"/>
    </fieldset>
 </form>
 </div>
