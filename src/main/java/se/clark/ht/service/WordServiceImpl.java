@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.domain.Word;
+import se.clark.ht.domain.WordRelationshipTypes;
 import se.clark.ht.exception.WordNotFoundException;
 import se.clark.ht.repository.WordRepositoryExtension;
 
@@ -63,6 +64,28 @@ public class WordServiceImpl implements WordService {
     @Transactional
     public void createWord(Word word) {
         wordRepository.save(word);
+    }
+
+    @Override
+    @Transactional
+    public void createRelationshipBetween(Word word, Word anotherWord, String onChinese, String onEnglish, String whichType) {
+
+        switch (WordRelationshipTypes.valueOf(whichType.toUpperCase())){
+            case SYNONYM_WITH:
+                word.synonymWith(anotherWord, onChinese, onEnglish);
+                break;
+            case ANTONYM_WITH:
+                word.antonymWith(anotherWord, onChinese, onEnglish);
+                break;
+            case IDIOM_WITH:
+                word.idiomWith(anotherWord, onChinese, onEnglish);
+                break;
+            case EXTENSION_WITH:
+                word.extendWith(anotherWord, onChinese, onEnglish);
+                break;
+            default:  break;
+        }
+
     }
 
 

@@ -23,5 +23,6 @@ public interface WordService {
     @Transactional
     void createWord(Word word);
 
-
+    @Transactional
+    void createRelationshipBetween(Word word, Word anotherWord, String onChinese, String onEnglish, String whichType);
 }

@@ -30,6 +30,13 @@ a {
     margin: 7px;
 }
 
+.clear{
+    clear: both;
+}
+#form-container{
+    overflow: auto;
+    float: left;
+}
 
 form{
  background: #9cbc2c;
@@ -37,10 +44,25 @@ form{
  -webkit-border-radius: 5px;
  border-radius: 5px;
  padding: 5px;
- width: 600px;
+ margin-right:10px;
 }
 
-form fieldset {
+#search{
+    width: 496px;
+    float:left;
+}
+#create-word{
+    width: 465px;
+    float:left;
+}
+#create-relationship{
+    width: 200px;
+    float:left;
+}
+
+
+
+form  fieldset {
 border: none;
 margin-bottom: 1px;
 }

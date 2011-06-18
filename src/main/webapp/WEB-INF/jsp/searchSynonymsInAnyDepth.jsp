@@ -1,9 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <script language="javascript" type="text/javascript" src="javascripts/search-words-jit-customization.js"></script>
 
-<h2>Search</h2>
+<h2>Search / Create</h2>
 
-<form action="searchSynonymsInAnyDepth.html" id="searchForm" class="round">
+<div id="form-container">
+<form action="searchSynonymsInAnyDepth.html" id="search" class="round">
    <fieldset>
         <%--<legend>Search</legend>--%>
         <label>Word Name </label>
@@ -20,7 +21,52 @@
    </fieldset>
 </form>
 
-<hr/>
+<form action="createWord.html" id="create-word" class="round">
+   <fieldset>
+        <%--<legend>Search</legend>--%>
+        <label>Word Name </label>
+         <input type="input" name="name" size="6" value=""/>
+            <label>Chinese Meaning </label>
+         <input type="input" name="chineseMeaning" size="20" value=""/>
+
+        <br/>
+
+            <label>Word Type </label>
+             <input type="input" name="type" size="7" value=""/>
+
+
+            <label>English Meaning </label>
+         <input type="input" name="englishMeaning" size="20" value=""/>
+        <br/>
+        <input type="submit" name="button" value="submit"/>
+   </fieldset>
+</form>
+
+<form action="createRelationship.html" id="create-relationship" class="round">
+   <fieldset>
+        <%--<legend>Search</legend>--%>
+        <label>Word Name</label>
+         <input type="input" name="wordName" size="20" value=""/>
+        <br/>
+        <label>Another Word Name </label>
+         <input type="input" name="anotherWordName" size="20" value=""/>
+        <br/>
+        <label>onChinese</label>
+         <input type="input" name="onChinese" size="20" value=""/>
+        <br/>
+        <label>onEnglish </label>
+         <input type="input" name="onEnglish" size="20" value=""/>
+        <br/>
+        <input type="radio" name="whichType" value="synonym_with" checked> synonym
+        <input type="radio" name="whichType" value="antonym_with"> antonym<br>
+        <input type="radio" name="whichType" value="idiom_with"> idiom
+            <input type="radio" name="whichType" value="extension_with"> extension <br>
+        <input type="submit" name="button" value="submit"/>
+   </fieldset>
+</form>
+</div>
+
+<hr class="clear"/>
 
 
 
@@ -44,7 +90,7 @@
 
 $(document).ready(function() {
 
-    $('#searchForm').submit(function(event){
+    $('#search').submit(function(event){
 	    event.preventDefault();
         var name = $('input[name=name]').val();
 
@@ -86,11 +132,13 @@ $(document).ready(function() {
 //                $("#color-to-relationship")
 
                 init(data);
-        }
-    });
+            }
+        });
     });
 
-    $('#searchForm').submit();
+
+
+    $('#search').submit();
 
 });
 

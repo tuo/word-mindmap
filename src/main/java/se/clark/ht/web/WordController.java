@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import se.clark.ht.domain.Relationship;
 import se.clark.ht.domain.Word;
+import se.clark.ht.domain.WordRelationshipTypes;
 import se.clark.ht.exception.WordNotFoundException;
 import se.clark.ht.service.WordService;
 
@@ -91,6 +92,10 @@ public class WordController {
         model.addAttribute("result", result);
         return "searchAllWordsResult";
     }
+
+
+
+
 
 
     @ExceptionHandler(WordNotFoundException.class)
@@ -185,6 +190,33 @@ public class WordController {
         }else{
             logger.warn("neo4j db already exist, skip it ...............");
         }
+    }
+
+
+    @RequestMapping(value = "/createWord.html")
+    public String createWord(@RequestParam(value = "name", required = false) String name,
+            @RequestParam(value = "type", required = false) String type,
+            @RequestParam(value = "chineseMeaning", required = false) String chineseMeaning,
+            @RequestParam(value = "englishMeaning", required = false) String englishMeaning,
+            ModelMap model) {
+
+        wordService.createWord(new Word(name,type,chineseMeaning,englishMeaning));
+        return "searchSynonymsInAnyDepth";
+    }
+
+    @RequestMapping(value = "/createRelationship.html")
+    public String createRelationship(@RequestParam(value = "wordName", required = false) String wordName,
+            @RequestParam(value = "anotherWordName", required = false) String anotherWordName,
+            @RequestParam(value = "onChinese", required = false) String onChinese,
+            @RequestParam(value = "onEnglish", required = false) String onEnglish,
+            @RequestParam(value = "whichType", required = false) String whichType,
+            ModelMap model) {
+
+        Word word = wordService.searchExactWordByName(wordName);
+        Word anotherWord = wordService.searchExactWordByName(anotherWordName);
+
+        wordService.createRelationshipBetween(word, anotherWord, onChinese, onEnglish, whichType);
+        return "searchSynonymsInAnyDepth";
     }
 
 }
