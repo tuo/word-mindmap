@@ -21,6 +21,7 @@ import se.clark.ht.domain.WordRelationshipTypes;
 import se.clark.ht.exception.WordNotFoundException;
 import se.clark.ht.service.WordService;
 
+import java.io.File;
 import java.util.*;
 
 import static se.clark.ht.domain.WordRelationshipTypes.SYNONYM_WITH;
@@ -45,9 +46,20 @@ public class WordController {
     @RequestMapping(value = "populateData.html")
     public ModelAndView populateWords(ModelMap model) {
         logger.info("start populating words to neo4j local storage..........");
-        Neo4jHelper.cleanDb(graphDatabaseContext);
-        wordService.populateSomeWords();
-        logger.info("populating words to neo4j local storage ended..........");
+
+
+        //using the relationship file size to determine whether neo4j db is there
+        //need a better way to handle it
+        File neo4jRelDb = new File("data/neo4j-db/neostore.relationshipstore.db");
+        long length = neo4jRelDb.length();
+
+        if(length == 0){
+            Neo4jHelper.cleanDb(graphDatabaseContext);
+            wordService.populateSomeWords();
+            logger.error("no neo4j exists, populating words to neo4j local storage ended..........");
+        }else{
+            logger.error("neo4j db already exist, skip it ...............");
+        }
 
         return new ModelAndView("redirect:startSearching.html");
     }
