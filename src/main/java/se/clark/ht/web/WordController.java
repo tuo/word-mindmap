@@ -46,7 +46,13 @@ public class WordController {
 
         createOrSkipNeo4jDataStore();
 
-        return new ModelAndView("redirect:startSearching.html");
+        return new ModelAndView("redirect:openSearchSynonymsInAnyDepth.html");
+    }
+
+
+    @RequestMapping(value = "openSearchSynonymsInAnyDepth.html")
+    public String openSearchSynonymsInAnyDepth(){
+        return "searchSynonymsInAnyDepth";
     }
 
     @RequestMapping(value = "startSearching.html")

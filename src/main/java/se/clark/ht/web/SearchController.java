@@ -138,9 +138,9 @@ public class SearchController {
 //            "#999900", "#99CC00", "#FFCCCC", "#FFFF00",
 //            "#0000CC", "#"};
     String[] colors = {
-        "Yellow","Maroon","Fuchsia ","Purple",
+        "Yellow","Teal","Fuchsia ","Purple",
         "Lime","Navy","Gray",
-        "Red","Silver","Teal","White",
+        "Red","Silver","Maroon","White",
         "#FFCC33","Blue", "Green"};
 
     private String getColorBy(Relationship relationship, Map<String, String> relToColorMap) {

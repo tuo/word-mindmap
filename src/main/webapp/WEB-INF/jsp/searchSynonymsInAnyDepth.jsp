@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <script language="javascript" type="text/javascript" src="javascripts/search-words-jit-customization.js"></script>
 
-<h2>Search All Synonyms(means any depth lookup)</h2>
-<br/>
-<form action="searchSynonymsInAnyDepth.html" id="searchForm">
+<h2>Search</h2>
+
+<form action="searchSynonymsInAnyDepth.html" id="searchForm" class="round">
    <fieldset>
-        <legend>Search: </legend>
+        <%--<legend>Search</legend>--%>
         <label>Word Name </label>
          <input type="search" name="name" size="20" value="earth"/>
         <br/>
@@ -22,7 +22,7 @@
 
 <hr/>
 
-<a href="startSearching.html">back to search operation home page.</a>
+
 
 
 <div id="container">
@@ -89,3 +89,4 @@ $(document).ready(function() {
 
 
 </script>
+
