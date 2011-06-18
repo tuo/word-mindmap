@@ -1,6 +1,5 @@
 package se.clark.ht.web;
 
-import net.minidev.json.JSONObject;
 import net.minidev.json.JSONValue;
 import org.apache.log4j.Logger;
 import org.neo4j.graphdb.traversal.Evaluators;
@@ -14,10 +13,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import se.clark.ht.Entrance;
 import se.clark.ht.domain.Relationship;
 import se.clark.ht.domain.Word;
-import se.clark.ht.domain.WordRelationshipTypes;
 import se.clark.ht.exception.WordNotFoundException;
 import se.clark.ht.service.WordService;
 
@@ -47,19 +44,7 @@ public class WordController {
     public ModelAndView populateWords(ModelMap model) {
         logger.info("start populating words to neo4j local storage..........");
 
-
-        //using the relationship file size to determine whether neo4j db is there
-        //need a better way to handle it
-        File neo4jRelDb = new File("data/neo4j-db/neostore.relationshipstore.db");
-        long length = neo4jRelDb.length();
-
-        if(length == 0){
-            Neo4jHelper.cleanDb(graphDatabaseContext);
-            wordService.populateSomeWords();
-            logger.error("no neo4j exists, populating words to neo4j local storage ended..........");
-        }else{
-            logger.error("neo4j db already exist, skip it ...............");
-        }
+        createOrSkipNeo4jDataStore();
 
         return new ModelAndView("redirect:startSearching.html");
     }
@@ -111,6 +96,9 @@ public class WordController {
 
     @RequestMapping(value = "/words.html", method = RequestMethod.GET)
     public @ResponseBody String getWordsJson() {
+
+        createOrSkipNeo4jDataStore();
+
         TraversalDescription traversal = Traversal.description()
                 .relationships(SYNONYM_WITH)
                 .relationships(EXTENSION_WITH)
@@ -121,7 +109,6 @@ public class WordController {
 
         Word earth = wordService.searchExactWordByName("earth");
         Iterable<EntityPath<Word, Word>> paths = earth.findAllPathsByTraversal(traversal);
-        System.out.println("-----------:" + paths);
         Map<Word, Set<Relationship>> words = new HashMap<Word, Set<Relationship>>();
 
         for (EntityPath<Word, Word> path : paths) {
@@ -144,7 +131,7 @@ public class WordController {
         List root = new LinkedList();
 
         for (Word key : words.keySet()) {
-            System.out.println("Key: " + key + ", Value: " + words.get(key));
+//            System.out.println("Key: " + key + ", Value: " + words.get(key));
 
             Map adjacencies = new LinkedHashMap();
             List nodes = new LinkedList();
@@ -172,51 +159,26 @@ public class WordController {
                 nodeData.put("$color", "#83548B");
             }
             adjacencies.put("data", nodeData);
-            //            "data": {
-//                "$color": "red",
-//                "$type": "star"
-//            }
-
             root.add(adjacencies);
         }
-
-
-        String jsonText = JSONValue.toJSONString(root);
-        return jsonText;
-
-//
-//            Relationship relationship = relaIter.next();
-//            sb.append(relationship.getWord()  + "  to " + relationship.getAnotherWord() + " on " + relationship.getOnEnglish()) ;
-
-
-//      return "{" +
-//              "name: lebron" +
-//              "" +
-//              "}";
-
-//            TraversalDescription traversal = Traversal.description()
-//                    .relationships(WordRelationshipTypes.SYNONYM_WITH)
-////                .relationships(EXTENSION_WITH)
-////                .relationships(IDIOM_WITH)
-////                .relationships(ANTONYM_WITH)
-//                    .breadthFirst()
-//                    .evaluator(Evaluators.excludeStartPosition());
-//            Iterable<EntityPath<Word, Word>> paths = earth.findAllPathsByTraversal(traversal);
-//
-//            for (EntityPath<Word, Word> path : paths) {
-//                StringBuilder sb = new StringBuilder();
-//
-//                Iterator<Relationship> relaIter = path.relationshipEntities(Relationship.class).iterator();
-//
-//                while (relaIter.hasNext()) {
-//                    sb.append(relaIter.next());
-//                    if (relaIter.hasNext()) sb.append(" --> ");
-//                }
-//                System.out.println(sb);
-//            }
-
-
+        return JSONValue.toJSONString(root);
     }
 
+
+    private void createOrSkipNeo4jDataStore() {
+
+        //using the relationship file size to determine whether neo4j db is there
+        //need a better way to handle it
+        File neo4jRelDb = new File("data/neo4j-db/neostore.relationshipstore.db");
+        long length = neo4jRelDb.length();
+
+        if(length == 0){
+            Neo4jHelper.cleanDb(graphDatabaseContext);
+            wordService.populateSomeWords();
+            logger.warn("no neo4j exists, populating words to neo4j local storage ended..........");
+        }else{
+            logger.warn("neo4j db already exist, skip it ...............");
+        }
+    }
 
 }
