@@ -1,4 +1,4 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <h2>Search Nearby Synonyms(means 1 depth lookup)</h2>
 <br/>
 <form action="searchNearbySynonyms.html">

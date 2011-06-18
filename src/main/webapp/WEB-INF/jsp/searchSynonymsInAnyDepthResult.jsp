@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <h1> Word to search: <b>earth</b></h1>
 <h4>Result(any depth) is: </h4>
 

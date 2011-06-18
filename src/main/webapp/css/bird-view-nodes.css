@@ -3,7 +3,7 @@
     width:100%;
     margin:0 auto;
     position:relative;
-    height:450px;
+    overflow: auto;
 }
 
 #center-container {
@@ -11,7 +11,7 @@
     background-color:#1a1a1a;
     color:#ccc;
     float:left;
-    height:100%;
+    height:450px;
 }
 #right-container{
     float:right;

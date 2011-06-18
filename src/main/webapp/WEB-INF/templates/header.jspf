@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -9,7 +9,22 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <meta http-equiv="Pragma" content="no-cache">
     <title>Word MindMap</title>
+
     <link type="text/css" href="css/base.css" rel="stylesheet" />
+    <link type="text/css" href="css/ForceDirected.css" rel="stylesheet" />
+    <link type="text/css" href="css/bird-view-nodes.css" rel="stylesheet" />
+
+
+    <!-- JIT Library File -->
+    <script language="javascript" type="text/javascript" src="javascripts/jit-yc.js"></script>
+
+
+    <script language="javascript" type="text/javascript" src="javascripts/jquery-1.6.1.min.js"></script>
+
+    <!-- Example File -->
+    <script language="javascript" type="text/javascript" src="javascripts/bird-view-nodes.js"></script>
+
+
 </head>
 
 <body>
