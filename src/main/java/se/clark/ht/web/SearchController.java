@@ -8,7 +8,10 @@ import org.neo4j.kernel.Traversal;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.graph.core.EntityPath;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 import se.clark.ht.domain.Relationship;
 import se.clark.ht.domain.Word;
@@ -77,7 +80,7 @@ public class SearchController {
         }
 
         List root = new LinkedList();
-
+        Map<String,String> relToColorMap = new HashMap<String,String>();
         for (Word key : words.keySet()) {
 //            System.out.println("Key: " + key + ", Value: " + words.get(key));
 
@@ -89,8 +92,10 @@ public class SearchController {
                 innerNode.put("nodeTo", relationship.getAnotherWord().getName());
                 innerNode.put("nodeFrom", relationship.getWord().getName());
                 LinkedHashMap innerData = new LinkedHashMap();
-                innerData.put("$color", "#dd99dd");
-                innerData.put("relatedOn", relationship.getOnEnglish());
+                logger.error("for relationshiP: " + relationship.getOnEnglish() + " color: " + getColorBy(relationship, relToColorMap));
+                innerData.put("$color", getColorBy(relationship, relToColorMap));
+                innerData.put("$lineWidth", "3");
+//                innerData.put("relatedOn", relationship.getOnEnglish());
                 innerNode.put("data", innerData);
                 nodes.add(innerNode);
             }
@@ -102,6 +107,7 @@ public class SearchController {
             if(key.getName().equals(startWord.getName())){
                 nodeData.put("$type", "star");
                 nodeData.put("$color", "red");
+                nodeData.put("$dim", "25");
             }else{
                 nodeData.put("$type", "circle");
                 nodeData.put("$color", "#83548B");
@@ -109,11 +115,43 @@ public class SearchController {
             adjacencies.put("data", nodeData);
             root.add(adjacencies);
         }
-        return JSONValue.toJSONString(root);
+
+        LinkedHashMap result = new LinkedHashMap();
+        result.put("data", root);
+        List colorRelJson = new LinkedList();
+
+        for (Map.Entry<String, String> entry : relToColorMap.entrySet()) {
+               LinkedHashMap color = new LinkedHashMap();
+               color.put("color", entry.getValue());
+               color.put("meaning", entry.getKey());
+               colorRelJson.add(color);
+        }
+
+
+        result.put("colorToRelMap", colorRelJson);
+
+        return JSONValue.toJSONString(result);
 
     }
 
+//    static String[] colors = {"#99FFFF", "#99FF00", "#990000", "#9933CC",
+//            "#999900", "#99CC00", "#FFCCCC", "#FFFF00",
+//            "#0000CC", "#"};
+    String[] colors = {
+        "Yellow","#333300","Fuchsia ","Purple",
+        "Lime","Maroon","Navy","Gray",
+        "Red","Silver","Teal","White",
+        "#FFCC33","Blue", "Green"};
 
+    private String getColorBy(Relationship relationship, Map<String, String> relToColorMap) {
+        logger.error("------------: size: " + relToColorMap.size());
+        String onEnglish = relationship.getOnEnglish();
+        if(!relToColorMap.containsKey(onEnglish)){
+              relToColorMap.put(onEnglish, colors[relToColorMap.size()]);
+        }
+
+        return  relToColorMap.get(onEnglish);
+    }
 
 
 }
