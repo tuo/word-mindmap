@@ -4,23 +4,27 @@
 <h2>Search All Synonyms(means any depth lookup)</h2>
 <br/>
 <form action="searchSynonymsInAnyDepth.html" id="searchForm">
-    <label>Name of word to search: </label>
-    <input type="text" name="name" size="20" value="earth"/>
-    <br/>
+   <fieldset>
+        <legend>Search: </legend>
+        <label>Word Name </label>
+         <input type="search" name="name" size="20" value="earth"/>
+        <br/>
 
 
-  <input type="checkbox" name="relation" value="synonym_with" checked>Synonym(同义词)</input>
-  <input type="checkbox" name="relation" value="antonym_with" >Antonym(反义词)</input>
-  <input type="checkbox" name="relation" value="extension_with">Extension(扩展词)</input>
-  <input type="checkbox" name="relation" value="idiom_with">Idom(短语)</input>
-    <br/>
-    <input type="submit" name="button" value="submit"/>
+          <input type="checkbox" name="relation" value="synonym_with" checked>Synonym(同义词)</input>
+          <input type="checkbox" name="relation" value="antonym_with" checked>Antonym(反义词)</input>
+          <input type="checkbox" name="relation" value="extension_with" checked>Extension(扩展词)</input>
+          <input type="checkbox" name="relation" value="idiom_with" checked>Idom(短语)</input>
+           <br />
+        <input type="submit" name="button" value="submit"/>
+   </fieldset>
 </form>
+
 <hr/>
 
 <a href="startSearching.html">back to search operation home page.</a>
 
-<div id="color-to-relationship"></div>
+
 <div id="container">
     <div id="center-container" style="width:100%;height:700px;">
         <div id="infovis"></div>
@@ -28,7 +32,7 @@
 
 </div>
 <div id="log"></div>
-
+<div id="color-to-relationship"></div>
 
 <script type="text/javascript">
 //        init();
