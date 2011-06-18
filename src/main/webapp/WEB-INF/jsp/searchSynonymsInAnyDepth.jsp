@@ -29,6 +29,12 @@
 
 <script type="text/javascript">
 //        init();
+   function clearCanvas(){
+    var canvas = document.getElementById("infovis-canvas");
+    var context = canvas.getContext("2d");
+    context.clearRect(0, 0, canvas.width, canvas.height);
+}
+
 $(document).ready(function() {
 
     $('#searchForm').submit(function(event){
@@ -47,7 +53,8 @@ $(document).ready(function() {
 //            data: ({name : name}, {relationships : relationshipStr}),
             data: data,
             success: function(data){
-//                alert("----------" + data);
+                //clear previous graph
+                $("#infovis").empty();
                 init(eval(data));
         }
     });
@@ -55,4 +62,6 @@ $(document).ready(function() {
 
 
 });
+
+
 </script>

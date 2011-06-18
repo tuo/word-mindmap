@@ -65,10 +65,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="searchSynonymsInAnyDepth.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="searchSynonymsInAnyDepth.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="46" selection-start="861" selection-end="861" vertical-scroll-proportion="-8.380953">
+            <state line="54" column="36" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.7986577">
               <folding />
             </state>
           </provider>
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bird-view-nodes.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="bird-view-nodes.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="481" column="9" selection-start="15824" selection-end="15824" vertical-scroll-proportion="0.9584775">
+            <state line="300" column="28" selection-start="8961" selection-end="8968" vertical-scroll-proportion="-12.461538">
               <folding />
             </state>
           </provider>
@@ -172,7 +172,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/rebel.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepthResult.jsp" />
@@ -187,6 +186,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.jspf" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/SearchController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/bird-view-nodes.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp" />
       </list>
     </option>
@@ -1381,13 +1381,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="87" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/se/clark/ht/domain/WordRelationshipTypes.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="38" selection-start="163" selection-end="177" vertical-scroll-proportion="0.0">
@@ -1423,16 +1416,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSpecificWordResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="46" selection-start="861" selection-end="861" vertical-scroll-proportion="-8.380953">
+        <state line="0" column="87" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/javascripts/bird-view-nodes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="481" column="9" selection-start="15824" selection-end="15824" vertical-scroll-proportion="0.9584775">
+        <state line="300" column="28" selection-start="8961" selection-end="8968" vertical-scroll-proportion="-12.461538">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSynonymsInAnyDepth.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="36" selection-start="1820" selection-end="1820" vertical-scroll-proportion="0.7986577">
           <folding />
         </state>
       </provider>
