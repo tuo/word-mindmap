@@ -24,7 +24,7 @@
 
 
 
-
+<cite>Those <i>grey</i> lines and triangle means that those nodes are not in the search result.</cite>
 <div id="container">
     <div id="center-container" style="width:100%;height:700px;">
         <div id="infovis"></div>
@@ -32,7 +32,7 @@
 
 </div>
 <div id="log"></div>
-<div id="color-to-relationship"></div>
+<div id="color-to-relationship" style="border: 1px dotted black;"></div>
 
 <script type="text/javascript">
 //        init();
@@ -56,8 +56,10 @@ $(document).ready(function() {
         var relationshipStr = relations.join(",");
         var  data = 'name=' + name + '&relationships=' + relationshipStr;
         $.ajax({
-            url: "searchWords.html",
+//            url: "searchWords.html",
+
 //            data: ({name : name}, {relationships : relationshipStr}),
+            url: "searchWords.html",
             data: data,
             success: function(data){
                 //clear previous graph
@@ -67,10 +69,14 @@ $(document).ready(function() {
                 var result =  eval("("  + data + ")");
                 var data = result["data"];
                 var colorToRelMap =  result["colorToRelMap"];
+
+                var html = ("<h4>Following are the colors corresponding to graph, which stands for what meaning it relates to.</h4><ul>");
                 for( i=0; i < colorToRelMap.length; i++){
                     var row = colorToRelMap[i];
-                    $("#color-to-relationship").append("<p style=\"color: " + row["color"] + ";\">" + row["meaning"] + "</p>");
+                    html += ("<li style=\"color: " + row["color"] + ";\">" + row["meaning"] + "</li>");
                 }
+
+                $("#color-to-relationship").append(html + "</ul>");
 //                colorToRelMap.each(function(index, row){
 //                     var shit = row;
 //                   $("#color-to-relationship").append("<p style=\"color: " + row["color"] + ";\">" + row["meaning"] + "</p>");
@@ -84,6 +90,7 @@ $(document).ready(function() {
     });
     });
 
+    $('#searchForm').submit();
 
 });
 

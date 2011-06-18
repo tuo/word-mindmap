@@ -5,6 +5,7 @@ import org.springframework.data.graph.annotation.RelatedTo;
 import org.springframework.data.graph.core.Direction;
 import org.springframework.data.graph.neo4j.annotation.Indexed;
 
+import java.util.HashSet;
 import java.util.Set;
 
 @NodeEntity
@@ -126,6 +127,44 @@ public class Word {
     public void antonymWith(Word anotherWord, String onChinese, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.ANTONYM_WITH.name());
         relationship.on(onChinese, onEnglish);
+    }
+
+    public Relationship getSynonymRelationshipTo(Word anotherWord) {
+        return getRelationshipTo(anotherWord, Relationship.class, "SYNONYM_WITH");
+    }
+
+    public Relationship getAntonymRelationshipTo(Word anotherWord) {
+        return getRelationshipTo(anotherWord, Relationship.class, "ANTONYM_WITH");
+    }
+
+    public Relationship getIdiomRelationshipTo(Word anotherWord) {
+        return getRelationshipTo(anotherWord, Relationship.class, "IDIOM_WITH");
+    }
+
+    public Relationship getExtensionRelationshipTo(Word anotherWord) {
+        return getRelationshipTo(anotherWord, Relationship.class, "EXTENSION_WITH");
+    }
+
+    public Set<Relationship> getRelationshipsTo(Word anotherWord) {
+        Set<Relationship> relationships = new HashSet<Relationship>();
+        if (getSynonymRelationshipTo(anotherWord) != null)
+            relationships.add(getSynonymRelationshipTo(anotherWord));
+        if (getAntonymRelationshipTo(anotherWord) != null)
+            relationships.add(getAntonymRelationshipTo(anotherWord));
+        if (getExtensionRelationshipTo(anotherWord) != null)
+            relationships.add(getExtensionRelationshipTo(anotherWord));
+        if (getIdiomRelationshipTo(anotherWord) != null)
+            relationships.add(getIdiomRelationshipTo(anotherWord));
+        return relationships;
+    }
+
+    public Set<Word> getAllRelatedWords(){
+        Set<Word> words = new HashSet<Word>();
+        words.addAll(getSynonyms());
+        words.addAll(getAntonyms());
+        words.addAll(getIdioms());
+        words.addAll(getExtensions());
+        return words;
     }
 
 }

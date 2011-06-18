@@ -122,6 +122,7 @@ public class WordServiceImpl implements WordService {
         String earthSynonymAeraEng = "area on earth";
 
         earth.synonymWith(soil, earthSynonymAeraChi, earthSynonymAeraEng);
+        earth.synonymWith(land, earthSynonymAeraChi, earthSynonymAeraEng);
         earth.synonymWith(ground, earthSynonymAeraChi, earthSynonymAeraEng);
         earth.synonymWith(mud, earthSynonymAeraChi, earthSynonymAeraEng);
         earth.synonymWith(dirt, earthSynonymAeraChi, earthSynonymAeraEng);
@@ -134,6 +135,7 @@ public class WordServiceImpl implements WordService {
 
         ocean.synonymWith(blue, "海洋是蓝色的", " ocean is blue");
 
+//        blue.extendWith(ocean, "海洋是蓝色的", " ocean is blue");
         blue.antonymWith(depressed, "忧郁的", "not very happy though");
         blue.synonymWith(happy, "高兴和忧郁", "happiness vs depressed");
         blue.extendWith(yellow, "颜色", "color");

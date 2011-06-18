@@ -44,3 +44,12 @@ form fieldset {
 border: none;
 margin-bottom: 1px;
 }
+
+#color-to-relationship h4{
+    color: black;
+}
+#color-to-relationship ul li{
+    padding: 5px;
+    font-size: 18px;
+    font-family:fantasy;
+}
