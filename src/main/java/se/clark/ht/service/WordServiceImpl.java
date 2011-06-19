@@ -113,6 +113,7 @@ public class WordServiceImpl implements WordService {
         Word ocean = new Word("ocean", "noun", "海洋", "the mass of salt water that covers most of the earth's surface");
         Word blue = new Word("blue", "adj", "蓝色的(颜色),沮丧的,支持共和党的", "having the colour of a clear sky or the sea/ocean on a clear day;depressed;(of an area in the US) having more people who vote for the Democratic candidate than the Republican one");
         Word yellow = new Word("yellow", "adj", "黄色的", "positive color");
+        Word yellowCard = new Word("yellow card", "noun", "黄牌", "yellow card for foul in football");
 
         Word happy = new Word("happy", "adj", "高兴的;满足的", "feeling or showing pleasure; pleased;satisfied that something is good or right; not anxious");
         Word depressed = new Word("depressed", "adj", "沮丧的", "very sad and without hope");
@@ -132,6 +133,7 @@ public class WordServiceImpl implements WordService {
         wordRepository.save(ocean);
         wordRepository.save(blue);
         wordRepository.save(yellow);
+        wordRepository.save(yellowCard);
         wordRepository.save(happy);
         wordRepository.save(depressed);
 
@@ -165,6 +167,8 @@ public class WordServiceImpl implements WordService {
 
         world.extendWith(word, "两个单词只差一个字母", "just have one more letter 'l'");
         word.idiomWith(in_a_word, "扩展,组成短语", "compose to a phrase");
+
+        yellow.extendWith(yellowCard, "黄色的牌", "yellow card");
 
     }
 

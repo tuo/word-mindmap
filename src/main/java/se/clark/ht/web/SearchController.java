@@ -46,10 +46,10 @@ public class SearchController {
 //            "#999900", "#99CC00", "#FFCCCC", "#FFFF00",
 //            "#0000CC", "#"};
     String[] colors = {
-        "Yellow","Teal","Fuchsia ","Purple",
+        "Yellow","Teal","Green ","#8B5742",
         "Lime","Navy","Gray",
         "Red","Silver","Maroon","White",
-        "#FFCC33","Blue", "Green"};
+        "#FFCC33","Purple", "#9F79EE"};
 
     private String getColorBy(Relationship relationship, Map<String, String> relToColorMap) {
 //        logger.error("------------: size: " + relToColorMap.size());
@@ -124,7 +124,7 @@ public class SearchController {
             }else if(wantedWords.contains(word)){
                 // for those words are wanted
                 nodeData.put("$type", "circle");
-                nodeData.put("$color", "#83548B");
+                nodeData.put("$color", "#D2691E");
             }else{
                 // for those words are not in wanted
                 nodeData.put("$type", "triangle");
