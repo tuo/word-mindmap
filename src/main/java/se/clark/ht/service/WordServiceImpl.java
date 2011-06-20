@@ -25,11 +25,11 @@ public class WordServiceImpl implements WordService {
     @Override
     public List<Word> searchNearBySynonymsFor(String wordName) throws WordNotFoundException {
         Word earth = wordRepository.findWordNamed(wordName);
-        if(earth == null){
+        if (earth == null) {
             throw new WordNotFoundException(wordName);
         }
         List<Word> result = new ArrayList<Word>();
-        for(Word word : wordRepository.findSynonymsFor(earth, 1)){
+        for (Word word : wordRepository.findSynonymsFor(earth, 1)) {
             result.add(word);
         }
         return result;
@@ -38,11 +38,11 @@ public class WordServiceImpl implements WordService {
     @Override
     public List<Word> searchSynonymsInAnyDepthFor(String wordName) throws WordNotFoundException {
         Word earth = wordRepository.findWordNamed(wordName);
-        if(earth == null){
+        if (earth == null) {
             throw new WordNotFoundException(wordName);
         }
         List<Word> result = new ArrayList<Word>();
-        for(Word word : wordRepository.findSynonymsInAnyDepthFor(earth)){
+        for (Word word : wordRepository.findSynonymsInAnyDepthFor(earth)) {
             result.add(word);
         }
         return result;
@@ -53,8 +53,8 @@ public class WordServiceImpl implements WordService {
     public List<Word> getAllWords() {
         Word earth = wordRepository.findWordNamed("earth");
 
-       List<Word> result = new ArrayList<Word>();
-        for(Word word : wordRepository.getAllWords(earth)){
+        List<Word> result = new ArrayList<Word>();
+        for (Word word : wordRepository.getAllWords(earth)) {
             result.add(word);
         }
         return result;
@@ -70,7 +70,7 @@ public class WordServiceImpl implements WordService {
     @Transactional
     public void createRelationshipBetween(Word word, Word anotherWord, String onChinese, String onEnglish, String whichType) {
 
-        switch (WordRelationshipTypes.valueOf(whichType.toUpperCase())){
+        switch (WordRelationshipTypes.valueOf(whichType.toUpperCase())) {
             case SYNONYM_WITH:
                 word.synonymWith(anotherWord, onChinese, onEnglish);
                 break;
@@ -83,7 +83,8 @@ public class WordServiceImpl implements WordService {
             case EXTENSION_WITH:
                 word.extendWith(anotherWord, onChinese, onEnglish);
                 break;
-            default:  break;
+            default:
+                break;
         }
 
     }
@@ -172,6 +173,142 @@ public class WordServiceImpl implements WordService {
 
         yellow.extendWith(yellowCard, "黄色的牌", "yellow card");
         yellowCard.extendWith(football, "足球中有黄牌", "somebody foul too hard get warning by yellow card in football");
+
+        Word being = new Word("being", "noun", "存在;人,生物;本质,思想感情,身心", "existence; Living, being alive; The nature or essence of a person");
+
+        Word existence = new Word("existence", "noun", "存在,生存", "The fact or state of living or having objective reality");
+        Word presence = new Word("presence", "noun", "出席,存在,到场", "The state or fact of existing, occurring, or being present in a place or thing");
+
+        Word nonbeing = new Word("nonbeing", "noun", "不存在的事, 无", "The state of not being; nonexistence");
+
+        Word organism = new Word("organism", "noun", "有机体,生物体", "An individual animal, plant, or single-celled life form");
+        Word life = new Word("life", "noun", "一生,生命,生活", "Living things and their activity");
+        Word creature = new Word("creature", "noun", "生物,动物,人", "An animal or person");
+        Word person = new Word("person", "noun", "人,本人,身体", "A human being regarded as an individual");
+
+        Word soul = new Word("soul", "noun", "灵魂,心灵,精神", "The spiritual or immaterial part of a human being or animal, regarded as immortal");
+        Word essence = new Word("essence", "noun", "精髓,本质,要素", "The intrinsic nature or indispensable quality of something, esp. something abstract, that determines its character");
+        Word self = new Word("self", "noun", "自己, 本性", "a person's personality or character that makes them different from other people");
+        Word spirit = new Word("spirit", "noun", "精神,心灵,幽灵", "The nonphysical part of a person that is the seat of emotions and character; the soul");
+
+        wordRepository.save(being);
+        wordRepository.save(nonbeing);
+        wordRepository.save(existence);
+        wordRepository.save(presence);
+        wordRepository.save(organism);
+        wordRepository.save(life);
+        wordRepository.save(creature);
+        wordRepository.save(person);
+        wordRepository.save(soul);
+        wordRepository.save(essence);
+        wordRepository.save(self);
+        wordRepository.save(spirit);
+
+        String beingSynonymChi = "存在";
+        String beingSynonymEng = "existence";
+        being.synonymWith(existence, beingSynonymChi, beingSynonymEng);
+        being.synonymWith(presence, beingSynonymChi, beingSynonymEng);
+        being.antonymWith(nonbeing, beingSynonymChi, beingSynonymEng);
+
+        String beingSynonymLifeChi = "人,生物";
+        String beingSynonymLifeEng = "Living, being alive";
+        being.synonymWith(organism, beingSynonymLifeChi, beingSynonymLifeEng);
+        being.synonymWith(life, beingSynonymLifeChi, beingSynonymLifeEng);
+        being.synonymWith(creature, beingSynonymLifeChi, beingSynonymLifeEng);
+        being.synonymWith(person, beingSynonymLifeChi, beingSynonymLifeEng);
+
+        String beingSynonymNatureChi = "本质,思想感情,身心";
+        String beingSynonymNatureEng = "The nature or essence of a person";
+        being.synonymWith(soul, beingSynonymNatureChi, beingSynonymNatureEng);
+        being.synonymWith(essence, beingSynonymNatureChi, beingSynonymNatureEng);
+        being.synonymWith(self, beingSynonymNatureChi, beingSynonymNatureEng);
+        being.synonymWith(spirit, beingSynonymNatureChi, beingSynonymNatureEng);
+
+
+        Word economy_noun = new Word("economy", "noun", "经济,节约", "Offering the best value for the money");
+//        Word economy_adj = new Word("economy", "adj", "经济的,廉价的", "Designed to be economical to use");
+
+        Word thrift = new Word("thrift", "noun", "节俭, 节约", "The quality of using money and other resources carefully and not wastefully");
+        Word frugality = new Word("frugality", "noun", "节俭, 俭省", "The quality of being economical with money or food; thriftiness");
+        Word saving = new Word("saving", "noun", "节约, 挽救", "With the exception of; except");
+        Word budget = new Word("budget", "noun", "预算", "the money that is available to a person or an organization and a plan of how it will be spent over a period of time");
+        Word cost_cutting = new Word("cost-cutting", "noun", "削减成本", "the reduction of the amount of money spent on something, especially because of financial difficulty");
+        Word cutback = new Word("cutback", "noun", "消减, 剪修新芽", "An act or instance of reducing something, typically expenditures");
+        Word reduction = new Word("reduction", "noun", "减少, 降低, 减价", "The action or fact of making a specified thing smaller or less in amount, degree, or size");
+        Word luxury = new Word("luxury", "noun", "奢侈品, 奢侈, 豪华", "The state of great comfort and extravagant living");
+
+        Word cheap = new Word("cheap", "adj", "便宜的, 廉价的", "(of an item for sale) Low in price; worth more than its cost");
+        Word reduced = new Word("reduced", "adj", "减少的, 简化的", "Make smaller or less in amount, degree, or size");
+
+        wordRepository.save(economy_noun);
+//        wordRepository.save(economy_adj);
+        wordRepository.save(thrift);
+        wordRepository.save(frugality);
+        wordRepository.save(saving);
+        wordRepository.save(budget);
+        wordRepository.save(cost_cutting);
+        wordRepository.save(cutback);
+        wordRepository.save(reduction);
+        wordRepository.save(luxury);
+        wordRepository.save(cheap);
+        wordRepository.save(reduced);
+
+        String economySynonymNounChi = "经济,节约";
+        String economySynonymNounEng = "Offering the best value for the money";
+        economy_noun.synonymWith(thrift, economySynonymNounChi, economySynonymNounEng);
+        economy_noun.synonymWith(frugality, economySynonymNounChi, economySynonymNounEng);
+        economy_noun.synonymWith(saving, economySynonymNounChi, economySynonymNounEng);
+        economy_noun.synonymWith(budget, economySynonymNounChi, economySynonymNounEng);
+        economy_noun.synonymWith(cost_cutting, economySynonymNounChi, economySynonymNounEng);
+        economy_noun.synonymWith(cutback, economySynonymNounChi, economySynonymNounEng);
+        economy_noun.synonymWith(reduction, economySynonymNounChi, economySynonymNounEng);
+        economy_noun.antonymWith(luxury, economySynonymNounChi, economySynonymNounEng);
+
+        String economySynonymAdjChi = "经济的,廉价的";
+        String economySynonymAdjEng = "Designed to be economical to use";
+//        economy_adj.synonymWith(cheap, economySynonymAdjChi, economySynonymAdjEng);
+//        economy_adj.synonymWith(reduced, economySynonymAdjChi, economySynonymAdjEng);
+
+        economy_noun.synonymWith(cheap, economySynonymAdjChi, economySynonymAdjEng);
+        economy_noun.synonymWith(reduced, economySynonymAdjChi, economySynonymAdjEng);
+
+        cheap.extendWith(happy, "遇到便宜的东西都很高兴", "cheap things are happy to buy");
+        depressed.extendWith(soul, " 忧郁的心灵", " depressed soul, not happy");
+
+        Word sallow = new Word("sallow", "adj", "灰黄的；蜡黄的", "having a slightly yellow colour that does not look healthy");
+        Word creamy = new Word("creamy", "adj", "奶油色的；淡黄色的；米色的", "pale yellowish-white in colour");
+        Word beige = new Word("beige", "adj", "浅褐色的；米黄色的", "light yellowish-brown in colour");
+        Word buttery = new Word("buttery", "adj", "黄油般的；含黄油的；以黄油覆盖的", "like, containing or covered with butter");
+        Word milky = new Word("milky", "adj", "奶制的；含奶多的；奶的", "made of milk; containing a lot of milk");
+        Word sickly = new Word("sickly", "adj", "难看的；看着不舒服的", "of colours, unpleasant to look at");
+        Word wan = new Word("wan", "adj", "苍白无力的；无血色的；憔悴的", "looking pale and weak");
+        Word xanthous = new Word("xanthous", "adj", "yellow", "黄色的,浅黄色的");
+        Word pale = new Word("pale", "adj", "灰白的；苍白的；白皙的", "having skin that is almost white; having skin that is whiter than usual because of illness, a strong emotion");
+        Word washed_out = new Word("washed-out", "adj", "筋疲力尽的;面色苍白的", "Pale and tired");
+
+        wordRepository.save(sallow);
+        wordRepository.save(creamy);
+        wordRepository.save(beige);
+        wordRepository.save(buttery);
+        wordRepository.save(milky);
+        wordRepository.save(wan);
+        wordRepository.save(sickly);
+        wordRepository.save(xanthous);
+        wordRepository.save(pale);
+        wordRepository.save(washed_out);
+
+        String yellowSynonymChi = "黄色的";
+        String yellowSynonymEng = "positive color";
+        yellow.synonymWith(sallow, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(creamy, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(beige, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(buttery, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(milky, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(wan, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(sickly, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(xanthous, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(pale, yellowSynonymChi, yellowSynonymEng);
+        yellow.synonymWith(washed_out, yellowSynonymChi, yellowSynonymEng);
     }
 
 

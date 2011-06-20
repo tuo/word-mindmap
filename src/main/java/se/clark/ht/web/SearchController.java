@@ -49,7 +49,9 @@ public class SearchController {
         "Yellow","Teal","Green ","#8B5742",
         "Lime","Navy","Gray",
         "Red","Silver","Maroon","White",
-        "#FFCC33","Purple", "#9F79EE"};
+        "#FFCC33","Purple", "#9F79EE", "#EE3B3B", "#CD3333",
+        "#FF7F24", "#2F4F2F", "#BCEE68", "#7CFC00", "#9AFF9A",
+        "#238E68", "#9A32CD", "#DAA520", "#99CC32", "#EAEAAE"};
 
     private String getColorBy(Relationship relationship, Map<String, String> relToColorMap) {
 //        logger.error("------------: size: " + relToColorMap.size());

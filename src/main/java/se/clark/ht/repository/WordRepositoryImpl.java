@@ -67,11 +67,23 @@ public class WordRepositoryImpl implements WordRepositoryExtension {
     public Iterable<Word> findWordsByRelationships(Word startWord, String... relationships) {
         TraversalDescription WORDS_TRAVERSAL = Traversal.description();
         for(String relationship : relationships){
-            WordRelationshipTypes type = WordRelationshipTypes.valueOf(relationship.toUpperCase());
+            WordRelationshipTypes type = WordRelationshipTypes.valueOf(relationship.toUpperCase().trim());
             WORDS_TRAVERSAL = WORDS_TRAVERSAL.relationships(type, Direction.BOTH);
         }
         WORDS_TRAVERSAL.breadthFirst()
                     .evaluator(Evaluators.all());
+        return wordRepository.findAllByTraversal(startWord, WORDS_TRAVERSAL);
+    }
+
+    @Override
+    public Iterable<Word> findWordsByRelationshipsAtDepth(Word startWord, int depth, String... relationships) {
+        TraversalDescription WORDS_TRAVERSAL = Traversal.description();
+        for(String relationship : relationships){
+            WordRelationshipTypes type = WordRelationshipTypes.valueOf(relationship.toUpperCase().trim());
+            WORDS_TRAVERSAL = WORDS_TRAVERSAL.relationships(type, Direction.BOTH);
+        }
+        WORDS_TRAVERSAL.breadthFirst()
+                    .evaluator(Evaluators.includingDepths(0, depth));
         return wordRepository.findAllByTraversal(startWord, WORDS_TRAVERSAL);
     }
 
