@@ -25,7 +25,7 @@
 <h4 id="shit"><a href="populateData.html"> start experiencing...........</a></h4>
 
 <hr/>
-<i>contribute to github: <a href="https://github.com/Tuo-Huang/word-mindmap">https://github.com/Tuo-Huang/word-mindmap</a></i>
+<i>contribute to github: <a href="https://github.com/tuo/word-mindmap">https://github.com/tuo/word-mindmap</a></i>
 
 <%--<img src="images/wordmap.jpg"/>--%>
 <div id="container">
