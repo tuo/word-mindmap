@@ -218,6 +218,12 @@
                         <contextPath>/${project.name}</contextPath>
                     </webAppConfig>
                     <scanIntervalSeconds>0</scanIntervalSeconds>
+                <connectors>
+                    <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                        <port>8888</port>
+                        <maxIdleTime>60000</maxIdleTime>
+                    </connector>
+                </connectors>
                 </configuration>
             </plugin>
             <!-- run mvn idea:idea-->

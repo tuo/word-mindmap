@@ -1,8 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <script language="javascript" type="text/javascript" src="javascripts/search-words-jit-customization.js"></script>
 
-<h1><a href="openSearchSpecificWord.html">UI: another exciting approach working in progress....</a></h1>
-<cite>Click above link to give suggestions?</cite>
+<h1><a href="openSearchSpecificWord.html">UI: another approach working in progress....</a></h1>
+<cite>Click above link to give suggestions?<br/>
+Right now, I use some CSS3 animation/transition to do it. so pls open it in <b>Chrome</b> or <b>Safari</b></cite>
 <h2>Search / Create</h2>
 
 <div id="form-container">
