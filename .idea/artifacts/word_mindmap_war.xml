@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="word-mindmap:war">
-    <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="word-mindmap.war">
-      <element id="artifact" artifact-name="word-mindmap:war exploded" />
-    </root>
-  </artifact>
-</component>
