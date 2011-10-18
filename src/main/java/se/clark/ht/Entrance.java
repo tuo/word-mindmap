@@ -8,6 +8,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.io.File;
 
+import com.google.common.io.Files;
 import org.apache.log4j.Logger;
 import org.apache.lucene.index.Term;
 import org.apache.lucene.search.WildcardQuery;
@@ -29,7 +30,6 @@ import org.neo4j.kernel.EmbeddedGraphDatabase;
 import org.neo4j.kernel.Traversal;
 import org.neo4j.kernel.Uniqueness;
 import se.clark.ht.domain.WordRelationshipTypes;
-import se.clark.ht.util.FileHelper;
 
 public class Entrance {
 
@@ -64,8 +64,11 @@ public class Entrance {
 
     public static void populateData() {
         // deleteWordNodeSpace();
-        FileHelper.deleteDir(new File(DB_PATH));
-
+        try {
+            Files.deleteRecursively(new File(DB_PATH));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         System.out.println("Creating word node space ...");
         graphDb = new EmbeddedGraphDatabase(DB_PATH);
         Map<String, Node> savedNodes = new Hashtable<String, Node>();

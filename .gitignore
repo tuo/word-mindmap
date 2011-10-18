@@ -2,3 +2,4 @@ logs/**
 target/**
 data/**
 ssh_clarkhtse/**
+.idea/**
