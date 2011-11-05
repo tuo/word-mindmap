@@ -163,75 +163,15 @@
 </div>
 <script>
 $(document).ready(function(){
-  centerStartWord();
-  // $(".wordsystem").drawLine(0, 0, 220, 45);
-  // Bouncer animation (by Leo Xavier)
-  // BASE SPEED OF BOUNCING. WILL ADD RAINDOM 0-100 TO UNSYNC BOUNCING
-  var bouncespeed = 400;
-  // SELECT ALL A'S EXCEPT... RESET BG-POSITION TO AVOID INITIAL POSITION BUG AND CALL BOUNCER
-  $('.related').each(
-    function () {
-        bounce(this, parseInt($(this).css('left').replace("px", "")), parseInt($(this).css('top').replace("px", "")));
-     }
-  );
-  // ACTUAL BOUNCER. CALLBACK OF ANIMATION IS THE BOUNCER ITSELF, TO LOOP ALL NIGHT LONG
-  function bounce(currentA, origin_left, origin_top) {
-    newx = origin_left + Math.floor(10*Math.random());
-    newy = origin_top + Math.floor(10*Math.random());
-    newspeed = bouncespeed + Math.floor(100*Math.random());
-    $(currentA).animate({left: newx + 'px', top: newy + 'px'}, newspeed, 'linear', function() { bounce(currentA, origin_left, origin_top);});
-  }
 
-  function centerStartWord(){
-    var left_in_center = parseInt($("ul.wordsystem").width() / 2);
-    var top_in_center = parseInt($("ul.wordsystem").height() / 2);
-
-    // $('ul.wordsystem li.start-word').css('left', left_in_center + 'px');
-    // $('ul.wordsystem li.start-word').css('top', top_in_center + 'px');
-    $('ul.wordsystem li.start-word').animate({
-           left: left_in_center + 'px',
-           top: top_in_center + 'px',
-           fontSize: '2em '
-
-    }, 1500);
-
-  }
-
-  $("ul.wordsystem li:contains('land')").each(function(){
-    // alert($(this).text());
-    $(this).click(function(event){
-      event.preventDefault();
-      var left_in_center = parseInt($("ul.wordsystem").width() / 2);
-      var top_in_center = parseInt($("ul.wordsystem").height() / 2);
-      // alert(left_in_center + " , " + top_in_center);
-      $(this).stop();
-      $('ul.wordsystem li.start-word').css('-webkit-transform', 'scale(1.0)');
-      $(this).css('-webkit-transform', 'scale(1.5)');
-
-      $('ul.wordsystem').animate({
-             left: '100px',
-             top: '0px',
-             fontSize: '2em '
-
-      }, 1500);
-
-      // $(this).css('left', left_in_center + 'px');
-      // $(this).css('top', top_in_center + 'px');
-      // $(this).animate({
-      //        left: left_in_center + 'px',
-      //        top: top_in_center + 'px',
-      //        fontSize: '2em '
-      //
-      // }, 1500);
-
-
-
-      $("ul.wordsystem li:contains('world')").fadeOut('slow');
-
-      $("ul.wordsystem li:contains('sky')").fadeIn('slow');
-      $("ul.wordsystem li:contains('ocean')").fadeIn('slow');
+    $.ajax({
+        url: "getWordsNearTo.html",
+        data: {"name" : "earth"},
+        success: function(data){
+               alert(data);
+        }
     });
-  });
+
 });
 </script>
 

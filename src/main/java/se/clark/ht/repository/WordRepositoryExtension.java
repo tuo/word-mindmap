@@ -4,6 +4,8 @@ import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.domain.Relationship;
 import se.clark.ht.domain.Word;
 
+import java.util.List;
+
 public interface WordRepositoryExtension {
 
     @Transactional
@@ -21,5 +23,5 @@ public interface WordRepositoryExtension {
 
     public Iterable<Word> findWordsByRelationships(Word startWord, String... relationships);
 
-    public Iterable<Word> findWordsByRelationshipsAtDepth(Word startWord, int depth, String... relationships);
+    public Iterable<Word> findWordsByRelationshipsToDepth(Word startWord, int depth, String... relationships);
 }
