@@ -84,4 +84,10 @@ public class WordRepositoryImpl implements WordRepositoryExtension {
         return wordRepository.findAllByTraversal(startWord, WORDS_TRAVERSAL);
     }
 
+    @Override
+    public Iterable<Word> findWordsToDepth(Word startWord, int depth) {
+        String[] relationshipsLiteral = new String[]{"synonym_with","antonym_with","extension_with","idiom_with"};
+        return findWordsByRelationshipsToDepth(startWord, depth,relationshipsLiteral);
+    }
+
 }

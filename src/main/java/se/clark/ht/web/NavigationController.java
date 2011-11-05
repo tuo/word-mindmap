@@ -22,7 +22,10 @@ public class NavigationController {
         return "searchNearbySynonyms";
     }
 
-
+    @RequestMapping(value = "openExploreWords.html")
+    public String openExperienceWords(){
+        return "exploreWords";
+    }
 
 
 

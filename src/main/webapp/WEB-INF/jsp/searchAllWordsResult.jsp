@@ -7,7 +7,7 @@
     <li><b><i><c:out value="${synonym.name}"/></i></b></li>
     <li><c:out value="${synonym.type}"/></li>
     <li><c:out value="${synonym.chineseMeaning}"/></li>
-    <li><c:out value="${synonym.englishMeaning}"/></li>
+    <li><c:out value="${synonym.meaning}"/></li>
   </ul>
 
 </c:forEach>

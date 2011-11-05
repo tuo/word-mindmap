@@ -3,7 +3,6 @@ package se.clark.ht.domain;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
 import se.clark.ht.builder.WordBuilder;
 import se.clark.ht.repository.WordRepository;
 
-import java.util.List;
 import java.util.Set;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -112,13 +110,12 @@ public class WordTest {
         assertThat("earth's synonyms count", earth.getSynonymsCount(), is(0));
         wordRepository.save(globe);
         //as earth and globe both are under controll of springdata graph, no need to further call earth.save()
-        earth.synonymWith(globe, "地球", "the planet we live");
+        earth.synonymWith(globe, "the planet we live");
         assertThat("earth's synonyms count", earth.getSynonymsCount(), is(equalTo(1)));
         assertThat("earth's synonym contains globe", earth.getSynonyms(), hasItem(globe));
         Relationship relationship = earth.getSynonymRelationshipTo(globe);
         assertThat("relationship should work properly" , relationship.getWord(), is(earth));
         assertThat("relationship should work properly" , relationship.getAnotherWord(), is(globe));
-        assertThat("relationship should work properly" , relationship.getOnChinese(), is("地球"));
         assertThat("relationship should work properly" , relationship.getOnEnglish(), is("the planet we live"));
 
     }
@@ -132,7 +129,7 @@ public class WordTest {
         wordRepository.save(globe);
         assertThat("globe's synonyms count", globe.getSynonymsCount(), is(0));
         //as earth and globe both are under controll of springdata graph, no need to further call earth.save()
-        earth.synonymWith(globe, "地球", "the planet we live");
+        earth.synonymWith(globe, "the planet we live");
         assertThat("globe's synonyms count", globe.getSynonymsCount(), is(equalTo(1)));
         assertThat("globe's synonyms contain earth", globe.getSynonyms(), hasItem(earth));
 
@@ -144,13 +141,12 @@ public class WordTest {
         assertThat("earth's extensions count", earth.getExtensionsCount(), is(0));
         wordRepository.save(sky);
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        earth.extendWith(sky, "土地和天空", "earth and sky just intuitive");
+        earth.extendWith(sky, "earth and sky just intuitive");
         assertThat("earth's extensions count", earth.getExtensionsCount(), is(equalTo(1)));
         assertThat("earth's extensions contains sky", earth.getExtensions(), hasItem(sky));
         Relationship relationship = earth.getExtensionRelationshipTo(sky);
         assertThat("relationship should work properly" , relationship.getWord(), is(earth));
         assertThat("relationship should work properly" , relationship.getAnotherWord(), is(sky));
-        assertThat("relationship should work properly" , relationship.getOnChinese(), is("土地和天空"));
         assertThat("relationship should work properly" , relationship.getOnEnglish(), is("earth and sky just intuitive"));
     }
 
@@ -161,7 +157,7 @@ public class WordTest {
         assertThat("sky's extensions count", sky.getExtensionsCount(), is(0));
 
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        earth.extendWith(sky, "土地和天空", "earth and sky just intuitive");
+        earth.extendWith(sky, "earth and sky just intuitive");
         assertThat("sky's extensions count", sky.getExtensionsCount(), is(equalTo(1)));
         assertThat("sky's extensions contains sky", sky.getExtensions(), hasItem(earth));
     }
@@ -172,13 +168,12 @@ public class WordTest {
         assertThat("earth's idioms count", earth.getIdiomsCount(), is(0));
         wordRepository.save(onEarth);
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        earth.idiomWith(onEarth, "加前缀on", "added a prefix 'on'");
+        earth.idiomWith(onEarth, "added a prefix 'on'");
         assertThat("earth's idioms count", earth.getIdiomsCount(), is(equalTo(1)));
         assertThat("earth's idioms contains onEarth", earth.getIdioms(), hasItem(onEarth));
         Relationship relationship = earth.getIdiomRelationshipTo(onEarth);
         assertThat("relationship should work properly" , relationship.getWord(), is(earth));
         assertThat("relationship should work properly" , relationship.getAnotherWord(), is(onEarth));
-        assertThat("relationship should work properly" , relationship.getOnChinese(), is("加前缀on"));
         assertThat("relationship should work properly" , relationship.getOnEnglish(), is("added a prefix 'on'"));
 
     }
@@ -190,7 +185,7 @@ public class WordTest {
         assertThat("onEarth's idiom count", onEarth.getIdiomsCount(), is(0));
 
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        earth.idiomWith(onEarth, "加前缀on", "added a prefix 'on'");
+        earth.idiomWith(onEarth, "added a prefix 'on'");
         assertThat("onEarth's idiom count", onEarth.getIdiomsCount(), is(equalTo(1)));
         assertThat("onEarth's idiom contains earth", onEarth.getIdioms(), hasItem(earth));
     }
@@ -201,13 +196,12 @@ public class WordTest {
         assertThat("happy's antonym count", happy.getAntonymsCount(), is(0));
         wordRepository.save(sad);
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        happy.antonymWith(sad, "高兴与悲伤", "feel good vs feel bad");
+        happy.antonymWith(sad, "feel good vs feel bad");
         assertThat("happy's antonym count", happy.getAntonymsCount(), is(equalTo(1)));
         assertThat("happy's antonym contains sad", happy.getAntonyms(), hasItem(sad));
         Relationship relationship = happy.getAntonymRelationshipTo(sad);
         assertThat("relationship should work properly" , relationship.getWord(), is(happy));
         assertThat("relationship should work properly" , relationship.getAnotherWord(), is(sad));
-        assertThat("relationship should work properly" , relationship.getOnChinese(), is("高兴与悲伤"));
         assertThat("relationship should work properly" , relationship.getOnEnglish(), is("feel good vs feel bad"));
 
         Set<Relationship> relationships = happy.getRelationshipsTo(sad);
@@ -222,7 +216,7 @@ public class WordTest {
         wordRepository.save(earth);
         assertThat("sad's antonym count", sad.getAntonymsCount(), is(0));
         //as earth and sky both are under controll of springdata graph, no need to further call earth.save()
-        happy.antonymWith(sad, "高兴与悲伤", "feel good vs feel bad'");
+        happy.antonymWith(sad, "feel good vs feel bad'");
         assertThat("sad's antonym count", sad.getAntonymsCount(), is(equalTo(1)));
         assertThat("sad's antonym contains happy", sad.getAntonyms(), hasItem(happy));
         Relationship relationship = happy.getSynonymRelationshipTo(sad);

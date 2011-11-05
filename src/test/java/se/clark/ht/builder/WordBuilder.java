@@ -41,7 +41,7 @@ public class WordBuilder {
     }
 
     public Word build(){
-        return new Word(name, type, chineseMeaning, englishMeaning);
+        return new Word(name, type, englishMeaning);
     }
 
 

@@ -13,8 +13,6 @@ public class Relationship {
     @EndNode
     private Word anotherWord;
 
-    private String onChinese;
-
     private String onEnglish;
 
     public Word getWord() {
@@ -25,17 +23,11 @@ public class Relationship {
         return anotherWord;
     }
 
-    public String getOnChinese() {
-        return onChinese;
-
-    }
-
     public String getOnEnglish() {
         return onEnglish;
     }
 
-    public Relationship on(String onChinese, String onEnglish){
-        this.onChinese = onChinese;
+    public Relationship on(String onEnglish){
         this.onEnglish = onEnglish;
         return this;
     }
@@ -45,7 +37,6 @@ public class Relationship {
         return "Relationship{" +
                 "word=" + word +
                 ", anotherWord=" + anotherWord +
-                ", onChinese='" + onChinese + '\'' +
                 ", onEnglish='" + onEnglish + '\'' +
                 '}';
     }

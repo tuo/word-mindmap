@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import se.clark.ht.domain.Relationship;
 import se.clark.ht.domain.Word;
-import se.clark.ht.domain.WordRelationshipTypes;
 import se.clark.ht.exception.WordNotFoundException;
 import se.clark.ht.service.WordService;
 
@@ -200,7 +199,7 @@ public class WordController {
             @RequestParam(value = "englishMeaning", required = false) String englishMeaning,
             ModelMap model) {
 
-        wordService.createWord(new Word(name,type,chineseMeaning,englishMeaning));
+        wordService.createWord(new Word(name,type, englishMeaning));
         return new ModelAndView("redirect:openSearchSynonymsInAnyDepth.html");
     }
 

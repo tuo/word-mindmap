@@ -24,4 +24,6 @@ public interface WordRepositoryExtension {
     public Iterable<Word> findWordsByRelationships(Word startWord, String... relationships);
 
     public Iterable<Word> findWordsByRelationshipsToDepth(Word startWord, int depth, String... relationships);
+
+    public Iterable<Word> findWordsToDepth(Word startWord, int depth);
 }

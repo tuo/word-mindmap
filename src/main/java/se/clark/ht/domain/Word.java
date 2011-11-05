@@ -18,11 +18,11 @@ public class Word {
     @Indexed
     private String type;
 
-    @Indexed
-    private String chineseMeaning;
+//    @Indexed
+//    private String chineseMeaning;
 
     @Indexed
-    private String englishMeaning;
+    private String meaning;
 
     @RelatedTo(elementClass = Word.class, type = "SYNONYM_WITH", direction = Direction.BOTH)
     private Set<Word> synonyms;
@@ -42,11 +42,10 @@ public class Word {
     }
 
 
-    public Word(String name, String type, String chineseMeaning, String englishMeaning) {
+    public Word(String name, String type, String meaning) {
         this.name = name;
         this.type = type;
-        this.englishMeaning = englishMeaning;
-        this.chineseMeaning = chineseMeaning;
+        this.meaning = meaning;
     }
 
     public String getName() {
@@ -58,13 +57,13 @@ public class Word {
         return type;
     }
 
-    public String getEnglishMeaning() {
-        return englishMeaning;
+    public String getMeaning() {
+        return meaning;
     }
 
-    public String getChineseMeaning() {
-        return chineseMeaning;
-    }
+//    public String getChineseMeaning() {
+//        return chineseMeaning;
+//    }
 
     public Set<Word> getSynonyms() {
         return synonyms;
@@ -104,29 +103,29 @@ public class Word {
         return "Word{" +
                 "name='" + name + '\'' +
                 ", type='" + type + '\'' +
-                ", englishMeaning='" + englishMeaning + '\'' +
-                ", chineseMeaning='" + chineseMeaning + '\'' +
+                ", meaning='" + meaning + '\'' +
+//                ", chineseMeaning='" + chineseMeaning + '\'' +
                 '}';
     }
 
-    public void synonymWith(Word anotherWord, String onChinese, String onEnglish) {
+    public void synonymWith(Word anotherWord, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.SYNONYM_WITH.name());
-        relationship.on(onChinese, onEnglish);
+        relationship.on(onEnglish);
     }
 
-    public void extendWith(Word anotherWord, String onChinese, String onEnglish) {
+    public void extendWith(Word anotherWord, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.EXTENSION_WITH.name());
-        relationship.on(onChinese, onEnglish);
+        relationship.on(onEnglish);
     }
 
-    public void idiomWith(Word anotherWord, String onChinese, String onEnglish) {
+    public void idiomWith(Word anotherWord, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.IDIOM_WITH.name());
-        relationship.on(onChinese, onEnglish);
+        relationship.on(onEnglish);
     }
 
-    public void antonymWith(Word anotherWord, String onChinese, String onEnglish) {
+    public void antonymWith(Word anotherWord, String onEnglish) {
         Relationship relationship = relateTo(anotherWord, Relationship.class, WordRelationshipTypes.ANTONYM_WITH.name());
-        relationship.on(onChinese, onEnglish);
+        relationship.on(onEnglish);
     }
 
     public Relationship getSynonymRelationshipTo(Word anotherWord) {
@@ -166,5 +165,7 @@ public class Word {
         words.addAll(getExtensions());
         return words;
     }
+
+
 
 }

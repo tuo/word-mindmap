@@ -68,6 +68,7 @@
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.1.2" />
           <element id="library" level="project" name="Maven: javax.servlet:servlet-api:2.4" />
+          <element id="library" level="project" name="Maven: com.google.code.gson:gson:1.7.1" />
           <element id="library" level="project" name="Maven: org.hibernate:hibernate-validator:4.0.2.GA" />
           <element id="library" level="project" name="Maven: org.zeroturnaround:jrebel-maven-plugin:1.0.7" />
           <element id="library" level="project" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1" />

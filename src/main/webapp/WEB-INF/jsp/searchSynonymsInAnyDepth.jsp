@@ -6,6 +6,7 @@
 Right now, I use some CSS3 animation/transition to do it. so pls open it in <b>Chrome</b> or <b>Safari</b></cite>
 <h2>Search / Create</h2>
 
+<h3><a href="openExploreWords.html">New Stuff....</a></h3>
 <div id="form-container">
 <form action="searchSynonymsInAnyDepth.html" id="search" class="round">
    <fieldset>

@@ -59,9 +59,9 @@ public class WordRepositoryTest {
         repository.save(sky);
         repository.save(onEarth);
 
-        earth.synonymWith(globe, "地球", "the planet we live");
-        globe.synonymWith(world, "地球", "the planet we live");
-        earth.extendWith(sky, "土地和天空", "earth and sky just intuitive");
+        earth.synonymWith(globe, "the planet we live");
+        globe.synonymWith(world, "the planet we live");
+        earth.extendWith(sky, "earth and sky just intuitive");
 
     }
 
@@ -83,11 +83,23 @@ public class WordRepositoryTest {
 
     @Test
     public void findWordsByRelationshipsToDepth(){
-        String[] relationshipsLiteral = new String[]{"synonym_with","antonym_with","extension_with","idiom_with"};
+        String[] relationshipsLiteral = new String[]{"synonym_with","antonym_with", "idiom_with"};
 
         List<Word> result = new ArrayList<Word>();
         for (Word word : repository.findWordsByRelationshipsToDepth(earth, 1, relationshipsLiteral)) {
-            System.out.println("word : " + word.getName());
+            result.add(word);
+        }
+        assertNotNull(result);
+        assertThat(result, hasItem(earth));
+        assertThat(result, hasItem(globe));
+        assertFalse("should not contains world, cause it is at depth 2", result.contains(world));
+        assertFalse("should not contains world, cause it is at depth 2", result.contains(sky));
+    }
+
+    @Test
+    public void findWordsToDepth(){
+        List<Word> result = new ArrayList<Word>();
+        for (Word word : repository.findWordsToDepth(earth, 1)) {
             result.add(word);
         }
         assertNotNull(result);
@@ -95,7 +107,6 @@ public class WordRepositoryTest {
         assertThat(result, hasItem(globe));
         assertFalse("should not contains world, cause it is at depth 2", result.contains(world));
         assertThat(result, hasItem(sky));
-
     }
 
     @Test

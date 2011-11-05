@@ -1,14 +1,9 @@
 package se.clark.ht.service;
 
-import net.minidev.json.JSONValue;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.neo4j.graphdb.traversal.Evaluators;
-import org.neo4j.graphdb.traversal.TraversalDescription;
-import org.neo4j.kernel.Traversal;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.graph.core.EntityPath;
 import org.springframework.data.graph.neo4j.support.GraphDatabaseContext;
 import org.springframework.data.graph.neo4j.support.node.Neo4jHelper;
 import org.springframework.test.annotation.Rollback;
@@ -16,12 +11,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.transaction.BeforeTransaction;
 import org.springframework.transaction.annotation.Transactional;
-import se.clark.ht.builder.WordBuilder;
 import se.clark.ht.builder.WordMother;
-import se.clark.ht.domain.Relationship;
 import se.clark.ht.domain.Word;
 import se.clark.ht.exception.WordNotFoundException;
-import sun.security.krb5.internal.EncAPRepPart;
 
 import java.util.*;
 
@@ -30,7 +22,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 import static org.junit.matchers.JUnitMatchers.hasItem;
-import static se.clark.ht.domain.WordRelationshipTypes.*;
 
 
 /**
@@ -77,10 +68,10 @@ public class WordServiceTest {
         wordService.createWord(sky);
         wordService.createWord(onEarth);
 
-        earth.synonymWith(globe, "地球", "the planet we live");
-        globe.synonymWith(world, "地球", "the planet we live");
-        earth.extendWith(sky, "土地和天空", "earth and sky just intuitive");
-        earth.idiomWith(onEarth, "加前缀on", "added a prefix 'on'");
+        earth.synonymWith(globe, "the planet we live");
+        globe.synonymWith(world, "the planet we live");
+        earth.extendWith(sky, "earth and sky just intuitive");
+        earth.idiomWith(onEarth, "added a prefix 'on'");
 
     }
 
