@@ -46,7 +46,7 @@ public class WordController {
 
         createOrSkipNeo4jDataStore();
 
-        return new ModelAndView("redirect:openSearchSynonymsInAnyDepth.html");
+        return new ModelAndView("redirect:openExploreWords.html");
     }
 
 

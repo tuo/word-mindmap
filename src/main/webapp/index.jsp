@@ -27,29 +27,16 @@
 <hr/>
 <i>contribute to github: <a href="https://github.com/tuo/word-mindmap">https://github.com/tuo/word-mindmap</a></i>
 
-<%--<img src="images/wordmap.jpg"/>--%>
-<div id="container">
-<div id="center-container">
-    <div id="infovis"></div>
-</div>
-<cite><b>Try to click the nodes.</b></cite>
-<cite>You can scroll to scale down the graph if graph filled in too much or you can move the nodes</cite>
-<div id="right-container">
-<div id="inner-details"></div>
-</div>
-</div>
-<div id="log"></div>
-
 </body>
 </html>
-<script type="text/javascript">
-//        init();
-$(document).ready(function() {
-    $.ajax({
-        url: "words.html",
-        success: function(data){
-            init(eval(data));
-        }
-    });
-});
-</script>
+<%--<script type="text/javascript">--%>
+<%--//        init();--%>
+<%--$(document).ready(function() {--%>
+    <%--$.ajax({--%>
+        <%--url: "words.html",--%>
+        <%--success: function(data){--%>
+            <%--init(eval(data));--%>
+        <%--}--%>
+    <%--});--%>
+<%--});--%>
+<%--</script>--%>
