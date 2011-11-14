@@ -1,6 +1,7 @@
 package se.clark.ht.web;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,7 +59,9 @@ public class SearchControllerTest {
        // I could get the controller from the context here
         controller = new SearchController(service, repository);
     }
-
+		
+		
+    @Ignore
     @Test
     public void shouldReturnJsonForSearchWordNearTo() throws Exception {
         Word earth = WordMother.getEarth();
