@@ -63,7 +63,7 @@
       text-align: center;
       vertical-align: middle;;
   }
-  ul#word-system li.shining {
+  ul#word-system li#start-word {
       background: #fc3;
       -webkit-box-shadow: 0  0 40px #c90;
       -moz-box-shadow: 0  0 40px #c90;
@@ -126,11 +126,9 @@ $(document).ready(function(){
                 var previouslyCenteredWord = wordSystem.find("li#start-word");
                 //fade out other unrelated words if any
                 wordSystem.find('li').not(":contains('" + word +"')").remove();
-//                wordSystem.empty();
-
 
                 if(previouslyCenteredWord.length == 0){
-                    var startNode = $("<li id='start-word' class='shining'>" + start.name + '</li>')
+                var startNode = $("<li id='start-word' class='shining'>" + start.name + '</li>')
                             .appendTo(wordSystem)
                             .position({ my: "center", at: "center", of: wordSystem});
                     previouslyPos = startNode.position();
@@ -157,11 +155,10 @@ $(document).ready(function(){
                     var gapWith = previouslyPos.left - startOffset.left;
                     var gapHeight = previouslyPos.top - startOffset.top;
                     startNode.animate({top:'+='+gapHeight, left:'+='+gapWith},2000, function() {
-                        $(this).addClass('shining');
+                        $(this).attr('id','start-word');
                         var centerX = previouslyPos.left + NODE_RADIUS;
                         var centerY = previouslyPos.top - NODE_RADIUS;
                         var points = calculatePoints(relatedWords.length, centerX, centerY);
-
                         var textToInsert = "";
                         var fragment = document.createDocumentFragment();
                         $.each(relatedWords, function(index, value){
@@ -170,6 +167,7 @@ $(document).ready(function(){
                             textToInsert += value.name;
                             textToInsert += '</li>';
                         });
+
                         wordSystem.append(textToInsert);
                         //regist click event except current word
                         wordSystem.find('li').not(":contains('" + word +"')").click(function(event){

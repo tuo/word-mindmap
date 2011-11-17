@@ -68,7 +68,16 @@
       <file leaf-file-name="exploreWords.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/exploreWords.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="173" column="64" selection-start="5913" selection-end="5913" vertical-scroll-proportion="0.52117264">
+            <state line="157" column="55" selection-start="5027" selection-end="5027" vertical-scroll-proportion="0.3843648">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="32" selection-start="471" selection-end="471" vertical-scroll-proportion="323.6154">
               <folding />
             </state>
           </provider>
@@ -115,7 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryExtension.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/repository/WordRepositoryImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/domain/Relationship.java" />
@@ -130,6 +138,7 @@
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/test/java/se/clark/ht/web/SearchControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/se/clark/ht/web/SearchController.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/exploreWords.jsp" />
       </list>
     </option>
@@ -945,11 +954,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchNearbySynonymsResult.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/searchSimilarResult.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -1028,9 +1032,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="32" selection-start="471" selection-end="471" vertical-scroll-proportion="323.6154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/exploreWords.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="64" selection-start="5913" selection-end="5913" vertical-scroll-proportion="0.52117264">
+        <state line="157" column="55" selection-start="5027" selection-end="5027" vertical-scroll-proportion="0.3843648">
           <folding />
         </state>
       </provider>
