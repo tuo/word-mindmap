@@ -113,7 +113,7 @@ $(document).ready(function(){
         }
         return points;
     }
-
+    var previouslyPos;
     var grabWord = function(word) {
         $.ajax({
             url: "getWordsNearTo.html",
@@ -123,26 +123,53 @@ $(document).ready(function(){
                 var start = data.startWord;
                 var wordSystem = $("#word-system")
                 var relatedWords = data.relatedWords;
-                wordSystem.empty();
-                var startNode = $("<li id='start-word'>" + start.name + '</li>')
-                        .appendTo(wordSystem)
-                        .position({ my: "center", at: "center", of: wordSystem})
-//                    .show('explode', { pieces: 32}, 2000);
+                var previouslyCenteredWord = wordSystem.find("li#start-word");
+                //fade out other unrelated words if any
+                wordSystem.find('li').not(":contains('" + word +"')").fadeOut();
+//                wordSystem.empty();
 
-                var startOffset = startNode.position();
-                var centerX = startOffset.left + NODE_RADIUS;
-                var centerY = startOffset.top - NODE_RADIUS;
-                var points = calculatePoints(relatedWords.length, centerX, centerY);
 
-                var textToInsert = "";
-                var fragment = document.createDocumentFragment();
-                $.each(relatedWords, function(index, value){
-                    var point = points[index];
-                    textToInsert += '<li style=\"left:' + point.x + 'px;top:' + point.y + 'px;\">';
-                    textToInsert += value.name;
-                    textToInsert += '</li>';
-                });
-                wordSystem.append(textToInsert);
+                if(previouslyCenteredWord.length == 0){
+                    var startNode = $("<li id='start-word'>" + start.name + '</li>')
+                            .appendTo(wordSystem)
+                            .position({ my: "center", at: "center", of: wordSystem});
+                    previouslyPos = startNode.position();
+                    var centerX = previouslyPos.left + NODE_RADIUS;
+                    var centerY = previouslyPos.top - NODE_RADIUS;
+                    var points = calculatePoints(relatedWords.length, centerX, centerY);
+
+                    var textToInsert = "";
+                    var fragment = document.createDocumentFragment();
+                    $.each(relatedWords, function(index, value){
+                        var point = points[index];
+                        textToInsert += '<li style=\"left:' + point.x + 'px;top:' + point.y + 'px;\">';
+                        textToInsert += value.name;
+                        textToInsert += '</li>';
+                    });
+                    wordSystem.append(textToInsert);
+                }else {
+                    var startNode = wordSystem.find('li:contains(' + word + ')' );
+                    var startOffset = startNode.position();
+                    var gapWith = previouslyPos.left - startOffset.left;
+                    var gapHeight = previouslyPos.top - startOffset.top;
+                    startNode.animate({top:'+='+gapHeight, left:'+='+gapWith},2000, function() {
+                        var centerX = previouslyPos.left + NODE_RADIUS;
+                        var centerY = previouslyPos.top - NODE_RADIUS;
+                        var points = calculatePoints(relatedWords.length, centerX, centerY);
+
+                        var textToInsert = "";
+                        var fragment = document.createDocumentFragment();
+                        $.each(relatedWords, function(index, value){
+                            var point = points[index];
+                            textToInsert += '<li style=\"left:' + point.x + 'px;top:' + point.y + 'px;\">';
+                            textToInsert += value.name;
+                            textToInsert += '</li>';
+                        });
+                        wordSystem.append(textToInsert).show('slow');
+                    });
+                }
+
+
                 wordSystem.find('li').click(function(event){
                     grabWord($(this).text());
                 });

@@ -167,6 +167,7 @@ public class SearchController {
     @ResponseBody
     String getWordsNearTo(@RequestParam(value = "name", required = false) String wordName) {
         Word startWord = wordService.searchExactWordByName(wordName);
+        System.out.println("startWord: " + startWord);
         LinkedHashMap result = new LinkedHashMap();
 
         result.put("startWord", getWordDescInJson(startWord));
